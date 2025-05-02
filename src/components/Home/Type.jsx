@@ -18,7 +18,11 @@ function Type() {
       callback: function() {
         console.log("Typed!");
       },
-      fontSize: "10em"
+      fontSize: "10em",
+      display: "flex",
+      justifyContent: "left",
+      alignItems: "start",
+      color: "blue"
     }} />
     </div>
   );

@@ -9,7 +9,7 @@ function HomeTwo() {
     <>
       <Container fluid id="about" className="home-about-section">
         <Container>
-          <h2 className="section-title">LET ME INTRODUCE MYSELF</h2>
+          <h2 className="section-title">Let Me Introduce Myself</h2>
           <Row className="content-section wrapper">
             <Col md={8} className="home-about-desc base-box">
               <div className="section-header">

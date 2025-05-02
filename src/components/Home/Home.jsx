@@ -11,8 +11,12 @@ function Home() {
       <Container id="hero" className='section-tag d-flex flex-column justify-content-start align-items-center'>
         <Container className="container hero-container" data-aos="zoom-in" data-aos-delay="100">
           <Container className='hero-content'>
-            <h1>Jeremiah Katumo</h1>
-            <Type />
+            <Row>
+              <h1>Jeremiah Katumo</h1>
+            </Row>
+            <Row >
+              <Type />
+            </Row>
             <Row className="social-links">
               <a href="twitter.com" className="twitter"><i className="bx bxl-twitter"></i></a>
               <a href="facebook.com" className="facebook"><i className="bx bxl-facebook"></i></a>
