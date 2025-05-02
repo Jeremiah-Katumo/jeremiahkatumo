@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Vite + React</title>
+    <style>
+        .wrapper {
+            position: relative;
+            width: 600px;
+            height: 300px;
+            background-color: #eee;
+            margin: 40px;
+            overflow: visible;
+        }
+
+        /* Bottom/base div — full width */
+        .base-box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: #88c;
+            padding: 20px;
+            color: white;
+            z-index: 1;
+        }
+
+        /* Top/floating div — smaller and overlapping */
+        .top-box {
+            position: absolute;
+            top: 200px;
+            /* pushes it down to overlap ~100px at bottom */
+            left: 150px;
+            /* centers it horizontally or adjust as needed */
+            width: 300px;
+            /* smaller than base box */
+            background-color: rgba(255, 68, 68, 0.9);
+            padding: 20px;
+            color: white;
+            z-index: 2;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="background-box">
+            Background Content
+        </div>
+
+        <div class="floating-box">
+            Floating Content
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="base-box">Base Box</div>
+        <div class="top-box">Floating Box</div>
+    </div> -->
+
+    <div class="wrapper">
+        <div class="base-box">
+            Base Box<br>
+            This is a wide base section.
+        </div>
+        <div class="top-box">
+            Floating Box<br>
+            Overlapping a few inches.
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremiah Katumo Kurwa</title>
+    <link rel="stylesheet" href="../portfolio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-calendar/dist/github-calendar.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/github-calendar/dist/github-calendar.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="index-page">
+    <header id="header" class="header">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <button class="navbar-toggle" id="navbar-toggle">
+                <i class="fa fa-bars"></i> <!-- Hamburger Icon -->
+            </button>
+            <div class="navbar-content">
+                <div class="back-btn">
+                    <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="navbar-items">
+                    <ul id="navbar-links">
+                        <li><a href="../portfolio.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="interest.html">Interests</a></li>
+                        <li><a href="skill.html">Skills</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section id="contact" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="interests-container">
+                <div class="info-container" data-aos="fade-up" data-aos-delay={delay}>
+                    <div class="info-box">
+                        <div class="info-icon-box">
+                            <i class="fa fa-map"></i>
+                            <h3>My Office</h3>
+                        </div>
+                        <div>
+                            <p>Baobab Plaza, Kilifi</p>
+                        </div>
+                    </div>
+                
+                    <a class="btn" href="mailto:jeremykurwa02@gmail.com">
+                        <div class="info-box">
+                            <i class="fa fa-envelope"></i>
+                            <h3>Email Us</h3>
+                        </div>
+                    </a>
+                
+                    <div class="info-box">
+                        <div class="info-icon-box">
+                            <i class="fa fa-phone"></i>
+                            <h3>Call Us</h3>
+                        </div>
+                        <div>
+                            <p>+254 745612869</p>
+                        </div>
+                    </div>
+                </div>                
+
+                <div class="inputs-container" data-aos="fade-up" data-aos-delay="300">
+                    <form method="post" class="php-email-form">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                        <div class="submit-button">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
