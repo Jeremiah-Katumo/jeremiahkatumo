@@ -199,9 +199,15 @@ h6 {
   border-radius: 50px;
   background: #f2f3f5;
   height: 56px;
-  width: 100%;
+  width: 26px;
   overflow: hidden;
   transition: 0.3s;
+}
+
+.nav-menu .nav-link a {
+  width: 56px;
+  height: 26px;
+  /* border-radius: 15px; */
 }
 
 .nav-link p {
@@ -216,7 +222,7 @@ h6 {
 .nav-menu a span,
 .nav-menu a:focus span {
   padding: 0 5px 0 7px;
-  color: #45505b;
+  color: var(--pre-text-color);
 }
 
 @media (min-width: 992px) {
@@ -235,27 +241,23 @@ h6 {
 
 .nav-menu a:hover,
 .nav-menu .active,
-.nav-menu .active:focus,
-.nav-menu li:hover>a {
-  color: var(--secondary-color);
+.nav-menu .active:focus {
+  color: var(--text-color);
   background: var(--background-color);
 }
 
 .nav-menu a:hover span,
 .nav-menu .active span,
-.nav-menu .active:focus span,
-.nav-menu li:hover>a span {
-  color: var(--secondary-color);
+.nav-menu .active:focus span {
+  color: var(--text-color);
 }
 
-.nav-menu a:hover,
-.nav-menu li:hover>a {
-  width: 100%;
-  color: var(--secondary-color);
+.nav-menu a:hover {
+  width: 60%;
+  color: var(--text-color);
 }
 
-.nav-menu a:hover span,
-.nav-menu li:hover>a span {
+.nav-menu a:hover span {
   display: block;
 }
 
