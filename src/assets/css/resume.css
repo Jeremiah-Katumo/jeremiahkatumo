@@ -35,7 +35,7 @@
 .resume-wrap .date {
     font-weight: 900;
     font-size: 26px;
-    color: #ffbd39;
+    color: var(--icon-color);
 }
 
 .resume-wrap h2 {
@@ -45,6 +45,7 @@
 
 .resume-wrap h3 {
     font-size: 17px;
+    color: var(--background-color);
 }
 
 .resume-wrap span,

@@ -215,105 +215,6 @@ h6 {
   margin-right: 8px;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  height: 40vh;
-  background: url("../img/hero.jpg") top right no-repeat;
-  /* background-color: var(--background-color); */
-  background-size: cover;
-  position: relative;
-}
-
-#hero .hero-content {
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  /* padding-left: 80px; */
-}
-
-#hero .hero-container {
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-  flex-direction: column;
-  padding-left: 160px;
-}
-
-/* @media (min-width: 992px) {
-  #hero {
-    padding-left: 160px;
-  }
-} */
-
-#hero:before {
-  content: "";
-  /* background: rgba(255, 255, 255, 0.8); */
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#hero h1 {
-  margin: 0;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 56px;
-  color: var(--text-color) /*#45505b; */
-}
-
-#hero p {
-  color: var(--text-color);
-  margin: 15px 0 0 0;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
-}
-
-#hero p span {
-  color: var(--background-color);
-  letter-spacing: 1px;
-}
-
-#hero .social-links {
-  margin-top: 30px;
-}
-
-#hero .social-links a {
-  font-size: 24px;
-  display: inline-block;
-  color: var(--background-color);
-  line-height: 1;
-  margin-right: 20px;
-  transition: 0.3s;
-}
-
-#hero .social-links a:hover {
-  color: var(--background-color);
-}
-
-@media (max-width: 992px) {
-  #hero {
-    text-align: center;
-  }
-
-  #hero h1 {
-    font-size: 32px;
-    line-height: 36px;
-  }
-
-  #hero p {
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -451,7 +352,7 @@ h6 {
 /* Upper layer */
 .top-box {
   position: absolute;
-  top: 250px;  /* margin from top of wrapper */
+  top: 260px;  /* margin from top of wrapper */
   left: 85px; /* margin from left of wrapper */
   /* bottom: 100px; */
   background-color: var(--background-thr-color);
@@ -462,13 +363,29 @@ h6 {
   pointer-events: auto; /* allow interaction */
   border-radius: 15px;
   border-color: #000000;
-  border: 1.5px dotted var(--background-color)
+  border: 1.5px dotted var(--background-color);
   /* border-top: 2px solid blue;
   border-right: 2px dotted green;
   border-bottom: 2px dashed orange;
   border-left: 2px solid gray; */
 }
 
+.middle-box {
+  position: absolute;
+  top: 250px;  /* margin from top of wrapper */
+  left: 75px; /* margin from left of wrapper */
+  /* bottom: 100px; */
+  background-color: var(--background-color);
+  width: 82%;
+  color: var(--secondary-color);
+  padding: 20px;
+  z-index: 2;
+  pointer-events: auto; /* allow interaction */
+  border-radius: 15px;
+  border-color: #000000;
+  border: 2.5px dotted var(--background-color);
+  height: 300px;
+}
 
 /* Flex container for text and image */
 .about-content {

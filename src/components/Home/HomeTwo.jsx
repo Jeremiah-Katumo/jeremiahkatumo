@@ -39,6 +39,10 @@ function HomeTwo() {
               </div>
             </Col>
 
+            <Col md={4} className="middle-box">
+              <p>Black</p>
+            </Col>
+
             <Col md={4} className="top-box">
               <div className="about-content">
                 <div className="about-text">

@@ -13,7 +13,7 @@ const TopBar = () => {
         >
             <Container className="nav-content-container">
                 <Container>
-                    <Navbar.Brand className="brand-name" href="#home">JEREMY</Navbar.Brand>
+                    <Navbar.Brand className="brand-name" href="/home">JEREMY</Navbar.Brand>
                     {/* <Navbar.Toggle className="brand-logo" aria-controls="ftco-nav" /> */}
                 </Container>
                 <Container>
@@ -25,7 +25,7 @@ const TopBar = () => {
                             <Nav.Link href="/services">Services</Nav.Link>
                             {/* <Nav.Link href="#skills-section">Skills</Nav.Link> */}
                             <Nav.Link href="/projects">Projects</Nav.Link>
-                            <Nav.Link href="/blogs">My Blog</Nav.Link>
+                            <Nav.Link href="/blogs">Blog</Nav.Link>
                             <Nav.Link href="/contacts">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
