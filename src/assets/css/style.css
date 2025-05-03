@@ -541,6 +541,6 @@ h6 {
   padding-left: 10px;
 }
 
-..call-to-action-btn:hover {
+.call-to-action-btn:hover {
   border: 1px solid var(--icon-color);
 }
