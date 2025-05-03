@@ -1,25 +1,51 @@
-.calendar-container {
-    overflow-x: auto;
-    padding: 1rem;
-  }
-  
-  .calendar-week {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .calendar-cell {
-    width: 15px;
-    height: 15px;
-    margin: 1px;
-    border-radius: 2px;
-    background-color: #ebedf0;
-    transition: background-color 0.3s ease;
-  }
-  
-  .level-0 { background-color: #ebedf0; }
-  .level-1 { background-color: #c6e48b; }
-  .level-2 { background-color: #7bc96f; }
-  .level-3 { background-color: #239a3b; }
-  .level-4 { background-color: #196127; }
-  
+@import url('./style.css');
+
+/* Github styles */
+/* Style the calendar container */
+#github {
+  text-align: center;
+  padding: 30px;
+  background: var(--background-thr-color);
+}
+
+.github-content-section {
+  /* padding: 10px; */
+  background-color: #f1f1f1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* width: 80%; */
+  /* Ensure the Skills section doesn't overlap with the fixed navbar */
+}
+
+/* Style the title */
+#github h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+/* Default calendar styling */
+.github-calendar {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.calendar {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.github-element:hover {
+  transform: translate3d(0px, 10px, 10px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}

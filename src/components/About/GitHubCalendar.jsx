@@ -1,18 +1,24 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import GitHubCalendar from "react-github-calendar";
+import '../../assets/css/github-calendar.css'
 
-const GitHubCalendarComponent = () => {
+const GithubCalendar = () => {
   return (
-    <Container className="my-5">
-      <Row className="justify-content-center">
-        <Col md="auto">
-          <h4 className="text-center">My GitHub Contributions</h4>
-          <GitHubCalendar username="your-github-username" />
-        </Col>
-      </Row>
-    </Container>
+    <div id="github" class="github-content-section">
+      <h2>GitHub Contributions</h2>
+      <div className='github-calendar'>
+        <GitHubCalendar
+          username="Jeremiah-Katumo"
+          blockSize={15}
+          blockMargin={5}
+          color="white"
+          fontSize={14}
+        />
+      </div>
+      <div class="calendar">Loading GitHub contributions...</div>
+    </div>
   );
 };
 
-export default GitHubCalendarComponent;
+export default GithubCalendar;

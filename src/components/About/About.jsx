@@ -1,5 +1,5 @@
 import React from 'react'
-import GitHubCalendar from 'react-github-calendar'
+import GithubCalendar from './GitHubCalendar'
 import Interests from './Interests'
 import Skills from './Skills'
 
@@ -8,17 +8,7 @@ function About() {
     <>
       <Skills />
 
-      <div id="github" class="github-content-section">
-        <h2>GitHub Contributions</h2>
-        <GitHubCalendar
-          username="Jeremiah-Katumo"
-          blockSize={15}
-          blockMargin={5}
-          color="#196127"
-          fontSize={14}
-        />
-        <div class="calendar">Loading GitHub contributions...</div>
-      </div>
+      <GithubCalendar />
 
       <Interests />
 

@@ -8,6 +8,8 @@
   --pre-text-color: #14181c;
   /* --background-color: #0B60B0; */
   --background-color: #000000;
+  --background-two-color: #1e3e62;
+  --background-thr-color: #0b192c;
   --section-bg-color: #EFF3C6;;
   --on-hover-color: #FF6500;
   --footer-bg-color: #212121;
@@ -433,7 +435,7 @@ h6 {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: #1e3e62;
+  background-color: var(--background-two-color);
   width: 100%;
   padding: 20px;
   color: var(--secondary-color);
@@ -448,7 +450,7 @@ h6 {
   top: 250px;  /* margin from top of wrapper */
   left: 85px; /* margin from left of wrapper */
   /* bottom: 100px; */
-  background-color: #0b192c;
+  background-color: var(--background-thr-color);
   width: 80%;
   color: var(--secondary-color);
   padding: 20px;
@@ -533,50 +535,6 @@ h6 {
 }
 
 
-
-
-/* Github styles */
-/* Style the calendar container */
-#github {
-  text-align: center;
-  padding: 30px;
-  background: #f9f9f9;
-}
-
-.github-content-section {
-  /* padding: 10px; */
-  background-color: #f1f1f1;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* width: 80%; */
-  /* Ensure the Skills section doesn't overlap with the fixed navbar */
-}
-
-/* Style the title */
-#github h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-/* Default calendar styling */
-.calendar {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.github-element:hover {
-  transform: translate3d(0px, 10px, 10px);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
 
 /*------------------------------------------------------------
 # Interests
