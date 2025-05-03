@@ -1,0 +1,71 @@
+@import url('./style.css');
+
+/* Skills Section Styles */
+.skills-content-section {
+    padding: 40px 10px;
+    background-color: var(--background-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Ensure the Skills section doesn't overlap with the fixed navbar */
+  }
+  
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  /* Portfolio Section Header */
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .section-header p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #777;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow the skills to wrap into new rows */
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .skill {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    /* Initially set each skill to take full width */
+    max-width: 250px;
+  }
+  
+  .skill i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .zoom-element:hover {
+    transform: translate3d(0px, 10px, 10px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
