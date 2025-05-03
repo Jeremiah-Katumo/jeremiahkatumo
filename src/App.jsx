@@ -17,6 +17,7 @@ import {
   Routes,
   Navigate
 } from "react-router-dom";
+import TopBar from './components/Topbar.jsx';
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -34,7 +35,8 @@ function App() {
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <NavBar />
+        <TopBar />
+        {/* <NavBar /> */}
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />

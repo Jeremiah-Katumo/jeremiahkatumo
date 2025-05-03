@@ -20,7 +20,7 @@ import {
 import '../assets/css/style.css';
 
 
-const SidebarNav = () => {
+const NavBar = () => {
   return (
     <header id="header" className="d-flex flex-column justify-content-center">
       <Nav defaultActiveKey="#hero" className="flex-column navbar nav-menu">
@@ -47,4 +47,4 @@ const SidebarNav = () => {
   );
 };
 
-export default SidebarNav;
+export default NavBar;
