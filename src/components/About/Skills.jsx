@@ -13,27 +13,27 @@ function Skills() {
         <div class="skills-container">
           <div class="skill zoom-element">
             <i class="fas fa-code"></i>
-            <p class="skill-name">Web Development</p>
+            <h3 class="skill-name">Web Development</h3>
           </div>
           <div class="skill zoom-element">
             <i class="fas fa-mobile-alt"></i>
-            <p class="skill-name">App Development</p>
+            <h3 class="skill-name">App Development</h3>
           </div>
           <div class="skill zoom-element">
             <i class="fas fa-paint-brush"></i>
-            <p class="skill-name">UI/UX Design</p>
+            <h3 class="skill-name">UI/UX Design</h3>
           </div>
           <div class="skill zoom-element">
             <i class="fas fa-server"></i>
-            <p class="skill-name">Backend Development</p>
+            <h3 class="skill-name">Backend Development</h3>
           </div>
           <div class="skill zoom-element">
             <i class="fas fa-pen-nib"></i>
-            <p class="skill-name">Data Science</p>
+            <h3 class="skill-name">Data Science</h3>
           </div>
           <div class="skill zoom-element">
             <i class="fas fa-pen-nib"></i>
-            <p class="skill-name">Content Writing</p>
+            <h3 class="skill-name">Content Writing</h3>
           </div>
         </div>
       </section>
