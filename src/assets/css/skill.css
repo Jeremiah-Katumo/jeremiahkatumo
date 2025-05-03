@@ -2,84 +2,116 @@
 
 /* Skills Section Styles */
 .skills-content-section {
-    padding: 40px 10px;
-    background-color: var(--background-color);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    /* Ensure the Skills section doesn't overlap with the fixed navbar */
-  }
-  
-  .section-title {
-    font-size: 36px;
-    margin-bottom: 40px;
-  }
-  
-  /* Portfolio Section Header */
-  .section-header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .section-header h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: var(--text-color);
-  }
-  
-  .section-header p {
-    font-size: 18px;
-    font-weight: 300;
-    color: var(--text-paragraph-color);
-  }
-  
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* Allow the skills to wrap into new rows */
-    gap: 20px;
-    justify-content: center;
-  }
+  padding: 40px 10px;
+  background-color: var(--background-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  /* Ensure the Skills section doesn't overlap with the fixed navbar */
+}
 
-  .skills-container p {
-    color: var(--background-color);
-  }
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
 
-  .skills-container h3 {
-    color: var(--text-heading-card-color);
-  }
-  
-  .skill {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    /* Initially set each skill to take full width */
-    max-width: 250px;
-  }
-  
-  .skill i {
-    font-size: 40px;
-    color: var(--icon-color);
-    margin-bottom: 10px;
-  }
-  
-  .skill-name {
-    font-size: 18px;
-    font-weight: 600;
-  }
+/* Portfolio Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-  .zoom-element {
-    background-color: var(--background-card-color);
-  }
-  
-  .zoom-element:hover {
-    transform: translate3d(0px, 10px, 10px);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-  }
+.section-header h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.section-header p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--text-paragraph-color);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow the skills to wrap into new rows */
+  gap: 20px;
+  justify-content: center;
+}
+
+.skills-container p {
+  color: var(--background-color);
+}
+
+.skills-container h3 {
+  color: var(--text-heading-card-color);
+}
+
+.skill {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  /* Initially set each skill to take full width */
+  max-width: 250px;
+}
+
+.skill i {
+  font-size: 40px;
+  color: var(--icon-color);
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.zoom-element {
+  background-color: var(--background-card-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.zoom-element:hover {
+  transform: translate3d(0px, 10px, 10px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.progress {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  height: 15px;
+  width: 30%;
+  overflow: hidden;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Simulate dynamic width */
+.filled-80 {
+  width: 80%;
+}
+
+/* Custom color */
+.color-6 {
+  background-color: #f39c12;
+  /* Orange-ish (you can change this) */
+}

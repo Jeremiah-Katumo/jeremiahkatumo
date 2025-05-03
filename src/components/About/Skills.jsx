@@ -34,6 +34,11 @@ function Skills() {
           <div class="skill zoom-element">
             <i class="fas fa-pen-nib"></i>
             <h3 class="skill-name">Content Writing</h3>
+            {/* <div class="progress">
+              <div class="progress-bar color-6 filled-80">
+                <span>80%</span>
+              </div>
+            </div> */}
           </div>
         </div>
       </section>
