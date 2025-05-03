@@ -14,7 +14,7 @@ function HomeTwo() {
             <Col md={8} className="home-about-desc base-box">
               <div className="section-header">
                 <p className="about-paragraph">
-                  I fell in ❤️ with tech and since then I'm proud to think that
+                  I fell in ❤️ with tech and since then I'm proud to think that I
                   earned something in programming... 🤷‍♂️🤷‍♂️.
                   I am proficent in the following languages:{" "}
                   <i>

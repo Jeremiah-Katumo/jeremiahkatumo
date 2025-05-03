@@ -1,0 +1,81 @@
+/* CustomNavbar.css */
+
+/* Default Navbar (Large screens) */
+.nav-menu {
+    padding: 0;
+    display: block;
+  }
+  
+  .nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-menu > ul > li {
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .nav-menu a,
+  .nav-menu a:focus {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    padding: 10px 18px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+    border-radius: 50px;
+    background: #f2f3f5;
+    height: 56px;
+    width: 26px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  .nav-menu a span {
+    padding: 0 5px 0 7px;
+    color: var(--pre-text-color);
+  }
+  
+  .nav-menu a i,
+  .nav-menu a:focus i {
+    font-size: 20px;
+  }
+  
+  .nav-menu a:hover,
+  .nav-menu .active,
+  .nav-menu .active:focus {
+    color: var(--text-color);
+    background: var(--background-color);
+  }
+  
+  .nav-menu a:hover span,
+  .nav-menu .active span,
+  .nav-menu .active:focus span {
+    color: var(--text-color);
+  }
+  
+  /* Show mobile menu on smaller screens */
+  @media (max-width: 991px) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .mobile-nav {
+      display: block;
+    }
+  }
+  
+  /* Hide mobile menu on larger screens */
+  @media (min-width: 992px) {
+    .mobile-nav {
+      display: none;
+    }
+  
+    .nav-menu {
+      display: block;
+    }
+  }
+  
