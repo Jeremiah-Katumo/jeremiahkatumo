@@ -59,12 +59,11 @@ function HomeTwo() {
                         download="Jeremiah_Katumo_Resume.pdf"
                         className="download-btn"
                       >
-                        Download Resume
+                        <i className="fa fa-download"></i> Resume
                       </a>
                     </div>
 
                     <div className="call-to-action-btn">
-                      <h3>Call To Action</h3>
                       <a
                         href="https://www.youtube.com/watch"
                         className="cta-button"

@@ -305,6 +305,7 @@ h6 {
   color: var(--text-color);
   /* margin-bottom: 10px; */
   padding: 0;
+  margin: 0px 20px 20px 20px;
 }
 
 .about-paragraph {
@@ -316,7 +317,7 @@ h6 {
 
 #about b {
   font-weight: bold;
-  color: var(--text-bold-color);
+  color: var(--text-heading-card-color);
 }
 
 #about p {
@@ -340,13 +341,13 @@ h6 {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: var(--background-two-color);
+  background-color: var(--background-color);
   width: 100%;
   padding: 20px;
   color: var(--secondary-color);
   z-index: 1;
   border-radius: 15px;
-  border: 1.5px dotted var(--background-color)
+  border: 1.5px solid var(--background-two-color)
 }
 
 /* Upper layer */
@@ -355,7 +356,7 @@ h6 {
   top: 260px;  /* margin from top of wrapper */
   left: 85px; /* margin from left of wrapper */
   /* bottom: 100px; */
-  background-color: var(--background-thr-color);
+  background-color: var(--background-color);
   width: 80%;
   color: var(--secondary-color);
   padding: 20px;
@@ -363,7 +364,7 @@ h6 {
   pointer-events: auto; /* allow interaction */
   border-radius: 15px;
   border-color: #000000;
-  border: 1.5px dotted var(--background-color);
+  border: 1.5px solid var(--background-two-color);
   /* border-top: 2px solid blue;
   border-right: 2px dotted green;
   border-bottom: 2px dashed orange;
@@ -383,7 +384,7 @@ h6 {
   pointer-events: auto; /* allow interaction */
   border-radius: 15px;
   border-color: #000000;
-  border: 2.5px dotted var(--background-color);
+  border: 2.5px solid var(--background-color);
   height: 300px;
 }
 
@@ -429,7 +430,11 @@ h6 {
 
 /* Download Resume Button */
 .download-btn {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
   margin-top: 15px;
   padding: 12px 20px;
   background-color: var(--background-color);
@@ -448,8 +453,8 @@ h6 {
 
 .call-to-action-btn {
   margin-top: 15px;
-  /* padding: 12px 20px; */
-  height: 60px;
+  padding: 10px;
+  /* height: 60px; */
   display: flex;
   justify-content: center;
   align-items: center;

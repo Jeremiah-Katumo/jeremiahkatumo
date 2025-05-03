@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
     /* Ensure the Skills section doesn't overlap with the fixed navbar */
   }
   
