@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/css/style.css';
+import '../../assets/css/home.css';
 import { Container } from 'react-bootstrap';
 import Type from './Type';
 import HomeTwo from './HomeTwo';

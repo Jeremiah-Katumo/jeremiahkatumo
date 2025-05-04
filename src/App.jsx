@@ -1,10 +1,8 @@
 // import logo from './logo.svg';
 import React, { useState, useEffect } from 'react';
-import './App.css';
 import Preloader from './components/Pre';
 import Home from './components/Home/Home';
 import Footer from './components/Footer';
-import NavBar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import Services from './components/Services/Services.jsx';
 import About from './components/About/About.jsx';
