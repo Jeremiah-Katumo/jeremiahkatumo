@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+// import { Container, Row, Col } from "react-bootstrap";
 import GitHubCalendar from "react-github-calendar";
 import '../../assets/css/github-calendar.css'
 
@@ -12,7 +12,7 @@ const GithubCalendar = () => {
           username="Jeremiah-Katumo"
           blockSize={15}
           blockMargin={5}
-          color="white"
+          color="#FF6500"
           fontSize={14}
         />
       </div>

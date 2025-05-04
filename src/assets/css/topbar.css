@@ -33,8 +33,12 @@
 
 .brand-name {
     color: var(--secondary-color);
-    font-weight: bold;
-    font-size: 23px;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    line-height: inherit;
+    margin-top: 5px;
+    display: flex;
 }
 .brand-logo:hover {
     background-color: var(--text-color);

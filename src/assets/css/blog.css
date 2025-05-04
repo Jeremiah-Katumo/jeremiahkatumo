@@ -1,0 +1,237 @@
+@import './style.css';
+
+#blogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .heading-section {
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-co<Container className="blog-card">
+            <Container className="blog-entry">
+              <a href="single.html" className="blog-img">
+              </a>
+              <Container className="text">
+                <Container className="author-container">
+                  <p className="mb-0">
+                    <span className="mr-2 date">June 21, 2019</span>
+                    <a href="#" className="mr-2 user">Admin</a>
+                    <a href="#" className="meta-chat"><span class="icon-chat"></span> 3</a>
+                  </p>
+                </Container>
+                <h3 className="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </Container>
+            </Container>
+          </Container>ntent: center;
+    align-items: center;
+    margin-top: 70px;
+} */
+
+
+
+.heading-section {
+    position: relative;
+    margin-top: 100px;
+}
+
+.heading-section .subheading {
+    font-size: 13px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 3px;
+}
+
+.heading-section h1.big {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    font-size: 7vw;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    font-weight: 900;
+}
+
+.section-title {
+    position: relative;
+    z-index: 2;
+}
+
+.heading-section h1.big.big-2 {
+    right: 0;
+    /* margin-bottom: 50px; */
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+}
+
+.blogs-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: auto;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.blog-card {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    border: 2px solid var(--background-thr-color);
+    padding: 50px;
+    /* border-radius: 15px; */
+    width: 20%;
+    height: 300px;
+    
+}
+
+.img,
+.blog-img,
+.user-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blog-entry {
+    position: relative;
+    background-image: url(../img/image_1.jpg);
+    /* padding-right: 10px; */
+}
+
+@media (min-width: 768px) {
+    .blog-entry {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .blog-entry {
+        margin-bottom: 30px;
+    }
+}
+
+/* .blog-img {
+    background-image: url(../img/image_1.jpg);
+} */
+
+.blog-entry .text {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: end;
+    margin-top: 10px;
+    /* float: right; */
+    display: block;
+    /* padding-right: 20px; */
+    /* padding-left: 60px; */
+}
+
+.blog-entry .author-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.blog-entry .text .heading {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.author-container .date,
+.author-container .author {
+    margin-right: 7px;
+}
+
+.author-container .date {
+    color: var(--icon-color);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.author-container .paragraph {
+    display: flex;
+    flex-direction: column;
+}
+.author-container .author {
+    color: var(--text-paragraph-color);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.blog-entry .text .heading a {
+    color: var(--text-color);
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.blog-entry .blog-desc {
+    color: var(--secondary-color);
+    /* font-weight: bold; */
+}
+
+.blog-entry .text .heading a:hover,
+.blog-entry .text .heading a:focus,
+.blog-entry .text .heading a:active {
+    color: var(--text-color);
+}
+
+.blog-entry .meta {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.blog-entry .meta span {
+    color: #ffbd39;
+}
+
+.blog-entry .meta a {
+    color: #ffbd39;
+}
+
+.blog-entry .meta a:hover {
+    color: #ffbd39;
+}
+
+.block-21 .blog-img {
+    display: block;
+    height: 80px;
+    width: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* Blog*/
+.post-info {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: .1em;
+}
+
+.post-info>div {
+    display: inline-block;
+}
+
+.post-info>div .seperator {
+    display: inline-block;
+    margin: 0 10px;
+    opacity: .5;
+}

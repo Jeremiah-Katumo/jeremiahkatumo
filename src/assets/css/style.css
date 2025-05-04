@@ -2,15 +2,21 @@
 
 :root {
   --primary-color: #40A2D8;
-  --secondary-color: #f0f0f0; /* #f0edcf */
+  --secondary-color: #f0f0f0;
+  /* #f0edcf */
   --text-color: #FF6500;
   --text-bold-color: #000000;
+  --text-paragraph-color: #fffaf0;
+  --text-heading-card-color: #2c3e50;
   --pre-text-color: #14181c;
   /* --background-color: #0B60B0; */
   --background-color: #000000;
   --background-two-color: #1e3e62;
   --background-thr-color: #0b192c;
-  --section-bg-color: #EFF3C6;;
+  --background-card-color: rgba(255, 255, 255, 0.1);
+  --icon-color: #ffbd39;
+  --section-bg-color: #EFF3C6;
+  ;
   --on-hover-color: #FF6500;
   --footer-bg-color: #212121;
   --footer-text-color: #f0f0f0;
@@ -32,10 +38,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background-image: linear-gradient(to left, rgb(65, 20, 155), rgb(52, 22, 143)); */
   background-color: var(--background-color);
-} 
+}
 
 /* Prevent horizontal scrolling */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -211,105 +218,6 @@ h6 {
   margin-right: 8px;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  height: 40vh;
-  background: url("../img/hero.jpg") top right no-repeat;
-  /* background-color: var(--background-color); */
-  background-size: cover;
-  position: relative;
-}
-
-#hero .hero-content {
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  /* padding-left: 80px; */
-}
-
-#hero .hero-container {
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-  flex-direction: column;
-  padding-left: 160px;
-}
-
-/* @media (min-width: 992px) {
-  #hero {
-    padding-left: 160px;
-  }
-} */
-
-#hero:before {
-  content: "";
-  /* background: rgba(255, 255, 255, 0.8); */
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#hero h1 {
-  margin: 0;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 56px;
-  color: var(--text-color) /*#45505b; */
-}
-
-#hero p {
-  color: var(--text-color);
-  margin: 15px 0 0 0;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
-}
-
-#hero p span {
-  color: var(--background-color);
-  letter-spacing: 1px;
-}
-
-#hero .social-links {
-  margin-top: 30px;
-}
-
-#hero .social-links a {
-  font-size: 24px;
-  display: inline-block;
-  color: var(--background-color);
-  line-height: 1;
-  margin-right: 20px;
-  transition: 0.3s;
-}
-
-#hero .social-links a:hover {
-  color: var(--background-color);
-}
-
-@media (max-width: 992px) {
-  #hero {
-    text-align: center;
-  }
-
-  #hero h1 {
-    font-size: 32px;
-    line-height: 36px;
-  }
-
-  #hero p {
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -397,21 +305,26 @@ h6 {
 .section-title {
   font-size: 36px;
   font-weight: bold;
-  color: var(--secondary-color);
+  color: var(--text-color);
   /* margin-bottom: 10px; */
   padding: 0;
+  margin: 0px 20px 20px 20px;
 }
 
 .about-paragraph {
   font-size: 18px;
-  color: var(--secondary-color);
+  color: var(--text-heading-card-color);
   line-height: 1.6;
   text-align: justify;
 }
 
 #about b {
   font-weight: bold;
-  color: var(--text-bold-color);
+  color: var(--text-heading-card-color);
+}
+
+#about p {
+  color: var(--secondary-color);
 }
 
 #about p {
@@ -425,7 +338,8 @@ h6 {
   /* height: auto; */
   background-color: var(--secondary-color);
   margin: 0px;
-  overflow: visible; /* allow content to overflow if needed */
+  overflow: visible;
+  /* allow content to overflow if needed */
   padding-bottom: 270px;
 }
 
@@ -435,36 +349,58 @@ h6 {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: var(--background-two-color);
+  background-color: var(--background-color);
   width: 100%;
   padding: 20px;
   color: var(--secondary-color);
   z-index: 1;
   border-radius: 15px;
-  border: 2px dashed var(--background-color)
+  border: 1.5px solid var(--background-two-color)
 }
 
 /* Upper layer */
 .top-box {
   position: absolute;
-  top: 250px;  /* margin from top of wrapper */
-  left: 85px; /* margin from left of wrapper */
+  top: 260px;
+  /* margin from top of wrapper */
+  left: 85px;
+  /* margin from left of wrapper */
   /* bottom: 100px; */
-  background-color: var(--background-thr-color);
+  background-color: var(--background-color);
   width: 80%;
   color: var(--secondary-color);
   padding: 20px;
   z-index: 2;
-  pointer-events: auto; /* allow interaction */
+  pointer-events: auto;
+  /* allow interaction */
   border-radius: 15px;
   border-color: #000000;
-  border: 2px dotted var(--background-color)
+  border: 1.5px solid var(--background-two-color);
   /* border-top: 2px solid blue;
   border-right: 2px dotted green;
   border-bottom: 2px dashed orange;
   border-left: 2px solid gray; */
 }
 
+.middle-box {
+  position: absolute;
+  top: 250px;
+  /* margin from top of wrapper */
+  left: 75px;
+  /* margin from left of wrapper */
+  /* bottom: 100px; */
+  background-color: var(--background-color);
+  width: 82%;
+  color: var(--secondary-color);
+  padding: 20px;
+  z-index: 2;
+  pointer-events: auto;
+  /* allow interaction */
+  border-radius: 15px;
+  border-color: #000000;
+  border: 2.5px solid var(--background-color);
+  height: 300px;
+}
 
 /* Flex container for text and image */
 .about-content {
@@ -497,14 +433,22 @@ h6 {
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  border: 2px solid var(--background-color);
+  border: 1px solid var(--background-color);
   object-fit: cover;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.img-about:hover {
+  border: 1px solid var(--icon-color);
+}
+
 /* Download Resume Button */
 .download-btn {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
   margin-top: 15px;
   padding: 12px 20px;
   background-color: var(--background-color);
@@ -523,128 +467,22 @@ h6 {
 
 .call-to-action-btn {
   margin-top: 15px;
-  /* padding: 12px 20px; */
-  height: 60px;
+  padding: 10px;
+  /* height: 60px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--background-color);
-  border-radius: 5px;
+  /* border-radius: 5px; */
   padding-left: 10px;
-
+  border: 2px solid var(--footer-bg-color);
+  /* padding: 10px; */
+  border-radius: 15px;
+  color: var(--secondary-color);
+}
+.call-to-action-btn:hover {
+  border: 2px solid var(--text-color);
 }
 
-
-
-/*------------------------------------------------------------
-# Interests
-------------------------------------------------------------*/
-#interests {
-    padding: 40px 20px;
-}
-
-/* Flex container for info + form */
-.interests-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: stretch;
-}
-
-/* Interest Styles */
-.interests-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
-  padding: 30px 0;
-}
-
-.interests-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  width: 100%;
-}
-
-.interest-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px 20px;
-  text-align: center;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.interest-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-}
-
-.interest-card i {
-  font-size: 40px;
-  color: #007bff;
-  margin-bottom: 15px;
-}
-
-.interest-card h3 {
-  margin: 10px 0;
-  font-size: 20px;
-  color: #2c3e50;
-}
-
-.interest-card p {
-  font-size: 15px;
-  color: #666;
-}
-
-/* ===== Responsive Breakpoints ===== */
-@media (max-width: 1024px) {
-  h1 {
-      font-size: 32px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-      padding: 30px 15px;
-  }
-
-  h1 {
-      font-size: 28px;
-  }
-
-  .interest-card {
-      padding: 25px 15px;
-  }
-
-  .interest-card h3 {
-      font-size: 18px;
-  }
-
-  .interest-card i {
-      font-size: 35px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-      padding: 20px 10px;
-  }
-
-  h1 {
-      font-size: 24px;
-  }
-
-  .interest-card {
-      padding: 20px 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .interest-card p {
-      font-size: 14px;
-  }
-}
-
+/* .call-to-action-btn:hover {
+  border: 1px solid var(--icon-color);
+} */

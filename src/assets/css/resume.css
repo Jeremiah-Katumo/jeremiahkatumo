@@ -1,0 +1,96 @@
+@import url('./style.css');
+
+/* .resume-section {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+} */
+
+.resume-wrap {
+    width: 20%;
+    height: max-content;
+    margin-bottom: 30px;
+    background: var(--background-card-color);
+    padding: 30px;
+    border-radius: 5px;
+    /* flex: 0 0 33.333%; 3 per row */
+    /* box-sizing: border-box; */
+    /* height: 300px; */
+}
+
+.section-heading {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.heading-section {
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.heading-section p {
+    color: var(--text-paragraph-color);
+}
+
+.resume-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.resume-wrap .date {
+    font-weight: 900;
+    font-size: 26px;
+    color: var(--icon-color);
+}
+
+.resume-wrap h2 {
+    font-size: 26px;
+    color: var(--text-heading-card-color);
+}
+
+.resume-wrap h3 {
+    font-size: 17px;
+    color: var(--background-color);
+}
+
+.resume-wrap span,
+.resume-wrap p {
+    color: var(--background-color);
+}
+
+.resume-wrap p {
+    padding: 10px;
+    border: 1px solid var(--background-color);
+    border-radius: 15px;
+}
+
+.resume-wrap .position {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+} 
+
+.resume-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+.resume-btn {
+    border: 2px solid var(--footer-bg-color);
+    padding: 10px;
+    border-radius: 15px;
+    color: var(--secondary-color);
+}
+.resume-btn:hover {
+    border: 2px solid var(--text-color);
+}
