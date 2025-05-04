@@ -16,6 +16,7 @@ import {
   Navigate
 } from "react-router-dom";
 import TopBar from './components/Topbar.jsx';
+import Contact from './components/Contact/Contact.jsx';
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -43,6 +44,7 @@ function App() {
           <Route path='/resume' element={<Resume />} />
           <Route path="/projects" element={<Projects />} />
           <Route path='/blogs' element={<Blogs />} />
+          <Route path='/contacts' element={<Contact />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
