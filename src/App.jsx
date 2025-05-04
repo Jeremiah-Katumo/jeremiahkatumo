@@ -32,7 +32,7 @@ function App() {
     <>
     <Router>
       <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      <div className='App' id={load ? "no-scroll" : "scroll"}>
         <TopBar />
         {/* <NavBar /> */}
         <ScrollToTop />
