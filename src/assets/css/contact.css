@@ -17,7 +17,7 @@
     width: 100%;
 }
 
-.bg-line-box {
+.bg-line-box-con {
     width: 33.333%;
     border-right: 0.5px solid rgba(255, 255, 255, 0.2);
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
@@ -26,7 +26,7 @@
     position: relative;
 }
 
-.bg-line-horizon-box {
+.bg-line-horizon-con-box {
     width: 100%;
     /* border-right: 0.5px solid var(--background-two-color); */
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
@@ -35,7 +35,7 @@
     position: relative;
 }
 
-.bg-line-box-end {
+.bg-line-box-con-end {
     width: 33.333%;
     /* border-right: 0.5px solid var(--background-two-color); */
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
