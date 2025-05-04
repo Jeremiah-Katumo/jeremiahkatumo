@@ -8,8 +8,8 @@ const ResumeSection = () => {
       <Container>
         <Row className="justify-content-center pb-5">
           <Col md={10} className="heading-section text-center ftco-animate">
-            <div class="section-header">
-              <h2>My Resume</h2>
+            <div className="section-header">
+              <h2 className='section-title'>My Resume</h2>
               <p>
                 A small river named Duden flows by their place and supplies it with the necessary regelialia.
                 It is a paradisematic country, in which roasted parts of sentences fly into your mouth.

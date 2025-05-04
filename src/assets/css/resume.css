@@ -17,6 +17,11 @@
     /* height: 300px; */
 }
 
+.section-heading {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
 .heading-section {
     text-align: center;
     margin-bottom: 10px;
