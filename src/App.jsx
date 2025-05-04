@@ -9,6 +9,7 @@ import About from './components/About/About.jsx';
 import Resume from './components/Resume/Resume.jsx';
 import Projects from './components/Projects/Projects.jsx';
 import Blogs from './components/Blogs/Blogs.jsx';
+import Contact from './components/Contact/Contact.jsx';
 import {
   BrowserRouter as Router,
   Route,
@@ -16,6 +17,7 @@ import {
   Navigate
 } from "react-router-dom";
 import TopBar from './components/Topbar.jsx';
+
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -43,7 +45,8 @@ function App() {
           <Route path='/resume' element={<Resume />} />
           <Route path="/projects" element={<Projects />} />
           <Route path='/blogs' element={<Blogs />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path='/contacts' element={<Contact />} />
+          {/* <Route path="*" element={<Navigate to="/" />} /> */}
         </Routes>
         <Footer />
       </div>
