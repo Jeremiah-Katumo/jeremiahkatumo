@@ -486,3 +486,11 @@ h6 {
 /* .call-to-action-btn:hover {
   border: 1px solid var(--icon-color);
 } */
+
+.typewriter-text {
+  color: var(--background-two-color);
+  font-size: 2em;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+}
