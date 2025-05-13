@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import '../../assets/css/resume.css'; // Keep your custom CSS
+import '../../styles/assets/css/resume.css'; // Keep your custom CSS
 
 const ResumeSection = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../assets/css/interest.css'
+import '../../styles/assets/css/interest.css'
 
 const Interests = () => {
     return (

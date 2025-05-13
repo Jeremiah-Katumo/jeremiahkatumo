@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import "../assets/css/topbar.css"; // this will hold your custom styles
+import "../styles/assets/css/topbar.css"; // this will hold your custom styles
 
 const TopBar = () => {
     return (
@@ -13,13 +13,13 @@ const TopBar = () => {
         >
             <Container className="nav-content-container">
                 <Container>
-                    <Navbar.Brand className="brand-name" href="/home">JEREMY</Navbar.Brand>
+                    <Navbar.Brand className="brand-name" href="/">JEREMY</Navbar.Brand>
                     {/* <Navbar.Toggle className="brand-logo" aria-controls="ftco-nav" /> */}
                 </Container>
                 <Container>
                     <Navbar.Collapse id="ftco-nav">
                         <Nav className="ml-auto">
-                            <Nav.Link href="/home">Home</Nav.Link>
+                            <Nav.Link href="/">Home</Nav.Link>
                             <Nav.Link href="/about">About</Nav.Link>
                             <Nav.Link href="/resume">Resume</Nav.Link>
                             <Nav.Link href="/services">Services</Nav.Link>

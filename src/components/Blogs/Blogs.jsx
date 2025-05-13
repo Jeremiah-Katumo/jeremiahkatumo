@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../assets/css/blog.css'
+import '../../styles/assets/css/blog.css'
 import { Container } from 'react-bootstrap'
 
 function Blogs() {

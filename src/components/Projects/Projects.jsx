@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap';
-import '../../assets/css/project.css'
+import '../../styles/assets/css/project.css'
 import HireMe from './HireMe';
 
 function Projects() {

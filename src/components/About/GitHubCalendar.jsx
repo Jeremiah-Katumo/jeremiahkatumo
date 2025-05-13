@@ -1,7 +1,7 @@
 import React from "react";
 // import { Container, Row, Col } from "react-bootstrap";
 import GitHubCalendar from "react-github-calendar";
-import '../../assets/css/github-calendar.css'
+import '../../styles/assets/css/github-calendar.css'
 
 const GithubCalendar = () => {
   return (

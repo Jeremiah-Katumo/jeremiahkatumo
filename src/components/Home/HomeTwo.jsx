@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import profile from '../../assets/img/profile.png';
+import profile from '../../styles/assets/img/profile.png';
 import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
-import '../../assets/css/style.css';
+import '../../styles/assets/css/style.css';
 
 function HomeTwo() {
   return (
