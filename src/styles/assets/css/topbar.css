@@ -25,6 +25,13 @@
     width: 70%;
 }
 
+.nav-list-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .ml-auto {
     gap: 10px;
     display: flex;
@@ -39,6 +46,14 @@
     line-height: inherit;
     margin-top: 5px;
     display: flex;
+}
+
+.brand-logo {
+    height: 55px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 40%;
+    overflow: hidden;
 }
 .brand-logo:hover {
     background-color: var(--text-color);

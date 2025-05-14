@@ -17,6 +17,7 @@ import {
   Navigate
 } from "react-router-dom";
 import TopBar from './components/Topbar.jsx';
+import ErrorBoundary from './components/ErrorBoundary.jsx';
 
 
 function App() {
@@ -39,13 +40,38 @@ function App() {
         {/* <NavBar /> */}
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/resume' element={<Resume />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path='/blogs' element={<Blogs />} />
-          <Route path='/contacts' element={<Contact />} />
+          <Route path="/" element={
+            <ErrorBoundary>
+              <Home />
+            </ErrorBoundary>} />
+          <Route path="/about" element={
+            <ErrorBoundary>
+              <About />
+            </ErrorBoundary>} />
+          <Route path='/services' element={
+            <ErrorBoundary>
+              <Services />
+            </ErrorBoundary>
+          } />
+          <Route path='/resume' element={
+            <ErrorBoundary>
+              <Resume />
+            </ErrorBoundary>
+          } />
+          <Route path="/projects" element={
+            <ErrorBoundary>
+              <Projects />
+            </ErrorBoundary>} />
+          <Route path='/blogs' element={
+            <ErrorBoundary>
+              <Blogs />
+            </ErrorBoundary>
+          } />
+          <Route path='/contacts' element={
+            <ErrorBoundary>
+              <Contact />
+            </ErrorBoundary>
+          } />
           {/* <Route path="*" element={<Navigate to="/" />} /> */}
         </Routes>
         <Footer />
