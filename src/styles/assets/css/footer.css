@@ -6,6 +6,7 @@
 #footer {
     background: var(--background-color);
     color: var(--text-heading-card-color);
+    border-top: 1px solid var(--footer-bg-color);
     font-size: 14px;
     text-align: center;
     padding: 20px;
