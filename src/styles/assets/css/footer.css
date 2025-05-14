@@ -6,6 +6,10 @@
 #footer {
     background: var(--background-color);
     color: var(--text-heading-card-color);
+<<<<<<< HEAD:src/assets/css/footer.css
+=======
+    border-top: 1px solid var(--footer-bg-color);
+>>>>>>> fix-refactoring-code:src/styles/assets/css/footer.css
     font-size: 14px;
     text-align: center;
     padding: 20px;

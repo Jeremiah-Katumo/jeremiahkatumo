@@ -1,5 +1,9 @@
 import React from 'react'
+<<<<<<< HEAD
 import '../../assets/css/interest.css'
+=======
+import '../../styles/assets/css/interest.css'
+>>>>>>> fix-refactoring-code
 
 const Interests = () => {
     return (

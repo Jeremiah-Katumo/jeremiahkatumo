@@ -1,5 +1,5 @@
 import react from 'react'
-import '../../assets/css/project.css'
+import '../../styles/assets/css/project.css'
 import { Container } from 'react-bootstrap'
 
 const HireMe = () => {

@@ -1,11 +1,19 @@
+<<<<<<< HEAD:src/assets/css/project.css
 @import url('./style.css');
 
+=======
+/* General Styles */
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
 #projects {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     width: 100%;
+<<<<<<< HEAD:src/assets/css/project.css
+=======
+    height: 220vh;
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
     /* height: 500px; */
 }
 
@@ -21,13 +29,22 @@
     width: 20%;
     border-right: 0.5px solid var(--background-two-color);
     border-bottom: 0.5px solid var(--background-two-color);
+<<<<<<< HEAD:src/assets/css/project.css
     height: 1550px;
     z-index: 1;
     position: relative;
+=======
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
 }
 
 .bg-line-box-end {
     width: 20%;
+<<<<<<< HEAD:src/assets/css/project.css
     /* border-right: 0.5px solid var(--background-two-color); */
     border-bottom: 0.5px solid var(--background-two-color);
     height: 1550px;
@@ -35,6 +52,17 @@
     position: relative;
 }
 
+=======
+    border-bottom: 0.5px solid var(--background-two-color);
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Projects Section */
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
 .projects-section {
     position: absolute;
     z-index: 2;
@@ -62,19 +90,36 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+<<<<<<< HEAD:src/assets/css/project.css
     /* padding: 20px; */
+=======
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
     padding-bottom: 0px;
     margin-bottom: 0px;
     gap: 10px;
 }
 
+<<<<<<< HEAD:src/assets/css/project.css
+=======
+/* Project Card Styles */
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
 .project-card {
     width: 40%;
     height: 285px;
     margin-bottom: 30px;
     position: relative;
     z-index: 0;
+<<<<<<< HEAD:src/assets/css/project.css
     background-image: url('../img/projectOne.jpg');
+=======
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
 }
 
 .project-card .overlay {
@@ -85,6 +130,7 @@
     bottom: 0;
     content: '';
     opacity: 0;
+<<<<<<< HEAD:src/assets/css/project.css
     background: #ffbd39;
     z-index: -1;
     -moz-transition: all 0.3s ease;
@@ -106,11 +152,76 @@
 .project-img-two {
     background-image: url('../img/project-5.jpg');
     width: 37.5%;
+=======
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .overlay {
+    opacity: 0.9;
+}
+
+.project-card .text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .text {
+    opacity: 1;
+}
+
+.project-card .text h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.project-card .text h3 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.project-card .text span {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Specific Styles for Project Images */
+.project-img-one {
+    /* background-image: url('../img/project-3.jpg'); */
+    width: 60%;
+    background-color: var(--background-two-card-color);
+}
+
+.project-img-two {
+    /* background-image: url('../img/project-5.jpg'); */
+    width: 37.5%;
+    background-color: var(--background-two-card-color);
+}
+
+.project-img-one:hover {
+    background-image: url('../img/project-3.jpg');
+}
+.project-img-two:hover {
+    background-image: url('../img/project-5.jpg');
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
 }
 
 .project-img-one .text h3,
 .project-img-two .text h3 {
     font-size: 22px;
+<<<<<<< HEAD:src/assets/css/project.css
+=======
+    color: var(--icon-color);
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
 }
 
 .project-img-one .text,
@@ -122,6 +233,7 @@
 
 .project-img-one .text h3 a,
 .project-img-two .text h3 a {
+<<<<<<< HEAD:src/assets/css/project.css
     color: #fff;
 }
 
@@ -129,6 +241,9 @@
     .project-img {
         height: 285px;
     }
+=======
+    color: var(--icon-color);
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
 }
 
 .project-img-one .text span,
@@ -138,7 +253,16 @@
     letter-spacing: 2px;
 }
 
+<<<<<<< HEAD:src/assets/css/project.css
 @media (max-width: 767.98px) {
+=======
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    .project-img {
+        height: 285px;
+    }
+
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
     .project-img .text {
         max-width: 100%;
         opacity: 1;
@@ -147,6 +271,7 @@
     .project-img .text span {
         color: rgba(255, 255, 255, 0.8);
     }
+<<<<<<< HEAD:src/assets/css/project.css
 }
 
 @media (max-width: 767.98px) {
@@ -183,6 +308,13 @@
 }
 
 @media (max-width: 767.98px) {
+=======
+
+    .project-card .overlay {
+        opacity: 0.2;
+    }
+
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
     .project-card .text {
         opacity: 1;
     }
@@ -192,6 +324,7 @@
     }
 }
 
+<<<<<<< HEAD:src/assets/css/project.css
 .project-card:hover .overlay,
 .project-card:focus .overlay {
     opacity: .9;
@@ -207,6 +340,9 @@
 HIRE ME
 ---------------------------------------------------------- */
 
+=======
+/* Hire Me Section */
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
 #freelance {
     display: flex;
     justify-content: center;
@@ -216,9 +352,13 @@ HIRE ME
 }
 
 .hire-me-container {
+<<<<<<< HEAD:src/assets/css/project.css
     /* width: 50%; */
     height: 200px;
     /* border: 2px solid red; */
+=======
+    height: 200px;
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -248,6 +388,7 @@ HIRE ME
     border-radius: 15px;
     color: var(--secondary-color);
 }
+<<<<<<< HEAD:src/assets/css/project.css
 .hire-me-btn:hover {
     border: 2px solid var(--text-color);
 }
@@ -326,3 +467,9 @@ HIRE ME
         max-width: 1140px;
     }
 } */
+=======
+
+.hire-me-btn:hover {
+    border: 2px solid var(--text-color);
+}
+>>>>>>> fix-refactoring-code:src/styles/assets/css/project.css

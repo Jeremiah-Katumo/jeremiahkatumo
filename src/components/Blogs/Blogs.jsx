@@ -1,6 +1,12 @@
 import React from 'react'
+<<<<<<< HEAD
 import '../../assets/css/blog.css'
 import { Container } from 'react-bootstrap'
+=======
+import '../../styles/assets/css/blog.css'
+import { Container } from 'react-bootstrap'
+import { blogData } from '../Objects/Database'
+>>>>>>> fix-refactoring-code
 
 function Blogs() {
   return (
