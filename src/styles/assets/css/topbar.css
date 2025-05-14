@@ -46,8 +46,6 @@
     line-height: inherit;
     margin-top: 5px;
     display: flex;
-<<<<<<< HEAD:src/assets/css/topbar.css
-=======
 }
 
 .brand-logo {
@@ -56,7 +54,6 @@
     object-fit: cover;
     border-radius: 40%;
     overflow: hidden;
->>>>>>> fix-refactoring-code:src/styles/assets/css/topbar.css
 }
 .brand-logo:hover {
     background-color: var(--text-color);

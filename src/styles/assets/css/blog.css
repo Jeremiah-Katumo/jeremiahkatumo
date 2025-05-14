@@ -5,10 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD:src/assets/css/blog.css
-=======
     margin-top: 35px;
->>>>>>> fix-refactoring-code:src/styles/assets/css/blog.css
 }
 
 /* .heading-section {
@@ -38,48 +35,6 @@
 } */
 
 
-<<<<<<< HEAD:src/assets/css/blog.css
-
-.heading-section {
-    position: relative;
-    margin-top: 100px;
-}
-
-.heading-section .subheading {
-    font-size: 13px;
-    font-weight: 500;
-    display: block;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    color: black;
-    letter-spacing: 3px;
-}
-
-.heading-section h1.big {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    font-size: 7vw;
-    color: rgba(255, 255, 255, 0.1);
-    z-index: -1;
-    font-weight: 900;
-}
-
-.section-title {
-    position: relative;
-    z-index: 2;
-}
-
-.heading-section h1.big.big-2 {
-    right: 0;
-    /* margin-bottom: 50px; */
-    position: absolute;
-    z-index: 1;
-    top: 0px;
-}
-
-=======
->>>>>>> fix-refactoring-code:src/styles/assets/css/blog.css
 .blogs-section {
     display: flex;
     justify-content: center;

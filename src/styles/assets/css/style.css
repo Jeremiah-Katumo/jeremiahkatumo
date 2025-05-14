@@ -14,10 +14,7 @@
   --background-two-color: #1e3e62;
   --background-thr-color: #0b192c;
   --background-card-color: rgba(255, 255, 255, 0.1);
-<<<<<<< HEAD:src/assets/css/style.css
-=======
   --background-two-card-color: #ffbd39;
->>>>>>> fix-refactoring-code:src/styles/assets/css/style.css
   --icon-color: #ffbd39;
   --section-bg-color: #EFF3C6;
   ;
@@ -489,9 +486,6 @@ h6 {
 
 /* .call-to-action-btn:hover {
   border: 1px solid var(--icon-color);
-<<<<<<< HEAD:src/assets/css/style.css
-} */
-=======
 } */
 
 .typewriter-text {
@@ -501,4 +495,3 @@ h6 {
   justify-content: left;
   align-items: start;
 }
->>>>>>> fix-refactoring-code:src/styles/assets/css/style.css

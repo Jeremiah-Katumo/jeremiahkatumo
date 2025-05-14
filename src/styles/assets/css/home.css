@@ -6,12 +6,6 @@
 #hero {
     width: 100%;
     height: 40vh;
-<<<<<<< HEAD:src/assets/css/home.css
-    background: url("../img/hero.jpg") top right no-repeat;
-    /* background-color: var(--background-color); */
-    background-size: cover;
-    position: relative;
-=======
     background: url("../img/hero-2.png") top right no-repeat;
     /* background-color: var(--background-color); */
     background-size: cover;
@@ -20,7 +14,6 @@
     flex-direction: 'column';
     justify-content: 'center';
     align-items: 'center';
->>>>>>> fix-refactoring-code:src/styles/assets/css/home.css
 }
 
 #hero .hero-content {
@@ -86,12 +79,8 @@
 #hero .social-links a {
     font-size: 24px;
     display: inline-block;
-<<<<<<< HEAD:src/assets/css/home.css
-    color: var(--background-color);
-=======
     color: var(--secondary-color);
 
->>>>>>> fix-refactoring-code:src/styles/assets/css/home.css
     line-height: 1;
     margin-right: 20px;
     transition: 0.3s;
