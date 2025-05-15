@@ -38,7 +38,28 @@ const blogHeaderData = [
     { sectionHeading: "Blog", sectionHeadingTwo: "My Blog", sectionText: "Take a look at some of my projects." }
 ];
 
-export { data, sectionHeaderData, serviceTopCardData, serviceBottomCardData, blogData, blogHeaderData };
+// Resume Data
+const education = [
+  { date: "2018-2023", title: "Bsc in Statistics", school: "Taita Taveta University" },
+  { date: "2025-Ongoing", title: "Software Engineering", school: "Power Learn Project" },
+  { date: "2025-Ongoing", title: "Data Science", school: "ALX Africa" },
+];
+
+const experience = [
+  { date: "2014-2015", title: "Art & Creative Director", school: "Cambridge University" },
+  { date: "2014-2015", title: "Wordpress Developer", school: "Cambridge University" },
+  { date: "2017-2018", title: "UI/UX Designer", school: "Cambridge University" },
+];
+
+const resumeSectionHeaderData = {
+  title: "My Resume",
+  description: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+};
+
+export { 
+    data, sectionHeaderData, serviceTopCardData, serviceBottomCardData, 
+    blogData, blogHeaderData, education, experience, resumeSectionHeaderData
+};
 
 // const data = [
 // 	{

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/assets/css/service.css'
 import ServiceCard from './ServiceCard'
-import SectionHeader from '../fragments/SectionHeader'
+import SectionHeader from '../Fragments/SectionHeader'
 import { serviceTopCardData, serviceBottomCardData } from '../Objects/Database'
 
 

@@ -38,10 +38,35 @@
 
 .resume-card-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 20px;
 }
+
+.resume-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* space the content out */
+  width: 20%;
+  height: max-content;
+  min-height: 360px; /* optional: enforce base height */
+  padding: 30px;
+  background: var(--background-card-color);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.resume-wrap .date,
+.resume-wrap h2,
+.resume-wrap .position,
+.resume-wrap p {
+  min-height: 40px;  /* adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 
 .resume-wrap .date {
     font-weight: 900;
@@ -68,21 +93,70 @@
     padding: 10px;
     border: 1px solid var(--background-color);
     border-radius: 15px;
+    min-height: 100px;
+    max-height: 100px;
+    overflow: auto;
 }
 
+.scrollable {
+  height: 100px; /* Fixed height to force scroll */
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--background-color);
+  color: var(--background-color);
+  background-color: var(--background-card-color);
+
+  scroll-behavior: smooth;
+
+  /* Ensure the paragraph doesn't cut off content */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 1.6;
+}
+
+/* Scrollbar Styling */
+.scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: var(--icon-color);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: var(--icon-color) transparent;
+}
+
+.resume-wrap h2,
+.resume-wrap h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* This forces single-line layout with ellipsis if needed */
 .resume-wrap .position {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
-} 
+}
 
 .resume-btn-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    
+
 }
 
 .resume-btn {
@@ -91,6 +165,7 @@
     border-radius: 15px;
     color: var(--secondary-color);
 }
+
 .resume-btn:hover {
     border: 2px solid var(--text-color);
 }

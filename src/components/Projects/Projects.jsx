@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import '../../styles/assets/css/project.css';
 import HireMe from './HireMe';
 import ProjectCard from './ProjectCard';
-import SectionHeader from '../fragments/SectionHeader';
+import SectionHeader from '../Fragments/SectionHeader';
 import { data, sectionHeaderData } from '../Objects/Database';
 import { groupProjectsInRows } from '../Utils/Dependencies';
 

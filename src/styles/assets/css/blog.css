@@ -54,7 +54,14 @@
     /* border-radius: 15px; */
     width: 20%;
     height: 300px;
-    
+}
+
+.blog-card:hover {
+    border: 2px solid var(--icon-color);
+    transition: all 0.1s ease-in-out;
+    box-shadow: 4px 8px 16px var(--background-thr-color);
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .img,
