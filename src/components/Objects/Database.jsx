@@ -56,9 +56,32 @@ const resumeSectionHeaderData = {
   description: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
 };
 
+// Skills Data
+const skillsData = [
+  { iconClass: 'fas fa-code', title: 'Web Development' },
+  { iconClass: 'fas fa-mobile-alt', title: 'App Development' },
+  { iconClass: 'fas fa-paint-brush', title: 'UI/UX Design' },
+  { iconClass: 'fas fa-server', title: 'Backend Development' },
+  { iconClass: 'fas fa-pen-nib', title: 'Frontend Development' },
+  { iconClass: 'fas fa-pen-nib', title: 'Analytical Skills' },
+];
+
+// Interests Data
+const interests = [
+  { icon: 'fa-code', title: 'Coding', description: 'I love creating software and solving real-world problems.', },
+  { icon: 'fa-music', title: 'Music', description: 'Music fuels my creativity and keeps me inspired.', },
+  { icon: 'fa-book', title: 'Reading', description: 'I\'m passionate about learning through books and articles.', },
+  { icon: 'fa-plane',  title: 'Travel',  description: 'Exploring new cultures broadens my perspective.', },
+  { icon: 'fa-camera',  title: 'Photography',  description: 'Capturing moments and visual storytelling is one of my passions.', },
+  { icon: 'fa-gamepad',  title: 'Gaming',  description: 'I enjoy immersive game worlds and competitive strategy games.', },
+  { icon: 'fa-hands-helping',  title: 'Volunteering',  description: 'Giving back to the community gives me purpose and joy.', },
+  { icon: 'fa-blog',  title: 'Tech Blogging',  description: 'I write about technology trends, tutorials, and coding tips.', },
+];
+
 export { 
     data, sectionHeaderData, serviceTopCardData, serviceBottomCardData, 
-    blogData, blogHeaderData, education, experience, resumeSectionHeaderData
+    blogData, blogHeaderData, education, experience, resumeSectionHeaderData,
+    skillsData, interests
 };
 
 // const data = [
