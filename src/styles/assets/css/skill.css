@@ -10,7 +10,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 60px;
-  /* Ensure the Skills section doesn't overlap with the fixed navbar */
 }
 
 .section-title {
@@ -18,7 +17,6 @@
   margin-bottom: 40px;
 }
 
-/* Portfolio Section Header */
 .section-header {
   text-align: center;
   margin-bottom: 40px;
@@ -38,13 +36,11 @@
 
 .skills-container {
   display: grid;
-  /* flex-wrap: wrap; */
-  /* Allow the skills to wrap into new rows */
   gap: 30px;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   width: 70%;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 30px;
 }
 
 .skills-container p {
@@ -62,7 +58,6 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
-  /* Initially set each skill to take full width */
   max-width: 250px;
 }
 
@@ -91,6 +86,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
+/* Progress Bar Styles */
 .progress {
   background-color: #e0e0e0;
   border-radius: 8px;
@@ -108,13 +104,70 @@
   font-weight: bold;
 }
 
-/* Simulate dynamic width */
 .filled-80 {
   width: 80%;
 }
 
-/* Custom color */
 .color-6 {
   background-color: #f39c12;
-  /* Orange-ish (you can change this) */
+}
+
+/* ----------------------------- */
+/* 📱 Responsive Styles Below */
+/* ----------------------------- */
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 992px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 85%;
+  }
+
+  .section-title,
+  .section-header h2 {
+    font-size: 30px;
+  }
+
+  .section-header p {
+    font-size: 16px;
+  }
+
+  .skill i {
+    font-size: 35px;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media screen and (max-width: 600px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 10px 15px;
+  }
+  
+  .section-title,
+  .section-header h2 {
+    font-size: 26px;
+  }
+
+  .section-header p {
+    font-size: 14px;
+  }
+
+  .skill {
+    max-width: 100%;
+  }
+
+  .skill i {
+    font-size: 30px;
+  }
+
+  .skill-name {
+    font-size: 16px;
+  }
 }
