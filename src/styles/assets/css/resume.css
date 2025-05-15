@@ -169,3 +169,42 @@
 .resume-btn:hover {
     border: 2px solid var(--text-color);
 }
+
+/* Tablet screens */
+@media (max-width: 992px) {
+  .resume-wrap {
+    width: 45px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 576px) {
+  .resume-wrap {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .heading-section {
+    padding: 0 10px;
+  }
+
+  .resume-wrap h2 {
+    font-size: 22px;
+  }
+
+  .resume-wrap h3 {
+    font-size: 16px;
+  }
+
+  .resume-wrap .date {
+    font-size: 20px;
+  }
+
+  .resume-wrap p {
+    font-size: 14px;
+  }
+
+  .resume-btn {
+    width: 100%;
+  }
+}
