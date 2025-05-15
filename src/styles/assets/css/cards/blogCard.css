@@ -1,0 +1,137 @@
+@import url('../style.css');
+
+
+.blog-card {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    border: 2px solid var(--background-thr-color);
+    padding: 50px;
+    /* border-radius: 15px; */
+    width: 20%;
+    height: 300px;
+    
+}
+
+.img,
+.blog-img,
+.user-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blog-entry {
+    position: relative;
+    background-image: url(../img/image_1.jpg);
+    /* padding-right: 10px; */
+}
+
+@media (min-width: 768px) {
+    .blog-entry {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .blog-entry {
+        margin-bottom: 30px;
+    }
+}
+
+/* .blog-img {
+    background-image: url(../img/image_1.jpg);
+} */
+
+.blog-entry .text {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: end;
+    margin-top: 10px;
+    /* float: right; */
+    display: block;
+    /* padding-right: 20px; */
+    /* padding-left: 60px; */
+}
+
+.blog-entry .author-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.blog-entry .text .heading {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.author-container .date,
+.author-container .author {
+    margin-right: 7px;
+}
+
+.author-container .date {
+    color: var(--icon-color);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.author-container .paragraph {
+    display: flex;
+    flex-direction: column;
+}
+.author-container .author {
+    color: var(--text-paragraph-color);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.blog-entry .text .heading a {
+    color: var(--text-color);
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.blog-entry .blog-desc {
+    color: var(--secondary-color);
+    /* font-weight: bold; */
+}
+
+.blog-entry .text .heading a:hover,
+.blog-entry .text .heading a:focus,
+.blog-entry .text .heading a:active {
+    color: var(--text-color);
+}
+
+.blog-entry .meta {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.blog-entry .meta span {
+    color: #ffbd39;
+}
+
+.blog-entry .meta a {
+    color: #ffbd39;
+}
+
+.blog-entry .meta a:hover {
+    color: #ffbd39;
+}
+
+.block-21 .blog-img {
+    display: block;
+    height: 80px;
+    width: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}

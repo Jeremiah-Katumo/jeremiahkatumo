@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 35px;
 }
 
 /* .heading-section {
@@ -34,45 +35,6 @@
 } */
 
 
-
-.heading-section {
-    position: relative;
-    margin-top: 100px;
-}
-
-.heading-section .subheading {
-    font-size: 13px;
-    font-weight: 500;
-    display: block;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    color: black;
-    letter-spacing: 3px;
-}
-
-.heading-section h1.big {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    font-size: 7vw;
-    color: rgba(255, 255, 255, 0.1);
-    z-index: -1;
-    font-weight: 900;
-}
-
-.section-title {
-    position: relative;
-    z-index: 2;
-}
-
-.heading-section h1.big.big-2 {
-    right: 0;
-    /* margin-bottom: 50px; */
-    position: absolute;
-    z-index: 1;
-    top: 0px;
-}
-
 .blogs-section {
     display: flex;
     justify-content: center;
@@ -92,7 +54,14 @@
     /* border-radius: 15px; */
     width: 20%;
     height: 300px;
-    
+}
+
+.blog-card:hover {
+    border: 2px solid var(--icon-color);
+    transition: all 0.1s ease-in-out;
+    box-shadow: 4px 8px 16px var(--background-thr-color);
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .img,
@@ -234,4 +203,74 @@
     display: inline-block;
     margin: 0 10px;
     opacity: .5;
+}
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  .blogs-section {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .blog-card {
+    width: 90%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .blog-entry .text .heading {
+    font-size: 18px;
+  }
+
+  .blog-entry .text .heading a {
+    font-size: 20px;
+  }
+
+  .author-container .date {
+    font-size: 18px;
+  }
+
+  .author-container .author {
+    font-size: 20px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .blogs-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .blog-card {
+    width: 45%;
+    padding: 30px;
+    height: auto;
+  }
+}
+
+/* Large screens (small desktops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .blogs-section {
+    gap: 40px;
+  }
+
+  .blog-card {
+    width: 30%;
+    padding: 40px;
+    height: auto;
+  }
+}
+
+/* Extra large screens (large desktops) */
+@media (min-width: 1025px) {
+  .blogs-section {
+    gap: 50px;
+  }
+
+  .blog-card {
+    width: 20%;
+  }
 }
