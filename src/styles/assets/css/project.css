@@ -1,5 +1,4 @@
-@import url('./style.css');
-
+/* General Styles */
 #projects {
     display: flex;
     justify-content: center;
