@@ -20,7 +20,6 @@ import TopBar from './components/Topbar.jsx';
 import ErrorBoundary from './components/ErrorBoundary.jsx';
 
 
-
 function App() {
   const [load, updateLoad] = useState(true);
 
