@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../styles/assets/css/interest.css';
+import '../../../styles/assets/css/interest.css'
 import InterestCard from './InterestCard'; // Adjust the path if needed
-import { interests } from '../Objects/Database'
+import { interests } from '../../Objects/Database'
 
 const Interests = () => {
   return (

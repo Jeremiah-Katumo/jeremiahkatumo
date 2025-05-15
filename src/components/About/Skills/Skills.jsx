@@ -1,8 +1,8 @@
 // components/Skills.jsx
 import React from 'react';
 import SkillCard from './SkillCard';
-import '../../styles/assets/css/skill.css';
-import { skillsData } from '../Objects/Database';
+import '../../../styles/assets/css/skill.css';
+import { skillsData } from '../../Objects/Database';
 
 function Skills() {
   return (
