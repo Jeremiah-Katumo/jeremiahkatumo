@@ -14,8 +14,7 @@ const Resume = () => {
             <div className="section-header">
               <h2 className="section-title">My Resume</h2>
               <p>
-                A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                An overview of my education, professional experience, and technical background. Download my resume or browse through the highlights of my journey so far.
               </p>
             </div>
           </Col>

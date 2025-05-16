@@ -656,6 +656,214 @@ h6 {
 
 }
 
+/* Extra small devices (phones) */
+@media (max-width: 479px) {
+  #about {
+    padding: 2px;
+    margin-bottom: 0;
+  }
+
+  .about-content {
+    gap: 5px;
+  }
+
+  .about-text {
+    font-size: 12px;
+    max-width: 100vw;
+    padding: 0 1px;
+  }
+
+  .img-about {
+    height: 60px;
+    width: 60px;
+  }
+
+  .top-box,
+  .middle-box {
+    left: 0;
+    width: 100%;
+    padding: 2px;
+    top: 120px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  #about {
+    padding: 8px;
+    margin-bottom: 10vh;
+  }
+
+  .about-content {
+    gap: 10px;
+  }
+
+  .about-text {
+    font-size: 13px;
+    max-width: 98vw;
+    padding: 0 3px;
+  }
+
+  .img-about {
+    height: 80px;
+    width: 80px;
+  }
+
+  .top-box,
+  .middle-box {
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    top: 150px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+}
+
+/* Medium devices (tablets) */
+/* @media (min-width: 768px) and (max-width: 991px) {
+  #about {
+    padding: 15px;
+    margin-bottom: 30vh;
+  }
+
+  .about-content {
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .about-text {
+    font-size: 15px;
+    max-width: 90vw;
+    text-align: center;
+  }
+
+  .img-about {
+    height: 120px;
+    width: 120px;
+  }
+
+  .top-box,
+  .middle-box {
+    left: 20px;
+    width: 90%;
+    padding: 10px;
+    top: 200px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+} */
+
+/* Large devices (laptops) */
+/* @media (min-width: 992px) and (max-width: 1199px) {
+  #about {
+    padding: 20px 40px;
+    margin-bottom: 20vh;
+  }
+
+  .about-content {
+    gap: 40px;
+  }
+
+  .about-text {
+    font-size: 17px;
+    max-width: 600px;
+  }
+
+  .img-about {
+    height: 180px;
+    width: 180px;
+  }
+
+  .top-box,
+  .middle-box {
+    left: 60px;
+    width: 85%;
+    padding: 18px;
+    top: 220px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+} */
+
+/* Extra large devices (desktops) */
+/* @media (min-width: 1200px) and (max-width: 1599px) {
+  #about {
+    padding: 30px 80px;
+    margin-bottom: 10vh;
+  }
+
+  .about-content {
+    gap: 60px;
+  }
+
+  .about-text {
+    font-size: 18px;
+    max-width: 700px;
+  }
+
+  .img-about {
+    height: 220px;
+    width: 220px;
+  }
+
+  .top-box,
+  .middle-box {
+    left: 90px;
+    width: 80%;
+    padding: 22px;
+    top: 250px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+} */
+
+/* XXL / ultra-wide screens */
+@media (min-width: 1600px) {
+  #about {
+    padding: 40px 200px;
+    margin-bottom: 5vh;
+  }
+
+  .about-content {
+    gap: 80px;
+  }
+
+  .about-text {
+    font-size: 20px;
+    max-width: 900px;
+  }
+
+  .img-about {
+    height: 300px;
+    width: 300px;
+  }
+
+  .top-box,
+  .middle-box {
+    left: 150px;
+    width: 70%;
+    padding: 30px;
+    top: 300px;
+  }
+
+  .section-title {
+    font-size: 44px;
+  }
+}
+
 .typewriter-text {
   color: var(--background-two-color);
   font-size: 2em;

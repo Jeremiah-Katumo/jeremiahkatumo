@@ -11,7 +11,7 @@ const Blogs = () => {
       <Container className='heading-section'>
         <h1 className="big big-2">Blog</h1>
         <h2 className='section-title mb-4'>My Blog</h2>
-        <p></p>
+        <p>A collection of thoughts, tutorials, and personal reflections on technology, <br />problem-solving, and continuous learning. I share what I learn as I grow.</p>
       </Container>
 
       <Container className='blogs-section'>
