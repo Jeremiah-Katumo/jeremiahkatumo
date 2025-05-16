@@ -18,6 +18,7 @@ const ServiceCard = ({ data }) => {
                         <div class="desc">
                             <h3 class="mb-5">{item.heading}</h3>
                         </div>
+                        {/* <p>item.section</p> */}
                     </a>
                 </div>
             ))}

@@ -16,16 +16,28 @@ const sectionHeaderData = [
 
 // Services Data
 const serviceTopCardData = [
-    { category: "top", icon: "flaticon-analysis", heading: "Web Design", sectionHeading: "Services", sectionText: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia" },
-    { category: "top", icon: "flaticon-flasks", heading: "Photography", sectionHeading: "Services", sectionText: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia" },
-    { category: "top", icon: "flaticon-ideas", heading: "Web Developer", sectionHeading: "Services", sectionText: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia" },
+    { category: "top", icon: "flaticon-analysis", heading: "Web Design", sectionHeading: "What I Offer", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
+    { category: "top", icon: "flaticon-flasks", heading: "Data Analysis", sectionHeading: "What I Offer", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
+    { category: "top", icon: "flaticon-ideas", heading: "Web Development", sectionHeading: "What I Offer", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
 ]
 
 const serviceBottomCardData = [
-    { category: "bottom", icon: "flaticon-analysis", heading: "App Developing", sectionHeading: "Services", sectionHeadingTwo: "My Services", sectionText: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia" },
-    { category: "bottom", icon: "flaticon-flasks", heading: "Branding", sectionHeading: "Services", sectionHeadingTwo: "My Services", sectionText: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia" },
-    { category: "bottom", icon: "flaticon-ideas", heading: "Product Strategy", sectionHeading: "Services", sectionHeadingTwo: "My Services", sectionText: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia" }
+    { category: "bottom", icon: "flaticon-analysis", heading: "Software Development", sectionHeading: "What I Offer", sectionHeadingTwo: "My Services", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
+    { category: "bottom", icon: "flaticon-flasks", heading: "Machine Learning", sectionHeading: "What I Offer", sectionHeadingTwo: "My Services", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
+    { category: "bottom", icon: "flaticon-ideas", heading: "Consultation", sectionHeading: "What I Offer", sectionHeadingTwo: "My Services", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." }
 ]
+
+// const serviceTopCardData = [
+//     { category: "top", icon: "flaticon-analysis", heading: "Web Design", sectionHeading: "Services", sectionText: "I design clean, responsive websites that align with your brand and deliver a seamless user experience. Whether you're building from scratch or need a redesign, I create interfaces that are both functional and visually compelling." },
+//     { category: "top", icon: "flaticon-flasks", heading: "Data Analysis", sectionHeading: "Services", sectionText: "I help you turn raw data into clear, actionable insights. From data cleaning and visualization to trend identification and reporting, I use tools like Python, Excel, and SQL to support smarter decisions and drive real results." },
+//     { category: "top", icon: "flaticon-ideas", heading: "Web Development", sectionHeading: "Services", sectionText: "I build fast, scalable, and fully functional websites using modern technologies like Laravel, Django, and JavaScript frameworks. From dynamic web apps to backend APIs, I turn ideas into interactive, user-friendly digital solutions." },
+// ]
+
+// const serviceBottomCardData = [
+//     { category: "bottom", icon: "flaticon-analysis", heading: "Software Development", sectionHeading: "Services", sectionHeadingTwo: "My Services", sectionText: "I develop custom software solutions tailored to your specific needs—whether it's a web app, API, or internal tool. Using frameworks like Laravel, Django, and Nest.js, I create reliable, scalable systems that solve real-world problems." },
+//     { category: "bottom", icon: "flaticon-flasks", heading: "Machine Learning", sectionHeading: "Services", sectionHeadingTwo: "My Services", sectionText: "I develop machine learning models that turn data into predictive insights and intelligent automation. From data preprocessing and model training to deployment, I use tools like Python, scikit-learn, and TensorFlow to solve real-world problems through AI." },
+//     { category: "bottom", icon: "flaticon-ideas", heading: "Consultation", sectionHeading: "Services", sectionHeadingTwo: "My Services", sectionText: "Need guidance on your tech project or career path? I offer one-on-one consultation to help you plan, troubleshoot, or scale your idea. Whether you're starting a software project, exploring data solutions, or navigating a tech career, I provide clear, actionable advice tailored to your goals." }
+// ]
 
 // Blog Data
 const blogData = [
