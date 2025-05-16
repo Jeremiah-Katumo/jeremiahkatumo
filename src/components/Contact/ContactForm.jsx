@@ -29,7 +29,7 @@ function ContactForm() {
                         </Col>
                     </div>
                     <div className="form-group contact-form-details row gsap-reveal">
-                        <Button href="#" className="btn btn-primary resume-btn">
+                        <Button href="#" className="btn btn-primary contact-btn">
                             Send Message
                         </Button>
                     </div>
