@@ -90,7 +90,7 @@ function HomeTwo() {
                         <i className="fa fa-play-circle"></i> Watch Video
                       </a> */}
                     <Button href="https://www.youtube.com/watch" className="call-to-action-btn btn btn-primary resume-btn">
-                      <i className="fa fa-play-circle"></i> Watch Video
+                      <i className="fa fa-play-circle"></i>&nbsp; Watch Video
                     </Button>
                     {/* </div> */}
                   </div>
