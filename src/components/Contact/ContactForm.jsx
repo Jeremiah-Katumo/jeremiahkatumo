@@ -47,7 +47,7 @@ function ContactForm() {
                     </div>
                     <div className="gsap-reveal d-block contact-card">
                         <span className="d-block contact-info-label"><p>Phone</p></span>
-                        <a href="#" className="contact-info-val">+25473 6789 012</a>
+                        <a href="#" className="contact-info-val">+2547 4561 2869</a>
                     </div>
                     <div className="gsap-reveal d-block contact-card">
                         <span className="d-block contact-info-label"><p>Address</p></span>
