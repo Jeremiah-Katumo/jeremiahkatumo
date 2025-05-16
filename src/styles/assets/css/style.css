@@ -481,6 +481,7 @@ h6 {
   border-radius: 15px;
   color: var(--secondary-color);
 }
+
 .call-to-action-btn:hover {
   border: 2px solid var(--text-color);
 }
@@ -488,6 +489,107 @@ h6 {
 /* .call-to-action-btn:hover {
   border: 1px solid var(--icon-color);
 } */
+
+@media (max-width: 767.98px) {
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-color);
+    /* height: auto; */
+    margin-bottom: 50vh
+  }
+
+  /* Lower layer */
+  .base-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--background-color);
+    width: 90%;
+    padding: 20px;
+    color: var(--secondary-color);
+    z-index: 1;
+    border-radius: 15px;
+    border: 1.5px solid var(--background-two-color)
+  }
+
+  /* Upper layer */
+  .top-box {
+    position: absolute;
+    top: 290px;
+    /* margin from top of wrapper */
+    left: 48px;
+    /* margin from left of wrapper */
+    /* bottom: 100px; */
+    background-color: var(--background-color);
+    width: 70%;
+    color: var(--secondary-color);
+    padding: 20px;
+    z-index: 2;
+    pointer-events: auto;
+    /* allow interaction */
+    border-radius: 15px;
+    border-color: #000000;
+    border: 1.5px solid var(--background-two-color);
+    /* border-top: 2px solid blue;
+  border-right: 2px dotted green;
+  border-bottom: 2px dashed orange;
+  border-left: 2px solid gray; */
+  }
+
+  .middle-box {
+    position: absolute;
+    top: 280px;
+    /* margin from top of wrapper */
+    left: 40px;
+    /* margin from left of wrapper */
+    /* bottom: 100px; */
+    background-color: var(--background-color);
+    width: 73%;
+    color: var(--secondary-color);
+    padding: 20px;
+    z-index: 2;
+    pointer-events: auto;
+    /* allow interaction */
+    border-radius: 15px;
+    border-color: #000000;
+    border: 2.5px solid var(--background-color);
+    height: 300px;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 100%;
+  }
+
+  .about-text {
+    max-width: 500px;
+    text-align: left;
+    font-size: 18px;
+    color: var(--secondary-color);
+    order: 2;
+  }
+
+  .about-text p {
+    text-align: justify;
+  }
+
+  /* Profile Image */
+  .about-image {
+    flex-shrink: 0;
+    order: 1;
+  }
+
+}
 
 .typewriter-text {
   color: var(--background-two-color);

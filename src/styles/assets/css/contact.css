@@ -21,7 +21,7 @@
     width: 33.333%;
     border-right: 0.5px solid rgba(255, 255, 255, 0.2);
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
-    height: 750px;
+    height: 790px;
     z-index: 1;
     position: relative;
 }
@@ -64,6 +64,7 @@
     justify-content: center;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    height: auto;
 }
 
 
@@ -80,7 +81,8 @@ Contact Form
     gap: 80px;
     width: 80%;
     border-radius: 15px;
-    /* border: 2px solid var(--background-two-color); */
+    height: auto;
+    border: 2px solid var(--background-two-color);
 }
 
 .contact-form-container {
@@ -114,6 +116,7 @@ Contact Form
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
 }
 
 .input-container {
@@ -142,6 +145,9 @@ Contact Form
     position: relative;
     margin-bottom: 50px;
     width: 55%;
+    font-display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-outline-style-v1 .form-group label {
@@ -160,7 +166,11 @@ Contact Form
     border-radius: 0;
     /* color: var(--background-two-color); */
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    /* width: 100%; */
+}
+
+#name,
+#email {
+    width: 80%;
 }
 
 .form-outline-style-v1 .form-group .form-control:active,
@@ -168,7 +178,7 @@ Contact Form
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-bottom: 1px solid var(--background-two-color);
+    border-bottom: 1px solid var(--icon-color);
 }
 
 .form-outline-style-v1 .form-group label {
@@ -267,4 +277,64 @@ Contact Form
 
 .contact-info-val:hover {
     text-decoration: underline;
+}
+
+
+/* Default order for large screens (contact form on the left, contact info on the right) */
+.contact-form-container {
+    order: 1;
+}
+
+.contact-info {
+    order: 2;
+}
+
+/* For screens smaller than 768px (mobile), reverse the order */
+@media (max-width: 767.98px) {
+    #contacts {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        /* flex-direction: column; */
+        /* Stack vertically */
+        align-items: center;
+        /* Center items */
+        /* padding: 0 20px; Add padding for better spacing */
+        margin-bottom: 210px;
+    }
+
+    #contact-form {
+        flex-direction: column;
+        /* Stack vertically */
+        gap: 40px;
+        /* Adjust gap for better spacing on mobile */
+    }
+
+    .contact-form-container {
+        order: 2;
+        /* Move form below */
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact-info {
+        order: 1;
+        /* Move info above */
+        width: 100%;
+        padding-left: 20px;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .form-outline-style-v1 .form-group {
+        width: 100%;
+    }
+
+    .bg-line-box,
+    .bg-line-box-end {
+        height: 903px;
+    }
 }

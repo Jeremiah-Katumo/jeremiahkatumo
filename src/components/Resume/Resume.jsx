@@ -22,7 +22,7 @@ const Resume = () => {
         </Row>
 
         <Col>
-          <Row md={4} className="resume-card-container">
+          <div className="resume-card-container">
             {education.map((item, idx) => (
               <ResumeCard
                 key={idx}
@@ -31,9 +31,9 @@ const Resume = () => {
                 school={item.school}
               />
             ))}
-          </Row>
+          </div>
 
-          <Row md={4} className="resume-card-container">
+          <div className="resume-card-container">
             {experience.map((item, idx) => (
               <ResumeCard
                 key={idx}
@@ -42,7 +42,7 @@ const Resume = () => {
                 school={item.school}
               />
             ))}
-          </Row>
+          </div>
         </Col>
 
         <Row className="justify-content-center mt-5 resume-btn-container">

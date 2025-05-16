@@ -28,7 +28,7 @@ const ResumeCard = ({ date, title, school }) => {
       </p>
 
       {/* Optional: Show scroll position below for debugging or interaction */}
-      <div className="scroll-indicator">Scroll Y: {scrollY}px</div>
+      {/* <div className="scroll-indicator">Scroll Y: {scrollY}px</div> */}
     </div>
   );
 };
