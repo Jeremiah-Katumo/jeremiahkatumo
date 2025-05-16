@@ -11,7 +11,7 @@ const data = [
 ];
 
 const sectionHeaderData = [
-    { sectionHeading: "Projects", sectionHeadingTwo: "My Projects", sectionText: "Take a look at some of my projects." }
+    { sectionHeading: "Featured Projects", sectionHeadingTwo: "My Projects", sectionText: "A showcase of selected projects where I applied my skills in web development, data analysis, and machine learning to solve real-world problems. Each project highlights my approach to building practical, scalable solutions." }
 ];
 
 // Services Data
