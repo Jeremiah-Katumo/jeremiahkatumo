@@ -41,9 +41,9 @@ const serviceBottomCardData = [
 
 // Blog Data
 const blogData = [
-    { date: "June 21, 2019", link: "/blog-details", author: "Admin", title: "Support Vector Machines", description: "Classification using support vector machines is one of the efficient methods when dealing with classes" },
-    { date: "June 21, 2019", link: "/blog-details", author: "Admin", title: "Support Vector Machines", description: "Classification using support vector machines is one of the efficient methods when dealing with classes" },
-    { date: "June 21, 2019", link: "/blog-details", author: "Admin", title: "Support Vector Machines", description: "Classification using support vector machines is one of the efficient methods when dealing with classes" },
+    { date: "March 21, 2024", link: "/blog-details", author: "Admin", title: "Support Vector Machines", description: "Support Vector Machines are supervised learning models used for classification and regression tasks." },
+    { date: "April 11, 2024", link: "/blog-details", author: "Admin", title: "Random Forests", description: "Random Forest is a powerful machine learning algorithm used for both classification and regression tasks." },
+    { date: "May 18, 2024", link: "/blog-details", author: "Admin", title: "Principal Component Analysis", description: "Principal Component Analysis is an unsupervised dimensionality reduction technique." },
 ]
 
 const blogHeaderData = [
