@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "../styles/assets/css/topbar.css"; // this will hold your custom styles
-import brand from "../styles/assets/img/brand.png"
+import brand from "../styles/assets/img/brand-name.png"
 
 const TopBar = () => {
     return (
