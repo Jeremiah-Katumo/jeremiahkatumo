@@ -21,7 +21,7 @@ function HomeTwo() {
               <Col md={8} className="home-about-desc base-box">
                 <div className="section-header">
                   <p className="about-paragraph">
-                    Hi, I’m Jeremiah Katumo Kurwa - a Data Analyst, Software Developer, and Creative Designer from Kilifi,
+                    Hi, I’m Jeremiah Katumo Kurwa - a design, data and software enthusiast from Kilifi,
                     Kenya. With a background in Statistics and further training in software engineering and
                     data science through PLP Academy and ALX Africa, I’ve built and deployed full-stack
                     applications using languages like:
