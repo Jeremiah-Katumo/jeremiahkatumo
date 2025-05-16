@@ -314,7 +314,6 @@ h6 {
 }
 
 .about-paragraph {
-  font-size: 18px;
   color: var(--text-heading-card-color);
   line-height: 1.6;
   text-align: justify;
@@ -327,6 +326,7 @@ h6 {
 
 #about p {
   color: var(--secondary-color);
+  font-size: 16px;
 }
 
 #about p {
@@ -363,7 +363,7 @@ h6 {
 /* Upper layer */
 .top-box {
   position: absolute;
-  top: 260px;
+  top: 220px;
   /* margin from top of wrapper */
   left: 85px;
   /* margin from left of wrapper */
@@ -386,7 +386,7 @@ h6 {
 
 .middle-box {
   position: absolute;
-  top: 250px;
+  top: 210px;
   /* margin from top of wrapper */
   left: 75px;
   /* margin from left of wrapper */
@@ -500,7 +500,7 @@ h6 {
     padding: 20px;
     background-color: var(--background-color);
     /* height: auto; */
-    margin-bottom: 50vh
+    margin-bottom: 60vh
   }
 
   /* Lower layer */
@@ -521,7 +521,7 @@ h6 {
   /* Upper layer */
   .top-box {
     position: absolute;
-    top: 290px;
+    top: 330px;
     /* margin from top of wrapper */
     left: 48px;
     /* margin from left of wrapper */
@@ -544,7 +544,7 @@ h6 {
 
   .middle-box {
     position: absolute;
-    top: 280px;
+    top: 320px;
     /* margin from top of wrapper */
     left: 40px;
     /* margin from left of wrapper */

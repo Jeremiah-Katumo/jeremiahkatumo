@@ -21,13 +21,25 @@ function HomeTwo() {
               <Col md={8} className="home-about-desc base-box">
                 <div className="section-header">
                   <p className="about-paragraph">
-                    I fell in ❤️ with tech and since then I'm proud to think that I
-                    earned something in programming... 🤷‍♂️🤷‍♂️.
-                    I am proficent in the following languages:{" "}
+                    Hi, I’m Jeremiah Katumo Kurwa - a Data Analyst, Software Developer, and Creative Designer from Kilifi,
+                    Kenya. With a background in Statistics and further training in software engineering and
+                    data science through PLP Academy and ALX Africa, I’ve built and deployed full-stack
+                    applications using languages like:
                     <i>
-                      <b className="#0563bb">R, Python, Javascript, Go and Kotlin. </b>
+                      <b className="#0563bb"> R, Python, Javascript and PHP. </b>
                     </i>
-                    My interest's rely in building new&nbsp;
+                    and frameworks like:
+                    <i>
+                      <b className="purple"> React.js, Express.js, FastAPI, Django, Shiny and Codeigniter4. </b>
+                    </i>
+                    I’ve also volunteered as a Data Analyst at CIPK, where I applied data skills to solve real-world challenges.
+
+                    {/* With years of experience, I also specialize in creating visually appealing designs that 
+                    enhance user experience. My approach combines creativity with technical expertise to 
+                    develop unique and functional designs. Whether it's branding, UI/UX, or print media, I am 
+                    committed to bringing ideas to life. */}
+
+                    {/* My interest's rely in building new&nbsp;
                     <i>
                       <b className="purple">ML and Web Technologies Products.</b>
                     </i>
@@ -36,12 +48,8 @@ function HomeTwo() {
                     Whenever possible, my passion for coding relies on{" "}
                     <b className="purple">JavaScript, Python, Golang, R, MongoDB, MySQL</b> and
                     <i> Modern Library and Frameworks</i>
-                    &nbsp; like{" "}
-                    <i>
-                      <b className="purple">
-                        React.js, Nest.js, Next.js, Express.js, FastAPI, Django, Shiny, Laravel and Codeigniter4.
-                      </b>
-                    </i>
+                    &nbsp; like{" "} */}
+
                   </p>
                 </div>
               </Col>
@@ -54,10 +62,11 @@ function HomeTwo() {
             <Col md={4} className="top-box">
               <div className="about-content">
                 <div className="about-text">
-                  <p>
-                    With years of experience, I specialize in creating visually appealing designs that enhance user
-                    experience. My approach combines creativity with technical expertise to develop unique and functional
-                    designs. Whether it's branding, UI/UX, or print media, I am committed to bringing ideas to life.
+                  <p className='about-paragraph'>
+                    In addition to coding, I specialize in creating visually appealing and user-friendly designs. 
+                    My work spans branding, UI/UX, and print media - combining creativity with technical skill to 
+                    develop meaningful, functional experiences. I’m passionate about building AI-driven tools 
+                    and design solutions that improve everyday life, especially for underserved communities.
                   </p>
 
                   <div className="about-btn-container" data-aos="zoom-out">
@@ -72,7 +81,7 @@ function HomeTwo() {
                     </div>
 
                     {/* <div className="call-to-action-btn"> */}
-                      {/* <a
+                    {/* <a
                         href="https://www.youtube.com/watch"
                         className="cta-button"
                         target="_blank"
@@ -80,9 +89,9 @@ function HomeTwo() {
                       >
                         <i className="fa fa-play-circle"></i> Watch Video
                       </a> */}
-                      <Button href="https://www.youtube.com/watch" className="call-to-action-btn btn btn-primary resume-btn">
-                        <i className="fa fa-play-circle"></i> Watch Video
-                      </Button>
+                    <Button href="https://www.youtube.com/watch" className="call-to-action-btn btn btn-primary resume-btn">
+                      <i className="fa fa-play-circle"></i> Watch Video
+                    </Button>
                     {/* </div> */}
                   </div>
                 </div>
