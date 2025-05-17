@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import ResumeCard from './ResumeCard'; // new component
-import { education, experience } from '../Objects/Database';
+import { education, experience } from '../Utils/Database';
 import '../../styles/assets/css/resume.css';
 
 
@@ -11,7 +11,7 @@ const Resume = () => {
       <Container>
         <Row className="justify-content-center pb-5">
           <Col md={10} className="heading-section text-center ftco-animate">
-            <div className="section-header">
+            <div className="section-heading">
               <h2 className="section-title">My Resume</h2>
               <p>
                 An overview of my education, professional experience, and technical background. Download my resume or browse through the highlights of my journey so far.

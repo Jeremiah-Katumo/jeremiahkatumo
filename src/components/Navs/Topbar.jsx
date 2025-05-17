@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import "../../styles/assets/css/topbar.css";
 import brand from "../../styles/assets/img/brand-name.png"
 import NavMenu from "./NavMenu";
-import MobileNav from "./MobileNav";
+// import MobileNav from "./MobileNav";
 
 const TopBar = () => {
     return (
@@ -15,14 +15,14 @@ const TopBar = () => {
             fixed="top"
         >
             <Container className="nav-content-container">
-                <Container>
+                <Container className="logo-container">
                     <Navbar.Brand className="brand-name" href="/">
                         <img src={brand} alt="Logo" className="brand-logo"/>
                     </Navbar.Brand>
                     {/* <Navbar.Toggle className="brand-logo" aria-controls="ftco-nav" /> */}
                 </Container>
 
-                <MobileNav />
+                {/* <MobileNav /> */}
                 
                 <NavMenu />
             </Container>

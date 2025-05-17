@@ -325,7 +325,7 @@ h6 {
 
 #about p {
   color: var(--secondary-color);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #about p {
@@ -364,7 +364,7 @@ h6 {
   position: absolute;
   top: 190px;
   /* margin from top of wrapper */
-  left: 85px;
+  left: 135px;
   /* margin from left of wrapper */
   /* bottom: 100px; */
   background-color: var(--background-color);
@@ -387,7 +387,7 @@ h6 {
   position: absolute;
   top: 180px;
   /* margin from top of wrapper */
-  left: 75px;
+  left: 120px;
   /* margin from left of wrapper */
   /* bottom: 100px; */
   background-color: var(--background-color);
@@ -574,7 +574,7 @@ h6 {
     justify-content: center;
     position: relative;
     background-color: var(--background-color);
-    width: 90%;
+    width: 100%;
     padding: 20px;
     color: var(--secondary-color);
     z-index: 1;
@@ -585,13 +585,13 @@ h6 {
   /* Upper layer */
   .top-box {
     position: absolute;
-    top: 330px;
+    top: 400px;
     /* margin from top of wrapper */
-    left: 48px;
+    left: 50px;
     /* margin from left of wrapper */
     /* bottom: 100px; */
     background-color: var(--background-color);
-    width: 70%;
+    width: 80%;
     color: var(--secondary-color);
     padding: 20px;
     z-index: 2;
@@ -608,13 +608,13 @@ h6 {
 
   .middle-box {
     position: absolute;
-    top: 320px;
+    top: 400px;
     /* margin from top of wrapper */
-    left: 40px;
+    left: 42px;
     /* margin from left of wrapper */
     /* bottom: 100px; */
     background-color: var(--background-color);
-    width: 73%;
+    width: 83%;
     color: var(--secondary-color);
     padding: 20px;
     z-index: 2;

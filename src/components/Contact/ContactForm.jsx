@@ -4,7 +4,7 @@ import { Row, Col, Form, Container, Button } from 'react-bootstrap';
 
 function ContactForm() {
     return (
-        <Row id='contact-form'>
+        <div id='contact-form'>
             <Col md={4} className='contact-form-container'>
                 <form method="post" className="form-outline-style-v1" id="contactForm">
                     <div className="form-group contact-form-details row mb-0">
@@ -28,7 +28,7 @@ function ContactForm() {
                             />
                         </Col>
                     </div>
-                    <div className="form-group contact-form-details row gsap-reveal">
+                    <div className="contact-form-details row">
                         <Button href="#" className="btn btn-primary contact-btn">
                             Send Message
                         </Button>
@@ -57,7 +57,7 @@ function ContactForm() {
                     </div>
                 </div>
             </Col>
-        </Row>
+        </div>
     );
 }
 

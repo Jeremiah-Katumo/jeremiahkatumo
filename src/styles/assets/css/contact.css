@@ -6,7 +6,9 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
-    /* height: 500px; */
+    height: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 5vh;
 }
 
 .bg-line-container {
@@ -144,7 +146,7 @@ Contact Form
 .form-outline-style-v1 .form-group {
     position: relative;
     margin-bottom: 50px;
-    width: 55%;
+    width: 100%;
     font-display: flex;
     align-items: center;
     justify-content: center;
@@ -302,7 +304,7 @@ Contact Form
         align-items: center;
         /* Center items */
         /* padding: 0 20px; Add padding for better spacing */
-        margin-bottom: 100px;
+        margin-bottom: 65%;
     }
 
     #contact-form {
@@ -336,5 +338,17 @@ Contact Form
     .bg-line-box,
     .bg-line-box-end {
         height: 903px;
+        border: 0px solid;
+    }
+
+    .form-outline-style-v1 {
+        border: 1px solid var(--background-two-color);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
     }
 }
