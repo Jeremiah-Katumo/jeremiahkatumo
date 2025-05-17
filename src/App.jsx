@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Preloader from './components/Pre';
 import Home from './components/Home/Home';
 import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/Common/ScrollToTop';
 import Services from './components/Services/Services.jsx';
 import About from './components/About/About.jsx';
 import Resume from './components/Resume/Resume.jsx';
@@ -16,7 +16,7 @@ import {
   Routes,
   Navigate
 } from "react-router-dom";
-import TopBar from './components/Topbar.jsx';
+import TopBar from './components/Navs/Topbar.jsx';
 import ErrorBoundary from './components/ErrorBoundary.jsx';
 
 
