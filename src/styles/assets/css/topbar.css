@@ -5,7 +5,7 @@
     background-color: #000;
     /* or whatever your intended background is */
     top: 0;
-    left: 0;
+    /* left: 0; */
     width: 100%;
     /* padding: 15px 30px; */
     display: flex;
@@ -118,5 +118,13 @@
         object-fit: cover;
         border-radius: 40%;
         overflow: hidden;
+    }
+
+    .nav-content-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        margin-top: 0px;
     }
 }

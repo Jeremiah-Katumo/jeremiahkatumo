@@ -1,81 +1,166 @@
 /* CustomNavbar.css */
+@import url('./style.css');
 
 /* Default Navbar (Large screens) */
 .nav-menu {
-    padding: 0;
+  padding: 0;
+  display: block;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu>ul>li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 50px;
+  background: #f2f3f5;
+  height: 56px;
+  width: 26px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.nav-menu a span {
+  padding: 0 5px 0 7px;
+  color: var(--pre-text-color);
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 20px;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus {
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+.nav-menu a:hover span,
+.nav-menu .active span,
+.nav-menu .active:focus span {
+  color: var(--text-color);
+}
+
+/* Show mobile menu on smaller screens */
+@media (max-width: 991px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-nav {
     display: block;
   }
-  
-  .nav-menu * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+}
+
+/* Hide mobile menu on larger screens */
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none;
   }
-  
-  .nav-menu > ul > li {
-    position: relative;
-    white-space: nowrap;
+
+  .nav-menu {
+    display: block;
   }
-  
+}
+
+@media (max-width: 767.98px) {
+  .nav-menu {
+    display: none;
+  }
+
   .nav-menu a,
   .nav-menu a:focus {
     display: flex;
     align-items: center;
-    color: var(--text-color);
+    color: black;
     padding: 10px 18px;
     margin-bottom: 8px;
     transition: 0.3s;
     font-size: 15px;
     border-radius: 50px;
-    background: #f2f3f5;
+    background: transparent;
     height: 56px;
     width: 26px;
     overflow: hidden;
     transition: 0.3s;
   }
-  
-  .nav-menu a span {
-    padding: 0 5px 0 7px;
-    color: var(--pre-text-color);
+
+  .nav-menu-container {
+    display: none !important;
   }
-  
-  .nav-menu a i,
-  .nav-menu a:focus i {
-    font-size: 20px;
+
+  .mobile-dropdown-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--background-card-color);
+    z-index: 999;
+    padding: 1rem;
+    backdrop-filter: blur(6px);
   }
-  
-  .nav-menu a:hover,
-  .nav-menu .active,
-  .nav-menu .active:focus {
-    color: var(--text-color);
+
+  body.mobile-nav-active #navbar {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
     background: var(--background-color);
+    padding: 1rem;
+    z-index: 9999;
   }
-  
-  .nav-menu a:hover span,
-  .nav-menu .active span,
-  .nav-menu .active:focus span {
-    color: var(--text-color);
+
+  #navbar {
+    display: none;
   }
-  
-  /* Show mobile menu on smaller screens */
-  @media (max-width: 991px) {
-    .nav-menu {
-      display: none;
-    }
-  
-    .mobile-nav {
-      display: block;
-    }
-  }
-  
-  /* Hide mobile menu on larger screens */
-  @media (min-width: 992px) {
-    .mobile-nav {
-      display: none;
-    }
-  
-    .nav-menu {
-      display: block;
-    }
-  }
-  
+
+}
+
+
+
+/* Mobile nav toggle */
+.mobile-nav-toggle {
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  background-color: black;
+}
+
+/* Mobile dropdown nav (initially hidden) */
+
+
+/* Show when active */
+body.mobile-nav-active .mobile-dropdown-nav {
+  display: block;
+}
+
+/* Nav link styling */
+.mobile-dropdown-nav .nav-link {
+  color: #fff;
+  display: block;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-dropdown-nav .nav-link:last-child {
+  border-bottom: none;
+}
