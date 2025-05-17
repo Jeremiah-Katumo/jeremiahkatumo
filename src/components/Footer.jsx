@@ -10,7 +10,7 @@ function Footer() {
 
   return (
     <>
-    <Container id="footer">
+    <footer id="footer">
       <Col className="footer-content d-flex flex-direction-column align-items-center justify-contents-center">
         <h3>Jeremiah Katumo</h3>
         <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
@@ -60,7 +60,7 @@ function Footer() {
           <p>Designed by @JeremyKatush</p>
         </Row>
       </Col>
-    </Container>
+    </footer>
     </>
   );
 }

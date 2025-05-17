@@ -585,9 +585,9 @@ h6 {
   /* Upper layer */
   .top-box {
     position: absolute;
-    top: 400px;
+    top: 420px;
     /* margin from top of wrapper */
-    left: 50px;
+    left: 44px;
     /* margin from left of wrapper */
     /* bottom: 100px; */
     background-color: var(--background-color);
@@ -608,9 +608,9 @@ h6 {
 
   .middle-box {
     position: absolute;
-    top: 400px;
+    top: 420px;
     /* margin from top of wrapper */
-    left: 42px;
+    left: 37px;
     /* margin from left of wrapper */
     /* bottom: 100px; */
     background-color: var(--background-color);
@@ -695,6 +695,14 @@ h6 {
   #about {
     padding: 8px;
     margin-bottom: 10vh;
+  }
+
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 
   .about-content {
