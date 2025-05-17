@@ -362,7 +362,7 @@ h6 {
 /* Upper layer */
 .top-box {
   position: absolute;
-  top: 190px;
+  top: 35vh;
   /* margin from top of wrapper */
   left: 135px;
   /* margin from left of wrapper */
@@ -385,7 +385,7 @@ h6 {
 
 .middle-box {
   position: absolute;
-  top: 180px;
+  top: 35vh;
   /* margin from top of wrapper */
   left: 120px;
   /* margin from left of wrapper */
@@ -564,7 +564,7 @@ h6 {
     padding: 20px;
     background-color: var(--background-color);
     /* height: auto; */
-    margin-bottom: 40vh
+    margin-bottom: 50vh
   }
 
   /* Lower layer */
@@ -585,7 +585,7 @@ h6 {
   /* Upper layer */
   .top-box {
     position: absolute;
-    top: 420px;
+    top: 76vh;
     /* margin from top of wrapper */
     left: 44px;
     /* margin from left of wrapper */
@@ -608,7 +608,7 @@ h6 {
 
   .middle-box {
     position: absolute;
-    top: 420px;
+    top: 76vh;
     /* margin from top of wrapper */
     left: 37px;
     /* margin from left of wrapper */
