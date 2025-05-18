@@ -1,81 +1,58 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../styles/assets/css/mobilenav.css';
 
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/resume', label: 'Resume' },
+  { href: '/services', label: 'Services' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/blogs', label: 'Blog' },
+  { href: '/contacts', label: 'Contact' },
+];
+
 const MobileNav = () => {
+  const [open, setOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 991);
+
   useEffect(() => {
-    const mobileNavShow = document.querySelector('.mobile-nav-show');
-    const mobileNavHide = document.querySelector('.mobile-nav-hide');
-    const navToggles = document.querySelectorAll('.mobile-nav-toggle');
-    const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
+    const handleResize = () => setIsMobile(window.innerWidth <= 991);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
-    const mobileNavToggle = () => {
-      document.querySelector('body').classList.toggle('mobile-nav-active');
-      mobileNavShow.classList.toggle('d-none');
-      mobileNavHide.classList.toggle('d-none');
-    };
+  // Close menu on navigation
+  const handleNavClick = () => setOpen(false);
 
-    const toggleMobileNavDropdown = el => {
-      el.classList.toggle('active');
-      el.nextElementSibling.classList.toggle('dropdown-active');
+  if (!isMobile) return null;
 
-      let dropDownIndicator = el.querySelector('.dropdown-indicator');
-      dropDownIndicator.classList.toggle('bi-chevron-up');
-      dropDownIndicator.classList.toggle('bi-chevron-down');
-    };
-
-    const setupMobileNavToggle = () => {
-      navToggles.forEach(el => {
-        el.addEventListener('click', event => {
-          event.preventDefault();
-          mobileNavToggle();
-        });
-      });
-    };
-
-    const setupHideMobileNavOnSamePageLinks = () => {
-      document.querySelectorAll('#navbar a').forEach(navbarlink => {
-        if (!navbarlink.hash) return;
-
-        let section = document.querySelector(navbarlink.hash);
-        if (!section) return;
-
-        navbarlink.addEventListener('click', () => {
-          if (document.querySelector('.mobile-nav-active')) {
-            mobileNavToggle();
-          }
-        });
-      });
-    };
-
-    const setupToggleMobileNavDropdowns = () => {
-      navDropdowns.forEach(el => {
-        el.addEventListener('click', event => {
-          if (document.querySelector('.mobile-nav-active')) {
-            event.preventDefault();
-            toggleMobileNavDropdown(el);
-          }
-        });
-      });
-    };
-
-    // Initialize all the functionalities
-    setupMobileNavToggle();
-    setupHideMobileNavOnSamePageLinks();
-    setupToggleMobileNavDropdowns();
-
-    // Clean up event listeners on component unmount
-    return () => {
-      navToggles.forEach(el => el.removeEventListener('click', mobileNavToggle));
-      navDropdowns.forEach(el => el.removeEventListener('click', toggleMobileNavDropdown));
-    };
-  }, []); // Empty dependency array ensures this useEffect runs once on mount
+  const dropdownStyles = {
+    "backgroundColor": "grey",
+    "width": "100%"
+  }
 
   return (
     <>
-      <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <button
+        className="mobile-nav-toggle"
+        aria-label={open ? "Close navigation" : "Open navigation"}
+        onClick={() => setOpen(!open)}
+      >
+        <i className={`bi ${open ? "bi-x" : "bi-list"}`}></i>
+      </button>
+      {open && (
+        <div className="mobile-dropdown-nav" style={dropdownStyles}>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/resume">Resume</a>
+          <a href="/services">Services</a>
+          <a href="/projects">Projects</a>
+          <a href="/blogs">Blog</a>
+          <a href="/contacts">Contact</a>
+        </div>
+      )}
     </>
   );
-}
+};
 
 export default MobileNav;

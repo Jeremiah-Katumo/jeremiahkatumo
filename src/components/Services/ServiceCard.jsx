@@ -10,7 +10,7 @@ const ServiceCard = ({ data }) => {
     return (
         <>
             {data.map((item, idx) => (
-                <div key={idx} class="col-md-4 text-center d-flex service-card">
+                <div key={idx} class="service-card">
                     <a href="#" class="services-1">
                         <span class="icon">
                             <i class={item.icon}></i>

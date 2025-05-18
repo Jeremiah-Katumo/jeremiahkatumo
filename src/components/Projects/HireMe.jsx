@@ -15,7 +15,7 @@ const HireMe = () => {
             <p>
               A small river named Duden flows by their place and supplies it with the necessary regelialia.
             </p>
-            <CustomButton href="#contact" label="Hire Me" className="py-3 px-5 hire-me-btn" />
+            <CustomButton href="#contact" label=" Hire Me" className="bi bi-briefcase py-3 px-5 hire-me-btn" />
           </Container>
         </Container>
       </Container>

@@ -2,14 +2,14 @@
 
 /* Skills Section Styles */
 .skills-content-section {
-  padding: 40px 10px;
+  padding: 20px 10px;
   background-color: var(--background-color);
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .section-title {
@@ -170,4 +170,29 @@
   .skill-name {
     font-size: 16px;
   }
+}
+
+@media (max-width: 767.98px) {
+  .skills-content-section {
+    padding: 0px;
+    margin-top: 0px;
+    gap: 0px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .section-header p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-paragraph-color);
+  }
+  
 }

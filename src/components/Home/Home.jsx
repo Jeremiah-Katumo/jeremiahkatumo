@@ -8,7 +8,7 @@ import { Row } from 'react-bootstrap';
 function Home() {
   return (
     <>
-      <Container id="hero" className='section-tag d-flex flex-column justify-content-start align-items-center'>
+      <Container id="hero" className=''>
         <Container className="container hero-container" data-aos="zoom-in" data-aos-delay="100">
           <Container className='hero-content'>
             <Row>
