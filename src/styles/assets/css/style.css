@@ -910,8 +910,14 @@ h6 {
 
 .typewriter-text {
   color: var(--background-two-color);
-  font-size: 2em;
+  font-size: 1.7em;
   display: flex;
   justify-content: left;
   align-items: start;
+}
+
+@media (max-width: 480px) {
+  .typewriter-text {
+    font-size: 1.4em;
+  }
 }

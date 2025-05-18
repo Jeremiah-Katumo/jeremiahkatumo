@@ -14,6 +14,9 @@ function Home() {
             <Row>
               <h1>Jeremiah Katumo</h1>
             </Row>
+            <Row>
+              <p>I am a </p>
+            </Row>
             <Row >
               <Type />
             </Row>
