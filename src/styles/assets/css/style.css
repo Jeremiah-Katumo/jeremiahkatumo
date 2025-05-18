@@ -318,6 +318,7 @@ h6 {
   color: var(--text-heading-card-color);
   line-height: 1.6;
   text-align: justify;
+  height: 100%;
 }
 
 #about b {
@@ -354,7 +355,7 @@ h6 {
   position: relative;
   background-color: var(--background-color);
   width: 100%;
-  padding: 20px;
+  padding: 0px 15px 20px 15px;
   color: var(--secondary-color);
   z-index: 1;
   border-radius: 15px;
@@ -577,7 +578,7 @@ h6 {
     position: relative;
     background-color: var(--background-color);
     width: 100%;
-    padding: 20px;
+    padding: 0px 15px 20px 15px;
     color: var(--secondary-color);
     z-index: 1;
     border-radius: 15px;
@@ -677,6 +678,10 @@ h6 {
   .img-about {
     height: 60px;
     width: 60px;
+  }
+
+  .base-box {
+    padding: 0px 15px 20px 15px;
   }
 
   .top-box,
