@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/assets/css/project.css';
 import { Container } from 'react-bootstrap';
-import CustomButton from '../Common/CustomButton'; // Import the reusable button
+import CustomButton from '../Common/CustomButton';
 
 const HireMe = () => {
   return (

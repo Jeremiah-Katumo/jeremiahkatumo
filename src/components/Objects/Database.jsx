@@ -3,7 +3,7 @@ import React from "react";
 // Projects Data
 const data = [
     { id: 1, imageNum: 'one', title: 'Imarika Corporate Website', category: 'Web Development', link: 'https://imarika-ui.vercel.app' },
-    { id: 2, imageNum: 'two', title: 'CIPK Corporate Website', category: 'Web Development', link: 'project2' },
+    { id: 2, imageNum: 'two', title: 'CIPK Corporate Website', category: 'Web Development', link: 'https://cipk-app.vercel.app' },
     // { id: 3, imageNum: 'one', title: 'E-commerce Platform Design', category: 'UI/UX Design', link: 'project3' },
     // { id: 4, imageNum: 'two', title: 'Mobile App Design', category: 'App Design', link: 'project4' },
     // { id: 5, imageNum: 'one', title: 'Portfolio Showcase Design', category: 'Web Design', link: 'project5' },

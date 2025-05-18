@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { AiFillGithub, AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
-import { FaLinkedinIn } from 'react-icons/fa';
+import { Row, Col } from 'react-bootstrap';
+// import { AiFillGithub, AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
+// import { FaLinkedinIn } from 'react-icons/fa';
 import '../styles/assets/css/footer.css'
 
 function Footer() {
@@ -22,7 +22,6 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* <AiOutlineTwitter /> */}
             <i className='bi bi-twitter'></i>
           </a>
           <a 
@@ -43,7 +42,6 @@ function Footer() {
           >
             <i className='bi bi-instagram'></i>
           </a>
-          {/* <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> */}
           <a 
             href="linkedin.com" 
             className="footer-icon"

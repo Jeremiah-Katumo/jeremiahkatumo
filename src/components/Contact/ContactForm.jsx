@@ -29,14 +29,9 @@ function ContactForm() {
                             />
                         </Col>
                     </div>
-                    {/* <button href="#" className="btn btn-primary contact-btn">
-                        <icon href="/send-message" className="bi bi-send"></icon> Send Message
-                    </button> */}
+                    
                     <CustomButton href="/send-message" className="bi bi-send contact-btn" label="Send Message" />
                 </form>
-
-                {/* <div id="form-message-warning" className="mt-4"></div>
-                <div id="form-message-success">Your message was sent, thank you!</div> */}
             </Col>
 
             <Col md={4} className='contact-info'>
