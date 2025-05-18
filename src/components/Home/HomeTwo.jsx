@@ -4,6 +4,7 @@ import profile from '../../styles/assets/img/profile.png';
 import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 import '../../styles/assets/css/style.css';
+import CustomButton from '../Common/CustomButton';
 
 function HomeTwo() {
   return (
@@ -70,29 +71,21 @@ function HomeTwo() {
                   </p>
 
                   <div className="about-btn-container" data-aos="zoom-out">
-                    <div className="download-btn-container">
-                      <a
+                    {/* <div className="download-btn-container"> */}
+                      {/* <a
                         href="../portfolio/Jeremiah Katumo Kurwa, CV.pdf"
                         download="Jeremiah_Katumo_Resume.pdf"
                         className="download-btn"
                       >
                         <i className="fa fa-download"></i> Resume
-                      </a>
-                    </div>
-
-                    {/* <div className="call-to-action-btn"> */}
-                    {/* <a
-                        href="https://www.youtube.com/watch"
-                        className="cta-button"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <i className="fa fa-play-circle"></i> Watch Video
                       </a> */}
-                    <Button href="https://www.youtube.com/watch" className="call-to-action-btn btn btn-primary resume-btn">
-                      <i className="fa fa-play-circle"></i>&nbsp; Watch Video
-                    </Button>
+                      <CustomButton href={"/Jeremiah Katumo Kurwa, CV.pdf"} className={"bi bi-download"} label={"Resume"} />
                     {/* </div> */}
+
+                    {/* <Button href="https://www.youtube.com/watch" className="call-to-action-btn btn btn-primary resume-btn">
+                      <i className="fa fa-play-circle"></i>&nbsp; Watch Video
+                    </Button> */}
+                    <CustomButton href={"https://youtube.com/watch"} className={"bi bi-play-circle"} label={"Watch Video"} />
                   </div>
                 </div>
 

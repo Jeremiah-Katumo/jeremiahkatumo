@@ -13,44 +13,45 @@ function Footer() {
     <footer id="footer">
       <Col className="footer-content d-flex flex-direction-column align-items-center justify-contents-center">
         <h3>Jeremiah Katumo</h3>
-        <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+        <p className='footer-description'>I’m a passionate software developer focused on building accessible, user-friendly web applications with React, Node.js, and modern web technologies.</p>
         <Row className="social-links">
           <a 
             href="https://twitter.com" 
-            className="twitter"
+            className="footer-icon"
             style={{ color: "black" }}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiOutlineTwitter />
+            {/* <AiOutlineTwitter /> */}
+            <i className='bi bi-twitter'></i>
           </a>
           <a 
             href="https://github.com/Jeremiah-Katumo" 
-            className="github"
+            className="footer-icon"
             style={{ color: "black" }}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillGithub />
+            <i className='bi bi-github'></i>
           </a>
           <a 
             href="instagram.com" 
-            className="instagram"
+            className="footer-icon"
             style={{ color: "black" }}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillInstagram />
+            <i className='bi bi-instagram'></i>
           </a>
           {/* <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> */}
           <a 
             href="linkedin.com" 
-            className="linkedin"
+            className="footer-icon"
             style={{ color: "black" }}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedinIn />
+            <i className='bi bi-linkedin'></i>
           </a>
         </Row>
         <Row className="copyright d-flex">

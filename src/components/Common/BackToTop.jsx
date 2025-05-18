@@ -1,39 +1,43 @@
-import React, { useEffect } from 'react';
-// import '../../public/assets/css/main.css';
+import React, { useState, useEffect } from 'react';
+import '../../styles/assets/css/button.css'
 
-function BackToTop() {
-    useEffect(() => {
-        const backToTop = document.querySelector('.scroll-top');
-        
-        const toggleBackToTop = () => {
-            if (window.scrollY > 100) {
-                backToTop.classList.add('active');
-            } else {
-                backToTop.classList.remove('active');
-            }
-        };
-        
-        window.addEventListener('load', toggleBackToTop);
-        window.addEventListener('scroll', toggleBackToTop);
-        
-        return () => {
-            window.removeEventListener('load', toggleBackToTop);
-            window.removeEventListener('scroll', toggleBackToTop);
-        };
-    }, []);
+const BackToTop = () => {
+  const [isVisible, setIsVisible] = useState(false);
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
+  // Show button after user scrolls down 300px
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
 
-    return (
-        <button className="scroll-top d-flex align-items-center justify-content-center" onClick={scrollToTop}>
-            <i className="bi bi-arrow-up-short"></i>
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
+  return (
+    <>
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className='back-to-top-btn'
+          aria-label="Back to top"
+        >
+          <i class="bi bi-arrow-up"></i>
         </button>
-    );
-}
+      )}
+    </>
+  );
+};
 
 export default BackToTop;

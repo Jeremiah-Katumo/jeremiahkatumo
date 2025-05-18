@@ -3,12 +3,13 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import ResumeCard from './ResumeCard'; // new component
 import { education, experience } from '../Utils/Database';
 import '../../styles/assets/css/resume.css';
+import CustomButton from '../Common/CustomButton';
 
 
 const Resume = () => {
   return (
     <section id="resume-section">
-      <Container>
+      <Container className='resume-content'>
         <Row className="justify-content-center pb-5">
           <Col md={10} className="heading-section text-center ftco-animate">
             <div className="section-heading">
@@ -44,13 +45,14 @@ const Resume = () => {
           </div>
         </Col>
 
-        <Row className="justify-content-center mt-5 resume-btn-container">
-          <Col className="text-center ftco-animate main-btn-container">
+        {/* <Row className="justify-content-center mt-5"> */}
+          {/* <Col className="text-center ftco-animate main-btn-container">
             <Button href="#" className="btn btn-primary resume-btn">
               <icon href="/send-message" className="bi bi-download"></icon> Download CV
             </Button>
-          </Col>
-        </Row>
+          </Col> */}
+          <CustomButton href={"/download-cv"} className={"bi bi-download"} label={" Download CV"} />
+        {/* </Row> */}
       </Container>
     </section>
   );
