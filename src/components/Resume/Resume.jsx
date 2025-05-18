@@ -45,9 +45,9 @@ const Resume = () => {
         </Col>
 
         <Row className="justify-content-center mt-5 resume-btn-container">
-          <Col md={6} className="text-center ftco-animate">
+          <Col className="text-center ftco-animate main-btn-container">
             <Button href="#" className="btn btn-primary resume-btn">
-              Download CV
+              <icon href="/send-message" className="bi bi-download"></icon> Download CV
             </Button>
           </Col>
         </Row>

@@ -301,9 +301,10 @@
 
 .hire-me-btn {
     border: 2px solid var(--footer-bg-color);
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 15px;
     color: var(--secondary-color);
+    max-width: 20vw;
 }
 
 .hire-me-btn:hover {

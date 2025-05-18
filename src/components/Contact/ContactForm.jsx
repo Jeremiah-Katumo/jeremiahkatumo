@@ -30,7 +30,7 @@ function ContactForm() {
                     </div>
                     <div className="contact-form-details row">
                         <Button href="#" className="btn btn-primary contact-btn">
-                            Send Message
+                           <icon href="/send-message" className="bi bi-send"></icon> Send Message
                         </Button>
                     </div>
                 </form>
