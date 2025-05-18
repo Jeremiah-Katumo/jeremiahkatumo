@@ -27,8 +27,10 @@ const MobileNav = () => {
   if (!isMobile) return null;
 
   const dropdownStyles = {
-    "backgroundColor": "grey",
-    "width": "100%"
+    "backgroundColor": "var(--background-color)",
+    "width": "100%",
+    "borderRadius": "10px",
+    "border": "1px solid var(--background-two-color)",
   }
 
   return (
