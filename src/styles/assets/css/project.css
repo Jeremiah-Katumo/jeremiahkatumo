@@ -5,7 +5,7 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 232vh;
+    height: 100%;
     /* height: 500px; */
 }
 
@@ -14,32 +14,36 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 50%;
+    height: auto;
 }
 
 .bg-line-box {
     width: 20%;
-    border-right: 0.5px solid var(--background-two-color);
-    border-bottom: 0.5px solid var(--background-two-color);
-    height: 100%;
+    /* border-right: 0.1px solid var(--background-two-color);
+    border-bottom: 0.1px solid var(--background-two-color); */
+    border: 0.05px solid var(--background-card-color);
+    /* height: 20px; */
     z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
+    /* height: 100%; */
 }
 
 .bg-line-box-end {
     width: 20%;
-    border-bottom: 0.5px solid var(--background-two-color);
-    height: 100%;
+    border-bottom: 0.1px solid var(--background-two-color);
+    /* height: 20px; */
     z-index: 1;
     position: absolute;
     top: 0;
     right: 0;
+    /* height: 100%; */
 }
 
 /* Projects Section */
-.projects-section {
+.projects-section {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     position: absolute;
     z-index: 2;
     top: 100px;
@@ -101,7 +105,7 @@
 }
 
 .project-card:hover .overlay {
-    opacity: 0.9;
+    opacity: 0.2;
 }
 
 .project-card .text {
@@ -110,7 +114,7 @@
     left: 20px;
     color: #fff;
     z-index: 3;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.3s ease;
 }
 
@@ -121,15 +125,16 @@
 .project-card .text h3 {
     font-size: 20px;
     margin: 0;
+    color: var(--background-two-color);
 }
 
 .project-card .text h3 a {
-    color: #fff;
+    color: var(--background-color);
     text-decoration: none;
 }
 
 .project-card .text span {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--background-color);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 12px;
@@ -137,6 +142,14 @@
 }
 
 /* Specific Styles for Project Images */
+.project-img .text {
+    opacity: 1;
+}
+
+.project-img h3 {
+    color: var(--background-two-color);
+}
+
 .project-img-one {
     /* background-image: url('../img/project-3.jpg'); */
     width: 60%;
@@ -150,16 +163,16 @@
 }
 
 .project-img-one:hover {
-    background-image: url('../img/project-3.jpg');
+    background-image: url('../img/imarika.png');
 }
 .project-img-two:hover {
-    background-image: url('../img/project-5.jpg');
+    background-image: url('../img/cipk.png');
 }
 
 .project-img-one .text h3,
 .project-img-two .text h3 {
     font-size: 22px;
-    color: var(--icon-color);
+    color: var(--background-two-color);
 }
 
 .project-img-one .text,
@@ -167,18 +180,20 @@
     max-width: 45%;
     z-index: 1;
     padding: 20px;
+    opacity: 1;
 }
 
 .project-img-one .text h3 a,
 .project-img-two .text h3 a {
-    color: var(--icon-color);
+    color: var(--background-thr-color);
 }
 
 .project-img-one .text span,
 .project-img-two .text span {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--background-color);
     text-transform: uppercase;
     letter-spacing: 2px;
+    opacity: 1;
 }
 
 /* Responsive Styles */
@@ -189,14 +204,17 @@
         flex-direction: row;
         align-items: center;
         width: 100%;
-        height: 482vh;
+        height: 200vh;
         /* height: 500px; */
     }
 
     .bg-line-box {
         width: 20%;
+        /* border-top: 0.5px solid var(--background-two-color);
+        border-top: 0.5px solid var(--background-two-color);
         border-right: 0.5px solid var(--background-two-color);
-        border-bottom: 0.5px solid var(--background-two-color);
+        border-bottom: 0.5px solid var(--background-two-color); */
+        border: 0.5px solid var(--background-card-color);
         height: 100%;
         z-index: 1;
         position: absolute;
@@ -224,7 +242,7 @@
     }
 
     .project-img .text span {
-        color: rgba(255, 255, 255, 0.8);
+        color: var(--background-color);
     }
 
     .project-card .overlay {
@@ -236,7 +254,7 @@
     }
 
     .project-card .text span {
-        color: rgba(255, 255, 255, 0.8);
+        color: var(--background-color);
     }
 }
 
@@ -258,7 +276,7 @@
     flex-direction: column;
     padding-left: 20px;
     padding-right: 10px;
-    /* margin-bottom: 20px; */
+    /* margin-bottom: 20vh; */
 }
 
 .text-container {
@@ -266,8 +284,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 20px;
+    gap: 0px;
+    margin-top: 40px;
+    margin-bottom: 10px;
     padding-left: 20px;
+    padding-top: 20px;
+    height: 100%;
 }
 
 .text-container p {
@@ -279,9 +301,10 @@
 
 .hire-me-btn {
     border: 2px solid var(--footer-bg-color);
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 15px;
     color: var(--secondary-color);
+    max-width: 20vw;
 }
 
 .hire-me-btn:hover {
@@ -290,6 +313,7 @@
 
 
 @media (max-width: 991.98px) {
+
     .portfolio-container {
         flex-direction: column;
         align-items: center;
@@ -309,5 +333,9 @@
         max-width: 100%;
         padding: 15px;
         text-align: center;
+    }
+
+    .hire-me-container {
+        margin-bottom: 0vh;
     }
 }

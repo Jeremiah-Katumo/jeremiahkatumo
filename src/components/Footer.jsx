@@ -10,8 +10,8 @@ function Footer() {
 
   return (
     <>
-    <Container id="footer">
-      <Col className="container">
+    <footer id="footer">
+      <Col className="footer-content d-flex flex-direction-column align-items-center justify-contents-center">
         <h3>Jeremiah Katumo</h3>
         <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
         <Row className="social-links">
@@ -53,14 +53,14 @@ function Footer() {
             <FaLinkedinIn />
           </a>
         </Row>
-        <Row className="copyright">
-          &copy; Copyright <strong><span>{year} MyPortfolio</span></strong>. All Rights Reserved
+        <Row className="copyright d-flex">
+          <p>&copy; Copyright <strong><span>{year} MyPortfolio</span></strong>. All Rights Reserved</p>
         </Row>
         <Row className="credits">
           <p>Designed by @JeremyKatush</p>
         </Row>
       </Col>
-    </Container>
+    </footer>
     </>
   );
 }

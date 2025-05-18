@@ -56,3 +56,12 @@
     z-index: 1;
     top: 0px;
 }
+
+@media (max-width: 767.98px) {
+    .section-header {
+        text-align: center;
+        margin-bottom: 40px;
+        width: 100%;
+        margin-top: 70px;
+    }
+}

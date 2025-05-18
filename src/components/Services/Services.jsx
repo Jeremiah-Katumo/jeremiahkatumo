@@ -19,7 +19,7 @@ function Services() {
 
   return (
 
-    <div id='services' class="container">
+    <div id='services'>
       <SectionHeader data={serviceTopCardData} />
       <div class="service-card-container">
         <div className='top-service-cards-container'>

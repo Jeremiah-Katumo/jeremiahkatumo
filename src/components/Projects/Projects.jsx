@@ -44,7 +44,7 @@ function Projects() {
         <Container className="bg-line-box"></Container>
         <Container className="bg-line-box"></Container>
         <Container className="bg-line-box"></Container>
-        <Container className="bg-line-box-end"></Container>
+        <Container className="bg-line-box"></Container>
       </Container>
 
       <Container className="projects-section">
