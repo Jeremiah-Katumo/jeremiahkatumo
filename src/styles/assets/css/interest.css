@@ -55,7 +55,7 @@
 .interest-card h3 {
   margin: 10px 0;
   font-size: 20px;
-  color: var(--text-heading-card-color);
+  color: var(--background-two-color);
 }
 
 .interest-card p {
