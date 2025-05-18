@@ -319,6 +319,7 @@ h6 {
   color: var(--text-heading-card-color);
   line-height: 1.6;
   text-align: justify;
+  height: 100%;
 }
 
 #about b {
@@ -355,7 +356,7 @@ h6 {
   position: relative;
   background-color: var(--background-color);
   width: 100%;
-  padding: 20px;
+  padding: 0px 15px 20px 15px;
   color: var(--secondary-color);
   z-index: 1;
   border-radius: 15px;
@@ -578,7 +579,7 @@ h6 {
     position: relative;
     background-color: var(--background-color);
     width: 100%;
-    padding: 20px;
+    padding: 0px 15px 20px 15px;
     color: var(--secondary-color);
     z-index: 1;
     border-radius: 15px;
@@ -680,6 +681,10 @@ h6 {
     width: 60px;
   }
 
+  .base-box {
+    padding: 0px 15px 20px 15px;
+  }
+
   .top-box,
   .middle-box {
     left: 0;
@@ -690,6 +695,31 @@ h6 {
 
   .section-title {
     font-size: 18px;
+  }
+
+  /* Stack base-box and top-box columnwise */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: static;
+    padding-bottom: 0;
+  }
+
+  .base-box,
+  .top-box {
+    position: static !important;
+    width: 100% !important;
+    margin: 0 0 10px 0;
+    left: 0 !important;
+    top: 0 !important;
+    border-radius: 15px;
+    z-index: 1;
+  }
+
+  /* Hide the middle-box */
+  .middle-box {
+    display: none !important;
   }
 }
 
@@ -721,6 +751,11 @@ h6 {
   .img-about {
     height: 80px;
     width: 80px;
+  }
+
+  .base-box {
+    padding-top: 0px;
+    margin-top: 0px;
   }
 
   .top-box,

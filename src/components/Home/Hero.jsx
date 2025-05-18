@@ -9,7 +9,7 @@ const Hero = () => {
       {/* Hero Section */}
       <section id="hero" className="hero section light-background">
         <Container>
-          <div className="hero-content text-center">
+          <div className="hero-content">
             <h2>Jeremiah Katumo</h2>
             <p>
               I'm a <span id="typed"></span>
