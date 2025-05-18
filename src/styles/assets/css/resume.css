@@ -78,18 +78,19 @@
 }
 
 .resume-wrap h2 {
-  font-size: 26px;
-  color: var(--text-heading-card-color);
+  font-size: 20px;
+  color: var(--background-two-color);
 }
 
 .resume-wrap h3 {
-  font-size: 17px;
-  color: var(--background-color);
+  font-size: 12px;
+  color: var(--secondary-color);
 }
 
 .resume-wrap span,
 .resume-wrap p {
-  color: var(--background-color);
+  color: var(--secondary-color);
+  font-size: 14px;
 }
 
 .resume-wrap p {

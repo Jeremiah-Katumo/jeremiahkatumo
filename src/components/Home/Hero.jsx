@@ -22,32 +22,6 @@ const Hero = () => {
           </div>
         </Container>
       </section>
-
-      {/* Footer Section (uncomment if needed) */}
-      {/* 
-      <footer className="footer">
-        <Container>
-          <ul className="list-inline">
-            <li className="list-inline-item">
-              <a className="social-link" href="https://facebook.com">
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a className="social-link" href="https://x.com/">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a className="social-link" href="https://github.com/Jeremiah-Katumo">
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </li>
-          </ul>
-          <p className="text-muted">Copyright &copy; Jeremiah Katumo Kurwa 2025</p>
-        </Container>
-      </footer>
-      */}
     </main>
   );
 };
