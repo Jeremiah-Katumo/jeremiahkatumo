@@ -168,4 +168,9 @@
         align-items: start;
         justify-content: start;
     }  
+
+    #hero-content h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
 }
