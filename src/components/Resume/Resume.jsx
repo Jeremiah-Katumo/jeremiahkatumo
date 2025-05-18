@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import ResumeCard from './ResumeCard'; // new component
+import ResumeCard from './ResumeCard';
 import { education, experience } from '../Utils/Database';
 import '../../styles/assets/css/resume.css';
 import CustomButton from '../Common/CustomButton';
@@ -44,15 +44,7 @@ const Resume = () => {
             ))}
           </div>
         </Col>
-
-        {/* <Row className="justify-content-center mt-5"> */}
-          {/* <Col className="text-center ftco-animate main-btn-container">
-            <Button href="#" className="btn btn-primary resume-btn">
-              <icon href="/send-message" className="bi bi-download"></icon> Download CV
-            </Button>
-          </Col> */}
-          <CustomButton href={"/download-cv"} className={"bi bi-download"} label={" Download CV"} />
-        {/* </Row> */}
+        <CustomButton href={"/download-cv"} className={"bi bi-download"} label={" Download CV"} />
       </Container>
     </section>
   );
