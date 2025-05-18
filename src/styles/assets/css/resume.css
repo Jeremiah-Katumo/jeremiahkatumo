@@ -28,6 +28,14 @@
   color: var(--text-paragraph-color);
 }
 
+.resume-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
 .resume-card-container {
   display: flex;
   flex-wrap: wrap;

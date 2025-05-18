@@ -18,6 +18,8 @@ import {
 } from "react-router-dom";
 import TopBar from './components/Navs/Topbar.jsx';
 import ErrorBoundary from './components/ErrorBoundary.jsx';
+import BackToTop from './components/Common/BackToTop.jsx';
+import AOSInitialiser from './components/AOSInitializer.jsx';
 
 
 function App() {
@@ -76,6 +78,8 @@ function App() {
         </Routes>
         <Footer />
       </div>
+      <BackToTop />
+      <AOSInitialiser />
     </Router>
     </>
   );

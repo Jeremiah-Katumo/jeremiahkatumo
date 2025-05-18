@@ -22,6 +22,7 @@
   --on-hover-color: #FF6500;
   --footer-bg-color: #212121;
   --footer-text-color: #f0f0f0;
+  --footer-gold-color: gold;
 
   --other-color: #0779E4;
 }
@@ -48,6 +49,7 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {

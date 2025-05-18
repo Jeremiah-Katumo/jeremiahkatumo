@@ -9,20 +9,20 @@ const CustomButton = ({ href, label, className }) => {
   const handleMouseLeave = () => setIsHovered(false);
 
   const buttonStyle = {
-    transform: isHovered ? 'scale(1.1)' : 'scale(1)',
+    transform: isHovered ? 'scale(1)' : 'scale(0.9)',
     transition: 'transform 0.3s ease',
   };
 
   return (
-    <Button
+    <button
       href={href}
       className={`btn btn-primary ${className}`}
       style={buttonStyle}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {label}
-    </Button>
+      &nbsp; {label}
+    </button>
   );
 };
 

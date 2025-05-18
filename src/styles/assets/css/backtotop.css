@@ -1,0 +1,16 @@
+@import url('./style.css');
+
+.back-to-top-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px var(--background-card-color);
+    cursor: pointer;
+    z-index: 1000;
+}

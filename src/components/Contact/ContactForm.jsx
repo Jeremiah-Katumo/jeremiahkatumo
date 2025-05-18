@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Form, Container, Button } from 'react-bootstrap';
+import CustomButton from '../Common/CustomButton';
 
 
 function ContactForm() {
@@ -28,11 +29,10 @@ function ContactForm() {
                             />
                         </Col>
                     </div>
-                    <div className="contact-form-details row">
-                        <Button href="#" className="btn btn-primary contact-btn">
-                           <icon href="/send-message" className="bi bi-send"></icon> Send Message
-                        </Button>
-                    </div>
+                    {/* <button href="#" className="btn btn-primary contact-btn">
+                        <icon href="/send-message" className="bi bi-send"></icon> Send Message
+                    </button> */}
+                    <CustomButton href="/send-message" className="bi bi-send contact-btn" label="Send Message" />
                 </form>
 
                 {/* <div id="form-message-warning" className="mt-4"></div>
