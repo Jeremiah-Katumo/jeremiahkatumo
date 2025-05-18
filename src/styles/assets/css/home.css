@@ -24,7 +24,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    /* padding-left: 80px; */
+    padding-left: 0px;
 }
 
 #hero .hero-container {
@@ -153,11 +153,11 @@
         /* background-color: var(--background-color); */
         background-size: cover;
         position: relative;
-        display: 'flex';
-        flex-direction: 'column';
-        justify-content: 'center';
-        align-items: 'center';
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        text-align: justify;
     }
 
     #hero .hero-content {
