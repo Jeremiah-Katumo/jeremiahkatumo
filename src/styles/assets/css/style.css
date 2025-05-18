@@ -690,6 +690,31 @@ h6 {
   .section-title {
     font-size: 18px;
   }
+
+  /* Stack base-box and top-box columnwise */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: static;
+    padding-bottom: 0;
+  }
+
+  .base-box,
+  .top-box {
+    position: static !important;
+    width: 100% !important;
+    margin: 0 0 10px 0;
+    left: 0 !important;
+    top: 0 !important;
+    border-radius: 15px;
+    z-index: 1;
+  }
+
+  /* Hide the middle-box */
+  .middle-box {
+    display: none !important;
+  }
 }
 
 /* Small devices (phones) */
