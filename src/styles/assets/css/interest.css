@@ -60,7 +60,7 @@
 
 .interest-card p {
   font-size: 15px;
-  color: var(--background-color);
+  color: var(--secondary-color);
 }
 
 /* ===== Responsive Breakpoints ===== */
