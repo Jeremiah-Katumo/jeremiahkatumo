@@ -16,9 +16,9 @@ function Footer() {
         <p className='footer-description'>I’m a passionate software developer focused on building accessible, user-friendly web applications with React, Node.js, and modern web technologies.</p>
         <Row className="social-links">
           <a 
-            href="https://twitter.com" 
+            href="https://x.com/jeremy_warku" 
             className="footer-icon"
-            style={{ color: "black" }}
+            style={{ color: "white" }}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -27,25 +27,25 @@ function Footer() {
           <a 
             href="https://github.com/Jeremiah-Katumo" 
             className="footer-icon"
-            style={{ color: "black" }}
+            style={{ color: "white" }}
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className='bi bi-github'></i>
           </a>
           <a 
-            href="instagram.com" 
+            href="https://www.instagram.com/jeremykatumo/profilecard/?igsh=N2pwaDlpcmU4b3k4" 
             className="footer-icon"
-            style={{ color: "black" }}
+            style={{ color: "white" }}
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className='bi bi-instagram'></i>
           </a>
           <a 
-            href="linkedin.com" 
+            href="https://www.linkedin.com/in/jeremiah-kurwa-27556b230/" 
             className="footer-icon"
-            style={{ color: "black" }}
+            style={{ color: "white" }}
             target="_blank"
             rel="noopener noreferrer"
           >
