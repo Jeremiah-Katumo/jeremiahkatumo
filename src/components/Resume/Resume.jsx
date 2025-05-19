@@ -7,6 +7,7 @@ import CustomButton from '../Common/CustomButton';
 
 
 const Resume = () => {
+  
   return (
     <section id="resume-section">
       <Container className='resume-content'>
@@ -29,6 +30,7 @@ const Resume = () => {
                 date={item.date}
                 title={item.title}
                 school={item.school}
+                description={item.text}
               />
             ))}
           </div>
@@ -40,6 +42,7 @@ const Resume = () => {
                 date={item.date}
                 title={item.title}
                 school={item.school}
+                description={item.text}
               />
             ))}
           </div>

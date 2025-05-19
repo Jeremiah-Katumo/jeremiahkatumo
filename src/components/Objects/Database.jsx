@@ -52,15 +52,15 @@ const blogHeaderData = [
 
 // Resume Data
 const education = [
-  { date: "2018-2023", title: "Bsc in Statistics", school: "Taita Taveta University" },
-  { date: "2025-Ongoing", title: "Software Engineering", school: "Power Learn Project" },
-  { date: "2025-Ongoing", title: "Data Science", school: "ALX Africa" },
+  { date: "2018-2023", title: "Bsc in Statistics", school: "Taita Taveta University", text: "Graduated with a bachelor's degree in statistics. Some of the modules that I went through this time are: 1. Calculus 2. Parametric and Non - parametric methods. 3. Time Series Analysis 5. Demographic Techniques 6. Epidemiology 7. Stochastic Processes 8. Survival Analysis 9. Experimental Design Analysis 10. Bayesian Inference 11. Statistical Quality Control Methods 12. Probability and Statistics and more" },
+  { date: "2025-Ongoing", title: "AI for Software Engineering", school: "PLP Academy", text: "The topics and skills covered were: 1. Python Programming 2. Database Design and Programming with SQL 3. Startup Building for Developers 4. Software Engineering 5. Web Development V2 6. Ethics in AI" },
+  { date: "2025-Ongoing", title: "Data Science", school: "ALX Africa", text: "The topics and skills covered included the following: 1. Self Awareness, 2. Teamwork and Leadership 3. Communication and Quantitative Reasoning 4. Entrepreneurial Thinking 5. Critical Thinking 6. Task Management 7. Technical Skills" },
 ];
 
 const experience = [
-  { date: "2014-2015", title: "Art & Creative Director", school: "Cambridge University" },
-  { date: "2014-2015", title: "Wordpress Developer", school: "Cambridge University" },
-  { date: "2017-2018", title: "UI/UX Designer", school: "Cambridge University" },
+  { date: "2022-2023", title: "Full-Stack Web Development", school: "Udemy", text: "Completed a comprehensive course on full-stack web development, covering both front-end and back-end technologies: 1. HTML and CSS 2. JavaScript, jquery 3. Node.js, Express.js, APIs 4. PostgreSQL 5. React.js 6. Web design and deployment 7. Web3 and Blockchain 8. Token contract development 9. NFT minting, buying and selling logic" },
+  // { date: "2014-2015", title: "Wordpress Developer", school: "Cambridge University" },
+  // { date: "2017-2018", title: "UI/UX Designer", school: "Cambridge University" },
 ];
 
 const resumeSectionHeaderData = {
