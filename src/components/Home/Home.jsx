@@ -14,9 +14,15 @@ function Home() {
             <Row>
               <h1>Jeremiah Katumo</h1>
             </Row>
+            
             <Row >
               <Type />
             </Row>
+
+            <Row>
+              <h5>Passionate about building tech for social impact.</h5>
+            </Row>
+
             <Row className="social-links">
               <a href="twitter.com" className="twitter"><i className="bx bxl-twitter"></i></a>
               <a href="facebook.com" className="facebook"><i className="bx bxl-facebook"></i></a>
