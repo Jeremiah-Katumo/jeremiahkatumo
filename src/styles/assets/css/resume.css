@@ -80,6 +80,20 @@
 .resume-wrap h2 {
   font-size: 20px;
   color: var(--background-two-color);
+  word-break: break-word;
+  white-space: normal;         /* Allow multiple lines */
+  overflow-wrap: break-word;
+  overflow: visible;           /* Ensure content is not clipped */
+  text-overflow: unset;        /* Remove ellipsis for multiline */
+  min-height: 40px;
+  display: block;              /* Ensure block for wrapping */
+}
+
+/* Remove single-line ellipsis for h2 */
+.resume-wrap h2 {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
 }
 
 .resume-wrap h3 {
