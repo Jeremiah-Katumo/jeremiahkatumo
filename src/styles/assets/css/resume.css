@@ -242,3 +242,17 @@
     width: 100%;
   }
 }
+
+@media (max-width: 575.98px) {
+  .resume-wrap h2,
+  .resume-wrap h3 {
+    font-size: 16px;
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    overflow: visible;
+    text-overflow: unset;
+    min-height: 24px;
+    display: block;
+  }
+}
