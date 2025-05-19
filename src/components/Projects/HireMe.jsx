@@ -13,7 +13,7 @@ const HireMe = () => {
               I'm <span>Available </span>for freelancing
             </h2>
             <p>
-              A small river named Duden flows by their place and supplies it with the necessary regelialia.
+              If you're looking for someone to help with web development, data analysis, or building custom solutions, feel free to reach out.
             </p>
             <CustomButton href="#contact" label="Hire Me" className="bi bi-briefcase" />
           </Container>
