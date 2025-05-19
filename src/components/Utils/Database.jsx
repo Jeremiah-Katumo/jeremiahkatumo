@@ -105,7 +105,7 @@ Completed a comprehensive course on full-stack web development, covering both fr
 
 const education = [
   { date: "2018-2023", title: "Bsc in Statistics", school: "Taita Taveta University", description: ttuDescription },
-  { date: "2025-Ongoing", title: "Software Engineering", school: "Power Learn Project", description: plpDescription },
+  { date: "2025-Ongoing", title: "Software Engineering", school: "PLP Academy", description: plpDescription },
   { date: "2025-Ongoing", title: "Data Science", school: "ALX Africa", description: alxDescription },
 ];
 
