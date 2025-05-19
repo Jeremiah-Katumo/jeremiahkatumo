@@ -51,6 +51,15 @@ function Footer() {
           >
             <i className='bi bi-linkedin'></i>
           </a>
+          <a 
+            href="https://medium.com/@jeremykatush" 
+            className="footer-icon"
+            style={{ color: "white" }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className='bi bi-medium'></i>
+          </a>
         </Row>
         <Row className="copyright d-flex">
           <p>&copy; Copyright <strong><span>{year} MyPortfolio</span></strong>. All Rights Reserved</p>

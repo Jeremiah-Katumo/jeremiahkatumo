@@ -331,6 +331,10 @@ Contact Form
         height: auto;
     }
 
+    .contact-info-val {
+        font-size: 12px;
+    }
+
     .form-outline-style-v1 .form-group {
         width: 100%;
     }
@@ -350,5 +354,11 @@ Contact Form
         flex-direction: column;
         gap: 20px;
         border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info-val {
+        font-size: 12px;
     }
 }
