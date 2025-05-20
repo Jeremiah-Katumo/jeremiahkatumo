@@ -112,6 +112,13 @@
   background-color: #f39c12;
 }
 
+.skill-card-wrapper {
+  opacity: 0;
+}
+.animate__animated.animate__fadeInUp {
+  opacity: 1 !important;
+}
+
 /* ----------------------------- */
 /* 📱 Responsive Styles Below */
 /* ----------------------------- */

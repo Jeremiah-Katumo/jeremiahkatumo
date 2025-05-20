@@ -39,15 +39,19 @@ function Projects() {
 
   return (
     <Container id="projects" className="project-container">
-      <Container className="bg-line-container">
-        <Container className="bg-line-box"></Container>
-        <Container className="bg-line-box"></Container>
-        <Container className="bg-line-box"></Container>
-        <Container className="bg-line-box"></Container>
-        <Container className="bg-line-box"></Container>
-      </Container>
+      <div class="lines-wrap">
+        <div class="lines-inner">
+          <div class="lines"></div>
+        </div>
+      </div>
 
       <Container className="projects-section">
+        <div class="lines-wrap">
+          <div class="lines-inner">
+            <div class="lines"></div>
+          </div>
+        </div>
+
         <SectionHeader data={sectionHeaderData} />
 
         <Container className="project-card-container">

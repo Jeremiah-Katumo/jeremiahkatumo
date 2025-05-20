@@ -8,6 +8,12 @@ function About() {
   return (
     <>
       <div id='skills-interests' className='about-container'>
+        <div class="lines-wrap">
+          <div class="lines-inner">
+            <div class="lines"></div>
+          </div>
+        </div>
+        
         <div className='section-header'>
           {/* <h1 className="big big-2">About Me</h1> */}
           <h2 className='section-title mb-4'>About Me</h2>
