@@ -38,4 +38,7 @@
     .about-container {
         margin-top: 80px;
     }
+    .about-container p {
+        font-size: 12px !important;
+    }
 }

@@ -10,10 +10,10 @@ const GithubCalendar = () => {
       <div className='github-calendar'>
         <GitHubCalendar
           username="Jeremiah-Katumo"
-          blockSize={15}
-          blockMargin={5}
-          color="#FF6500"
-          fontSize={14}
+          // blockSize={15}
+          // blockMargin={5}
+          // color="#FF6500"
+          // fontSize={14}
         />
       </div>
       <div class="calendar">Loading GitHub contributions...</div>
