@@ -29,13 +29,13 @@
 }
 
 @media (max-width: 767.98px) {
-  .hire-me-btn {
+  .hire-me-btn p {
   font-size: 12px !important;
 }
 }
 
 @media (max-width: 480px) {
-  .hire-me-btn {
+  .hire-me-btn p {
   font-size: 12px !important;
 }
 }
