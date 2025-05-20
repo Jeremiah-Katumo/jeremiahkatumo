@@ -358,7 +358,13 @@ Contact Form
 }
 
 @media (max-width: 480px) {
+    #contacts p {
+        font-size: 12px !important;
+    }
+
     .contact-info-val {
         font-size: 12px;
     }
+
+
 }

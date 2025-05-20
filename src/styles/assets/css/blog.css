@@ -277,13 +277,8 @@
   }
 }
 
-/* Extra large screens (large desktops) */
-/* @media (min-width: 1025px) {
-  .blogs-section {
-    gap: 50px;
+@media (max-width: 480px) {
+  #blogs p {
+    font-size: 12px !important;
   }
-
-  .blog-card {
-    width: 20%;
-  }
-} */
+}
