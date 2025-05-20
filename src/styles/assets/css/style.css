@@ -323,7 +323,7 @@ h6 {
 
 #about b {
   font-weight: bold;
-  color: var(--text-heading-card-color);
+  color: var(--icon-color);
 }
 
 #about p {
