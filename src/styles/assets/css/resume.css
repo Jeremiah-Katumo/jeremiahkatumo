@@ -256,3 +256,9 @@
     display: block;
   }
 }
+
+@media (max-width: 480px) {
+  .resume-section p {
+    font-size: 12px !important;
+  }
+}
