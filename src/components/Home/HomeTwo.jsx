@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import profile from '../../styles/assets/img/profile.png';
+import profile from '../../styles/assets/img/profile.jpg';
 import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 import '../../styles/assets/css/style.css';
