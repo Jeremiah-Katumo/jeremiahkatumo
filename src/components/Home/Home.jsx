@@ -27,7 +27,7 @@ function Home() {
               </Row>
             </Container>
 
-            <Container>
+            {/* <Container>
               <Row className="social-links">
                 <a href="https://x.com/jeremy_warku" className="x-twitter"><i className="bi bi-twitter"></i></a>
                 <a href="https://github.com/Jeremiah-Katumo" className="github"><i className="bi bi-github"></i></a>
@@ -35,7 +35,7 @@ function Home() {
                 <a href="https://www.linkedin.com/in/jeremiah-kurwa-27556b230/" className="linkedin"><i className="bi bi-linkedin"></i></a>
                 <a href="medium.com/@jeremykatush" className="medium"><i className="bi bi-medium"></i></a>
               </Row>
-            </Container>
+            </Container> */}
           </Container>
           {/* <Container className='social-links'> */}
           {/* <Button href="#my-about">

@@ -55,7 +55,7 @@
   /* optional: enforce base height */
   padding: 30px;
   background: var(--background-card-color);
-  border-radius: 5px;
+  /* border-radius: 5px; */
   margin-bottom: 30px;
 }
 
