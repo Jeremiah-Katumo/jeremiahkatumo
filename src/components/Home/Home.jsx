@@ -29,10 +29,11 @@ function Home() {
 
             <Container>
               <Row className="social-links">
-                <a href="x.com/jeremy_warku" className="x-twitter"><i className="bi bi-twitter"></i></a>
-                <a href="github.com/Jeremiah-Katumo" className="facebook"><i className="bi bi-github"></i></a>
-                <a href="instagram.com" className="instagram"><i className="bi bi-instagram"></i></a>
-                <a href="linkedin.com" className="linkedin"><i className="bi bi-linkedin"></i></a>
+                <a href="https://x.com/jeremy_warku" className="x-twitter"><i className="bi bi-twitter"></i></a>
+                <a href="https://github.com/Jeremiah-Katumo" className="github"><i className="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/jeremykatumo/profilecard/?igsh=N2pwaDlpcmU4b3k4" className="instagram"><i className="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/jeremiah-kurwa-27556b230/" className="linkedin"><i className="bi bi-linkedin"></i></a>
+                <a href="medium.com/@jeremykatush" className="medium"><i className="bi bi-medium"></i></a>
               </Row>
             </Container>
           </Container>
