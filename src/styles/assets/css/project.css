@@ -5,10 +5,11 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 100%;
-    /* height: 300px; */
-    padding-bottom: 40%;
-    padding-top: 20%;
+    height: auto;           /* let it grow with content */
+    min-height: 100vh;      /* ensures at least full viewport height */
+    padding-bottom: 40px;
+    padding-top: 90px;
+    box-sizing: border-box;
 }
 
 .bg-line-container {
@@ -45,26 +46,27 @@
 }
 
 /* Projects Section */
-.projects-section {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-    position: absolute;
+.projects-section {
+    position: relative; /* was absolute */
     z-index: 2;
-    top: 140px;
+    top: 0;             /* remove top: 140px */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: auto;       /* let it grow with content */
 }
 
 .project-card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;           /* Set gap between cards to 10px */
     width: 100%;
+    justify-items: center;
+    align-items: stretch;
 }
 
 .portfolio-container {
@@ -80,7 +82,7 @@
 
 /* Project Card Styles */
 .project-card {
-    width: 40%;
+    width: 100%;          /* Increase card width */
     height: 285px;
     margin-bottom: 30px;
     position: relative;
@@ -132,7 +134,7 @@
 }
 
 .project-card .text h3 a {
-    color: var(--background-color);
+    color: var(--background-two-color);
     text-decoration: none;
 }
 
@@ -153,24 +155,30 @@
     color: var(--background-two-color);
 }
 
+.project-img {
+    /* background-image: url('../img/project-3.jpg'); */
+    width: 100%;
+    background-color: var(--background-two-card-color);
+}
+
 .project-img-one {
     /* background-image: url('../img/project-3.jpg'); */
-    width: 60%;
+    width: 48.75%;
     background-color: var(--background-two-card-color);
 }
 
 .project-img-two {
     /* background-image: url('../img/project-5.jpg'); */
-    width: 37.5%;
+    width: 48.75%;
     background-color: var(--background-two-card-color);
 }
 
-.project-img-one:hover {
+/* .project-img-one:hover {
     background-image: url('../img/imarika.png');
 }
 .project-img-two:hover {
     background-image: url('../img/cipk.png');
-}
+} */
 
 .project-img-one .text h3,
 .project-img-two .text h3 {
@@ -323,7 +331,7 @@
     }
 
     .project-card {
-        width: 80% !important;
+        width: 98% !important;
     }
 
     .project-img-one,
@@ -340,6 +348,11 @@
 
     .hire-me-container {
         margin-bottom: 0vh;
+    }
+
+    .project-card-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 }
 

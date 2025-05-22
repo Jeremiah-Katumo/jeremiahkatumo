@@ -1,13 +1,13 @@
 import React from "react";
+import imarika from '../../styles/assets/img/imarika.png';
+import cipk from '../../styles/assets/img/cipk.png';
+import wireframe from '../../styles/assets/img/wireframe.png';
 
 // Projects Data
 const data = [
-    { id: 1, imageNum: 'one', title: 'Imarika Corporate Website', category: 'Web Development', link: 'https://imarika-ui.vercel.app' },
-    { id: 2, imageNum: 'two', title: 'CIPK Corporate Website', category: 'Web Development', link: 'project2' },
-    // { id: 3, imageNum: 'one', title: 'E-commerce Platform Design', category: 'UI/UX Design', link: 'project3' },
-    // { id: 4, imageNum: 'two', title: 'Mobile App Design', category: 'App Design', link: 'project4' },
-    // { id: 5, imageNum: 'one', title: 'Portfolio Showcase Design', category: 'Web Design', link: 'project5' },
-    // { id: 6, imageNum: 'two', title: 'SaaS Dashboard UI', category: 'Dashboard UI', link: 'project6' },
+    { id: 1, imageNum: 'one', title: 'Imarika Corporate Website', category: 'Web Development', link: 'https://imarika-ui.vercel.app', imageLink: imarika },
+    { id: 2, imageNum: 'two', title: 'CIPK Corporate Website', category: 'Web Development', link: 'https://cipk-app.vercel.app', imageLink: cipk },
+    { id: 3, imageNum: 'one', title: 'SMS-Based Jobs App', category: 'Designing, Wireframing', link: 'https://miro.com/app/board/uXjVIBfOL_4=/?share_link_id=861520531822', imageLink: wireframe },
 ];
 
 const sectionHeaderData = [
