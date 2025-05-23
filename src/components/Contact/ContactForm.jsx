@@ -30,6 +30,7 @@ function ContactForm() {
             <Col md={4} className='contact-info'>
                 <div className="contact-info-v1">
                     <div className='d-block contact-card'>
+                        <span className="d-block contact-info-label"><p>FOLLOW ME</p></span>
                         <div className="social-links">
                             <a
                                 href="https://x.com/jeremy_warku"
@@ -89,7 +90,7 @@ function ContactForm() {
                     <div className="d-block contact-card">
                         <span className="d-block contact-info-label"><p>Address</p></span>
                         <address className="contact-info-val">
-                            Kilifi - Mombasa Road. <br /> Kilifi Town - Vidazini Road
+                            Kilifi - Malindi Road - Vidazini Road
                         </address>
                     </div>
                 </div>

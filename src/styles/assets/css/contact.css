@@ -288,7 +288,7 @@ Contact Form
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--pre-text-color);
+    /* background: var(--pre-text-color); */
     color: var(--text-heading-card-color);
     line-height: 1;
     /* padding: 4px; */
@@ -299,7 +299,7 @@ Contact Form
     width: 30px;
     height: 25px;
     transition: 0.3s;
-    border: 1px solid var(--icon-color);
+    border: 0px solid var(--icon-color);
 }
 
 /* Custom styling moved from inline or layout adjustments */
@@ -321,7 +321,7 @@ Contact Form
 }
 
 .contact-info-v1 {
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 
 .contact-info-label {
