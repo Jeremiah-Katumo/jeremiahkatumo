@@ -122,12 +122,18 @@ const resumeSectionHeaderData = {
 
 // Skills Data
 const skillsData = [
-  { iconClass: 'fas fa-code', title: 'Web Development' },
-  { iconClass: 'fas fa-mobile-alt', title: 'App Development' },
-  { iconClass: 'fas fa-paint-brush', title: 'UI/UX Design' },
-  { iconClass: 'fas fa-server', title: 'Backend Development' },
-  { iconClass: 'fas fa-pen-nib', title: 'Frontend Development' },
-  { iconClass: 'fas fa-pen-nib', title: 'Analytical Skills' },
+  { iconClass: 'fab fa-python', title: 'Python' },
+  { iconClass: 'fab fa-r-project', title: 'R' },
+  { iconClass: 'fab fa-js', title: 'JavaScript' },
+  { iconClass: 'fab fa-php', title: 'PHP' },
+  { iconClass: 'fab fa-git-alt', title: 'Git' },
+  { iconClass: 'fas fa-pencil-ruler', title: 'UI/UX Design' },
+  { iconClass: 'fas fa-calculator', title: 'Quantitative Reasoning' },
+  { iconClass: 'fas fa-brain', title: 'Critical Thinking' },
+  { iconClass: 'fas fa-chart-line', title: 'Analytical Skills' },
+  { iconClass: 'fas fa-tasks', title: 'Task Management' },
+  { iconClass: 'fas fa-users', title: 'Teamwork' },
+  { iconClass: 'fas fa-rocket', title: 'Deployment' },
 ];
 
 // Interests Data

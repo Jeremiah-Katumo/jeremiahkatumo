@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import SkillCard from './SkillCard';
 import '../../../styles/assets/css/skill.css';
-import { skillsData } from '../../Objects/Database';
+import { skillsData } from '../../Utils/Database';
 import 'animate.css';
 
 function Skills() {
