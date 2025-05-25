@@ -15,16 +15,51 @@ const Blogs = () => {
       </Container>
 
       <Container className='blogs-section'>
-        {blogData.map((blog, index) => (
-          <BlogCard
-            key={index}
-            title={blog.title}
-            date={blog.date}
-            author={blog.author}
-            desc={blog.description}
-            link={blog.link}
-          />
-        ))}
+        <div class="row row-flex margintop-lg">
+          <div class="col-lg-4 col-md-12 d-flex">
+            <div class="blog-post col">
+              <div class="label-tag">
+                <span>Popular Article</span>
+              </div>
+              <a href="#">
+                <h4>Aesthetics & Usability </h4>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae ullamcorper dui, id
+                molestie ligula. Vestibulum a urna vel est rhoncus semper et sed libero.
+              </p>
+              <a href="#" class="blog-link">Read on Medium <i
+                class="bi bi-play-circle"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 d-flex">
+            <div class="blog-post col">
+              <div class="label-tag">
+                <span>Popular Article</span>
+              </div>
+              <a href="#">
+                <h4>Developing an App</h4>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae ullamcorper dui, id
+                molestie ligula. Vestibulum a urna vel est rhoncus semper et sed libero.</p>
+              <a href="#" class="blog-link">Read on Medium <i
+                class="bi bi-play-circle"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 d-flex">
+            <div class="blog-post col">
+              <div class="label-tag">
+                <span>Popular Article</span>
+              </div>
+              <a href="#">
+                <h4>Becoming a Software Architect</h4>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae ullamcorper dui, id
+                molestie ligula. Vestibulum a urna vel est rhoncus semper et sed libero.</p>
+              <a href="#" class="blog-link">Read on Medium <i
+                class="bi bi-play-circle"></i></a>
+            </div>
+          </div>
+        </div>
       </Container>
     </Container>
   );
