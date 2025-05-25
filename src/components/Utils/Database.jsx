@@ -133,7 +133,7 @@ const skillsData = [
   { iconClass: 'fas fa-chart-line', title: 'Analytical Skills' },
   { iconClass: 'fas fa-tasks', title: 'Task Management' },
   { iconClass: 'fas fa-users', title: 'Teamwork' },
-  { iconClass: 'fas fa-rocket', title: 'Deployment' },
+  // { iconClass: 'fas fa-rocket', title: 'Deployment' },
 ];
 
 // Interests Data
