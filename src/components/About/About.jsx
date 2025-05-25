@@ -13,11 +13,15 @@ function About() {
             <div class="lines"></div>
           </div>
         </div>
-        
+
         <div className='section-header'>
           {/* <h1 className="big big-2">About Me</h1> */}
-          <h2 className='section-title mb-4'>About Me</h2>
-          <p>I'm a passionate data scientist with some interest in software engineering and, a love for technology and problem-solving. I enjoy exploring new programming languages, frameworks, and tools. In my free time, I like to work on personal projects, contribute to open-source, and stay updated with the latest trends in the tech world.</p>
+          {/* <h2 className='section-title mb-4'>About Me</h2> */}
+          <p className='pt-4'>
+            A mix of what I do and what I love. From programming languages and <br />
+            frameworks to design tools and personal passions - this section <br />
+            reflects my professional strengths and what keeps me curious.
+          </p>
         </div>
 
         <Skills />
