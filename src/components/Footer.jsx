@@ -12,7 +12,7 @@ function Footer() {
     <>
     <footer id="footer">
       <Col className="footer-content d-flex flex-direction-column align-items-center justify-contents-center">
-        <h3>Jeremiah Katumo</h3>
+        <h2 className='display-5'>Jeremiah Katumo</h2>
         <p className='footer-description'>I’m a passionate software developer focused on building accessible, user-friendly web applications with React, Node.js, and modern web technologies.</p>
         <Row className="social-links">
           <a 

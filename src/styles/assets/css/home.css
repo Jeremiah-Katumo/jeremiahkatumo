@@ -53,14 +53,13 @@
     right: 0;
 }
 
-#hero h1 {
+/* #hero h1 {
     margin: 0;
     font-size: 64px;
     font-weight: 700;
     line-height: 56px;
     color: var(--text-color)
-        /*#45505b; */
-}
+} */
 
 #hero p {
     color: var(--text-color);

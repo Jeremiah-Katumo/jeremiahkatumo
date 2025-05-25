@@ -59,7 +59,7 @@ Completed a comprehensive course on full-stack web development, covering both fr
 `;
 
 const Resume = () => {
-  
+
   return (
     <section id="resume-section">
       <Container className='resume-content'>
@@ -75,32 +75,54 @@ const Resume = () => {
         </Row>
 
         <Col>
-          <div className="resume-card-container">
-            {/* {education.map((item, idx) => (
-              <ResumeCard
-                key={idx}
-                date={item.date}
-                title={item.title}
-                school={item.school}
-                description={item.text}
-              />
-            ))} */}
+          {/* <div className="resume-card-container">
             <ResumeCard date={education[0].date} title={education[0].title} school={education[0].school} description={ttuDescription} />
             <ResumeCard date={education[1].date} title={education[1].title} school={education[1].school} description={plpDescription} />
             <ResumeCard date={education[2].date} title={education[2].title} school={education[2].school} description={alxDescription} />
           </div>
 
           <div className="resume-card-container">
-            {/* {experience.map((item, idx) => (
-              <ResumeCard
-                key={idx}
-                date={item.date}
-                title={item.title}
-                school={item.school}
-                description={item.text}
-              />
-            ))} */}
             <ResumeCard date={experience[0].date} title={experience[0].title} school={experience[0].school} description={udemyDescription} />
+          </div> */}
+          <div class="timeline-container">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>{education[2].title}</h3>
+                  <span class="timeline-date">{education[2].date}</span>
+                  <p className='h4'>{education[2].school}</p>
+                  <p className='scrollable'>{education[2].description}</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>{education[1].title}</h3>
+                  <span class="timeline-date">{education[1].date}</span>
+                  <p className='h4'>{education[1].school}</p>
+                  <p className='scrollable'>{education[1].description}</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>{experience[0].title}</h3>
+                  <span class="timeline-date">{experience[0].date}</span>
+                  <p className='h4'>{experience[0].school}</p>
+                  <p className='scrollable'>{experience[0].description}</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>{education[0].title}</h3>
+                  <span class="timeline-date">{education[0].date}</span>
+                  <p className='h4'>{education[0].school}</p>
+                  <p className='scrollable'>{education[0].description}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </Col>
         <CustomButton href={"/download-cv"} className={"bi bi-download"} label={" Download CV"} />

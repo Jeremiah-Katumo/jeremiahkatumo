@@ -14,7 +14,7 @@ function Home() {
           <Container className='hero-content'>
             <Row>
               <Col>
-                <h1>Jeremiah Katumo</h1>
+                <h1 className='display-4'>Jeremiah Katumo</h1>
                 <Row >
                   <Type />
                 </Row>

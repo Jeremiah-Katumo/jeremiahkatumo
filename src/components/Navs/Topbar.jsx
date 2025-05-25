@@ -34,6 +34,12 @@ const TopBar = () => {
                 {/* <div className="mobile-dropdown-nav d-lg-none">
                     <NavMenu />
                 </div> */}
+                
+                <div class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="theme-toggle-ball"></div>
+                </div>
             </Container>
 
             {/* Mobile dropdown nav — shown only on mobile toggle */}

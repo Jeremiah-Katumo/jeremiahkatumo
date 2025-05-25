@@ -27,9 +27,9 @@
   flex-direction: row;
 }
 
-#footer h3 {
-    font-size: 36px;
-    font-weight: 700;
+#footer h2 {
+    /* font-size: 36px;
+    font-weight: 700; */
     position: relative;
     font-family: "Poppins", sans-serif;
     padding: 0;
@@ -37,7 +37,7 @@
     color: var(--text-heading-card-color);
 }
 
-#footer h3:hover {
+#footer h2:hover {
   color: var(--footer-gold-color);
 }
 
