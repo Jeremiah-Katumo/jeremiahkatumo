@@ -123,7 +123,7 @@ const resumeSectionHeaderData = {
 // Skills Data
 const skillsData = [
   { iconClass: 'fab fa-python', title: 'Python' },
-  { iconClass: 'fab fa-r-project', title: 'R' },
+  { iconClass: 'fab fa-r-project', title: 'R Programming' },
   { iconClass: 'fab fa-js', title: 'JavaScript' },
   { iconClass: 'fab fa-php', title: 'PHP' },
   { iconClass: 'fab fa-git-alt', title: 'Git' },

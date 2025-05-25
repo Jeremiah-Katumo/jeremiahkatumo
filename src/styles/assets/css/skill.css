@@ -79,7 +79,7 @@
 }
 
 .zoom-element {
-  background-color: var(--background-card-color);
+  background-color: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
