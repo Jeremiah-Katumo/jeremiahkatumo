@@ -16,9 +16,9 @@ const sectionHeaderData = [
 
 // Services Data
 const serviceTopCardData = [
-    { category: "top", icon: "flaticon-analysis", heading: "Web Design", sectionHeading: "What I Offer", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
+    { category: "top", icon: "flaticon-analysis", heading: "Responsive Design", sectionHeading: "What I Offer", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
     { category: "top", icon: "flaticon-flasks", heading: "Data Analysis", sectionHeading: "What I Offer", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
-    { category: "top", icon: "flaticon-ideas", heading: "Web Development", sectionHeading: "What I Offer", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
+    { category: "top", icon: "flaticon-ideas", heading: "Web Development, Hosting and Maintenance", sectionHeading: "What I Offer", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
 ]
 
 const serviceBottomCardData = [

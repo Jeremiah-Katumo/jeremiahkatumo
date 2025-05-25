@@ -13,9 +13,12 @@
 
 /* Carousel Wrapper */
 .interests-carousel {
-  width: 70%;
-  padding: 30px 20px 30px 20px;
+  width: 90%;
+  padding: 30px 30px 30px 30px;
   gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Remove grid layout since Swiper handles slides */
@@ -25,17 +28,18 @@
 
 /* Swiper Slide Card Styling */
 .interest-card {
-  background: var(--background-card-color);
+  background: var(--secondary-color);
   border-radius: 12px;
   padding: 30px 20px;
   text-align: center;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 220px;
+  border: 1px solid var(--background-card-color);
 }
 
 .interest-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(5px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,12 +52,12 @@
 .interest-card h3 {
   margin: 10px 0;
   font-size: 20px;
-  color: var(--background-two-color);
+  color: var(--background-thr-color);
 }
 
 .interest-card p {
   font-size: 15px;
-  color: var(--secondary-color);
+  color: var(--background-color);
 }
 
 /* Swiper Navigation Arrows */

@@ -11,7 +11,8 @@
 .services-1 {
     margin-bottom: 40px;
     padding: 2em;
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: var(--secondary-color);
     width: 230px;
     height: 200px;
     display: flex;
@@ -91,7 +92,8 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     position: relative;
-    color: #fff;
+    color: var(--background-thr-color);
+    /* color: var(--secondary-color); */
 }
 
 .services-1 .desc h3:after {
