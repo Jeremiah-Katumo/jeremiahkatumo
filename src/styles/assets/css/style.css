@@ -517,9 +517,10 @@ h6 {
 
   .top-box,
   .middle-box {
-    left: 30px;
+    left: 20px;
     width: 85%;
     padding: 15px;
+    top: 0vh;
   }
 }
 

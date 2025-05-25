@@ -317,14 +317,13 @@
 }
 
 .scrollable {
-  /* height: 100px; */  /* Fixed height to force scroll */
   overflow-y: auto;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid var(--background-color);
   color: var(--background-color);
   background-color: var(--background-card-color);
-  scroll-behavior: smooth;  /* Ensure the paragraph doesn't cut off content */
+  scroll-behavior: smooth;  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

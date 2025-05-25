@@ -75,15 +75,6 @@ const Resume = () => {
         </Row>
 
         <Col>
-          {/* <div className="resume-card-container">
-            <ResumeCard date={education[0].date} title={education[0].title} school={education[0].school} description={ttuDescription} />
-            <ResumeCard date={education[1].date} title={education[1].title} school={education[1].school} description={plpDescription} />
-            <ResumeCard date={education[2].date} title={education[2].title} school={education[2].school} description={alxDescription} />
-          </div>
-
-          <div className="resume-card-container">
-            <ResumeCard date={experience[0].date} title={experience[0].title} school={experience[0].school} description={udemyDescription} />
-          </div> */}
           <div class="timeline-container">
             <div class="timeline">
               <div class="timeline-item">
