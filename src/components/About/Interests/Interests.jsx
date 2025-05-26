@@ -5,12 +5,16 @@ import 'swiper/css';
 import '../../../styles/assets/css/interest.css';
 import InterestCard from './InterestCard';
 import { interests } from '../../Objects/Database';
+import SlidingText from '../../Common/SlidingText';
 
 const Interests = () => {
   return (
+    <>
+    
     <section className="content-section" id="interests">
       <div className="section-header">
         <h2 className="section-title">My Interests</h2>
+        {/* <SlidingText /> */}
         <p>Here is what I like most:</p>
       </div>
       <div className="interests-carousel">
@@ -46,6 +50,7 @@ const Interests = () => {
         </Swiper>
       </div>
     </section>
+    </>
   );
 };
 

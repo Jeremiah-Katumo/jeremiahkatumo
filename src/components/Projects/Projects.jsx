@@ -6,6 +6,7 @@ import ProjectCard from './ProjectCard';
 import SectionHeader from '../Fragments/SectionHeader';
 import { data, sectionHeaderData } from '../Utils/Database';
 // import { groupProjectsInRows } from '../Utils/Dependencies';
+import SlidingText from '../Common/SlidingText';
 
 function Projects() {
   // const rows = groupProjectsInRows(data);
@@ -24,7 +25,7 @@ function Projects() {
             <div class="lines"></div>
           </div>
         </div>
-
+        <SlidingText />
         <SectionHeader data={sectionHeaderData} />
 
         <Container className="project-card-container">
