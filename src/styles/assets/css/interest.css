@@ -13,12 +13,12 @@
 
 /* Carousel Wrapper */
 .interests-carousel {
-  width: 90%;
+  width: 100%;
   padding: 30px 30px 30px 30px;
-  gap: 10px;
-  display: flex;
+  /* gap: 10px; */
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 /* Remove grid layout since Swiper handles slides */
@@ -131,4 +131,11 @@
   .swiper-button-prev {
     display: none; /* hide arrows on small screens */
   }
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
