@@ -30,11 +30,29 @@ const Interests = () => {
             disableOnInteraction: false,
           }}
           breakpoints={{
-            768: {
+            320: {
+              slidesPerView: 1,
+            },
+            456: {
               slidesPerView: 2,
             },
+            600: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+            999: {
+              slidesPerView: 3,
+            },
             1024: {
+              slidesPerView: 4,
+            },
+            1200: {
               slidesPerView: 5,
+            },
+            1400: {
+              slidesPerView: 6,
             },
           }}
         >

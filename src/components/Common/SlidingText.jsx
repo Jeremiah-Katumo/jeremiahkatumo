@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import 'animate.css';
 
-const FeaturedMusic = () => {
+const SlidingText = () => {
   const [animate, setAnimate] = useState(false);
   const sectionRef = useRef(null);
 
@@ -34,4 +34,4 @@ const FeaturedMusic = () => {
   );
 };
 
-export default FeaturedMusic;
+export default SlidingText;
