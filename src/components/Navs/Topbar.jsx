@@ -4,6 +4,7 @@ import "../../styles/assets/css/topbar.css";
 import brand from "../../styles/assets/img/brand-name.png";
 import NavMenu from "./NavMenu";
 import MobileNav from "./MobileNav";
+import ThemeToggle from "./ThemeToggle";
 
 const TopBar = () => {
     // Theme Toggle Functionality
@@ -62,11 +63,12 @@ const TopBar = () => {
                     <NavMenu />
                 </div>
 
-                <div class="theme-toggle">
+                {/* <div class="theme-toggle">
                     <i class="fas fa-sun"></i>
                     <i class="fas fa-moon"></i>
                     <div class="theme-toggle-ball"></div>
-                </div>
+                </div> */}
+                <ThemeToggle />
             </Container>
 
         </Navbar>

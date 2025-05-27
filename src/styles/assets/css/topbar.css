@@ -72,7 +72,8 @@
 
 .navbar-nav .nav-link.active {
     color: var(--secondary-color) !important;
-    border-bottom: var(--background-color);
+    border-bottom: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
 }
 
 .navbar-nav .nav-link::after {

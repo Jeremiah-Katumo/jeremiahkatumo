@@ -1,22 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
-import { Button } from '@/components/ui/button';
+import { Button } from 'react-bootstrap';
 import { Moon, Sun } from 'lucide-react';
+import MobileNav from './MobileNav';
 
 const ThemeToggle = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  const isDark = resolvedTheme === 'dark';
 
   return (
+    <>
     <Button
-      variant="ghost"
+      variant="outline-secondary"
       size="sm"
-      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-      className="w-9 h-9 rounded-md"
+      onClick={() => setTheme(isDark ? 'light' : 'dark')}
+      aria-label="Toggle theme"
+      style={{ width: '36px', height: '36px', padding: 0 }}
     >
-      <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-      <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-      <span className="sr-only">Toggle theme</span>
+      {isDark ? <Moon size={18} /> : <Sun size={18} />}
     </Button>
+
+    <MobileNav />
+    </>
   );
 };
 
