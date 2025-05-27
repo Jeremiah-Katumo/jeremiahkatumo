@@ -4,7 +4,7 @@ const InterestCard = ({ icon, title, description }) => {
   return (
     <div className="interest-card">
       <i className={`fa ${icon}`}></i>
-      <h3>{title}</h3>
+      <h4>{title}</h4>
       <p>{description}</p>
     </div>
   );
