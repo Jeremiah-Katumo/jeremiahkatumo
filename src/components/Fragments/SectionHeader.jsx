@@ -16,14 +16,14 @@ const SectionHeader = ({ data }) => {
     )
 }
 
-export const SectionHeaderDouble = ({ data }) => {
+export const SectionHeaderDouble = ({ bigTitle, sectionTitle, sectionText }) => {
 
     return (
         <>
             <div className='heading-section'>
-                <h1 className="big big-2">{data.sectionHeading}</h1>
-                <h2 className='section-title mb-4'>{data.sectionHeadingTwo}</h2>
-                <p>{data.sectionText}</p>
+                <h1 className="big big-2">{bigTitle}</h1>
+                <h2 className='section-title mb-4'>{sectionTitle}</h2>
+                <p>{sectionText}</p>
             </div>
         </>
     )
