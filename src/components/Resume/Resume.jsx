@@ -4,6 +4,7 @@ import ResumeCard from './ResumeCard';
 import { education, experience } from '../Utils/Database';
 import '../../styles/assets/css/resume.css';
 import CustomButton from '../Common/CustomButton';
+import { SectionHeaderDouble } from '../Fragments/SectionHeader';
 
 
 const ttuDescription = `
@@ -63,7 +64,7 @@ const Resume = () => {
   return (
     <section id="resume-section">
       <Container className='resume-content'>
-        <Row className="justify-content-center pb-5">
+        {/* <Row className="justify-content-center pb-5">
           <Col md={10} className="heading-section text-center ftco-animate">
             <div className="section-heading">
               <h2 className="section-title">My Resume</h2>
@@ -72,7 +73,16 @@ const Resume = () => {
               </p>
             </div>
           </Col>
-        </Row>
+        </Row> */}
+        <SectionHeaderDouble bigTitle="Resume"
+          sectionTitle="My Resume"
+          sectionText={
+            <>
+              An overview of my education, professional experience, and technical background. <br />
+              Download my resume or browse through the highlights of my journey so far.
+            </>
+          }
+        />
 
         <Col>
           <div class="timeline-container">

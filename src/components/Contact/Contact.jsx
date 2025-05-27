@@ -12,20 +12,6 @@ const Contact = () => {
                         <div class="lines"></div>
                     </div>
                 </div>
-                {/* <Container className='bg-line-box'>
-                    <Container className='bg-line-horizon-box'></Container>
-                    <Container className='bg-line-horizon-box'></Container>
-                    <Container className='bg-line-horizon-box'></Container>
-                    <Container className='bg-line-horizon-box'></Container>
-                    <Container className='bg-line-horizon-box-end'></Container>
-                </Container> */}
-                {/* <Container className='bg-line-box-end'>
-                    <Container className='bg-line-horizon-box'></Container>
-                    <Container className='bg-line-horizon-box'></Container>
-                    <Container className='bg-line-horizon-box'></Container>
-                    <Container className='bg-line-horizon-box'></Container>
-                    <Container className='bg-line-horizon-box-end'></Container>
-                </Container> */}
 
                 <Container className="contacts-section">
                     <Container className="section-header">
@@ -35,15 +21,6 @@ const Contact = () => {
                     <ContactForm />
                 </Container>
             </Container>
-            {/* <Container id="contacts" className='contact-container'>
-            <Container className='bg-line-container'>
-                <Container className='bg-line-box'></Container>
-                <Container className='bg-line-box'></Container>
-                <Container className='bg-line-box'></Container>
-                <Container className='bg-line-box'></Container>
-                <Container className='bg-line-box-end'></Container>
-            </Container>
-        </Container> */}
         </>
     )
 }
