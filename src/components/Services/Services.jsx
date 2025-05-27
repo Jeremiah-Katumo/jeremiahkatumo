@@ -2,7 +2,7 @@ import React from 'react'
 import '../../styles/assets/css/service.css'
 import ServiceCard from './ServiceCard'
 import SectionHeader from '../Fragments/SectionHeader'
-import { serviceTopCardData, serviceBottomCardData } from '../Objects/Database'
+import { serviceTopCardData, serviceBottomCardData } from '../Utils/Database'
 
 
 function Services() {

@@ -7,9 +7,11 @@ const Contact = () => {
     return (
         <>
             <Container id="contacts">
-                <Container className='bg-line-box'></Container>
-                <Container className='bg-line-box'></Container>
-                <Container className='bg-line-box'></Container>
+                <div class="lines-wrap">
+                    <div class="lines-inner">
+                        <div class="lines"></div>
+                    </div>
+                </div>
                 {/* <Container className='bg-line-box'>
                     <Container className='bg-line-horizon-box'></Container>
                     <Container className='bg-line-horizon-box'></Container>

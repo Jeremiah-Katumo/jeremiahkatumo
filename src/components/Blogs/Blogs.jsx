@@ -15,16 +15,11 @@ const Blogs = () => {
       </Container>
 
       <Container className='blogs-section'>
-        {blogData.map((blog, index) => (
-          <BlogCard
-            key={index}
-            title={blog.title}
-            date={blog.date}
-            author={blog.author}
-            desc={blog.description}
-            link={blog.link}
-          />
-        ))}
+        <div class="row row-flex margintop-lg">
+          {blogData.map((blog, index) => (
+            <BlogCard key={index} title={blog.title} description={blog.description} />
+          ))}
+        </div>
       </Container>
     </Container>
   );

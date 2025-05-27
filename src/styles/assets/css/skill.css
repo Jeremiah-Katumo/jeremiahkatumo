@@ -36,11 +36,16 @@
 
 .skills-container {
   display: grid;
-  gap: 30px;
-  justify-content: center;
+  flex-flow: row wrap;
+  gap: 0px;
+  /* border: 0.1px solid var(--secondary-color); */
+  border-color: var(--secondary-color);
+  border-style: solid;
+	border-width: 1px 0px 0px 1px;
+  /* justify-content: center; */
   grid-template-columns: repeat(3, 1fr);
-  width: 70%;
-  padding: 10px 30px;
+  width: 80%;
+  /* padding: 10px 30px; */
 }
 
 .skills-container p {
@@ -53,12 +58,13 @@
 
 .skill {
   background-color: #ffffff;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding: 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
-  max-width: 250px;
+  border: 1px solid var(--secondary-color);
+  /* max-width: 250px; */
 }
 
 .skill i {
@@ -73,7 +79,7 @@
 }
 
 .zoom-element {
-  background-color: var(--background-card-color);
+  background-color: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,6 +90,7 @@
   transform: translate3d(0px, 10px, 10px);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
+  background-color: var(--secondary-color);
 }
 
 /* Progress Bar Styles */
@@ -110,6 +117,14 @@
 
 .color-6 {
   background-color: #f39c12;
+}
+
+.skill-card-wrapper {
+  opacity: 0;
+  width: 100%;
+}
+.animate__animated.animate__fadeInUp {
+  opacity: 1 !important;
 }
 
 /* ----------------------------- */

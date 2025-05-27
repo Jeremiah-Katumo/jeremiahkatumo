@@ -1,47 +1,17 @@
-import React, { useEffect } from 'react';
-import '../../public/assets/css/main.css';
+import React from 'react';
 
-const NavLink = ({ link, title }) => {
-    useEffect(() => {
-        const navbarlinks = document.querySelectorAll('a');
+const NavLinks = () => {
+  const links = ['Home', 'About', 'Resume', 'Services', 'Projects', 'Blog', 'Contact'];
 
-        function navbarlinksActive() {
-            navbarlinks.forEach(navbarlink => {
-                if (!navbarlink.hash) return;
+  return (
+    <ul className="nav-links">
+      {links.map((link) => (
+        <li key={link}>
+          <a href={`#${link.toLowerCase()}`}>{link}</a>
+        </li>
+      ))}
+    </ul>
+  );
+};
 
-                let section = document.querySelector(navbarlink.hash);
-                if (!section) return;
-
-                let position = window.scrollY + 200;
-
-                if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-                    navbarlink.classList.add('active');
-                } else {
-                    navbarlink.classList.remove('active');
-                }
-            })
-        }
-
-        window.addEventListener('load', navbarlinksActive);
-        document.addEventListener('scroll', navbarlinksActive);
-
-        return () => {
-            window.removeEventListener('load', navbarlinksActive);
-            document.removeEventListener('scroll', navbarlinksActive);
-        };
-    }, []);
-
-    const anchorStyles = {
-        textDecoration: 'none'
-    }
-
-    return (
-        <div>
-            <a style={ anchorStyles } href={ link }>{ title }</a>
-        </div>
-    );
-}
-
-export default NavLink;
-
-{/* <Nav.Link href="/services">Services</Nav.Link> */}
+export default NavLinks;

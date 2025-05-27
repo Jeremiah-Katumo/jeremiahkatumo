@@ -11,7 +11,8 @@
 .services-1 {
     margin-bottom: 40px;
     padding: 2em;
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: var(--secondary-color);
     width: 230px;
     height: 200px;
     display: flex;
@@ -91,7 +92,8 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     position: relative;
-    color: #fff;
+    color: var(--background-thr-color);
+    /* color: var(--secondary-color); */
 }
 
 .services-1 .desc h3:after {
@@ -161,9 +163,39 @@
     }
 }
 
+@media (max-width: 1024px) {
+    #services {
+        margin-top: 80px;
+    }
+
+    .top-service-cards-container,
+    .bottom-service-cards-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .service-card-container {
+        gap: 5px;
+    }
+
+    .service-card {
+        width: 90vw;
+        max-width: 400px;
+    }
+
+    .services-1 {
+        width: 90vw;
+        max-width: 400px;
+        height: auto;
+        padding: 2em;
+    }
+    
+}
+
 @media (max-width: 991.98px) {
     #services {
-        margin-top: 60px;
+        margin-top: 20vh;
     }
 
     .top-service-cards-container,
@@ -193,12 +225,12 @@
 @media (max-width: 767.98px) {
     #services {
         height: 100%;
-        margin-top: 40vh;
+        margin-top: 5vh;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding-top: 150px;
+        padding-top: 10px;
     }
 
     .section-header h2 {
