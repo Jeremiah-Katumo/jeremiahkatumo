@@ -28,7 +28,7 @@ function Skills() {
   return (
     <section className="skills-content-section" id="skills">
       <div className="section-header">
-        <h2 className="section-title">My Skills</h2>
+        <h2 className="section-title mb-4">My Skills</h2>
         {/* <p>
           A mix of what I do and what I love. From programming languages and <br />
           frameworks to design tools and personal passions - this section <br />
