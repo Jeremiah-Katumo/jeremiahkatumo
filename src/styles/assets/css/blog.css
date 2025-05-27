@@ -8,32 +8,6 @@
   margin-top: 35px;
 }
 
-/* .heading-section {
-    text-align: center;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-co<Container className="blog-card">
-            <Container className="blog-entry">
-              <a href="single.html" className="blog-img">
-              </a>
-              <Container className="text">
-                <Container className="author-container">
-                  <p className="mb-0">
-                    <span className="mr-2 date">June 21, 2019</span>
-                    <a href="#" className="mr-2 user">Admin</a>
-                    <a href="#" className="meta-chat"><span class="icon-chat"></span> 3</a>
-                  </p>
-                </Container>
-                <h3 className="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </Container>
-            </Container>
-          </Container>ntent: center;
-    align-items: center;
-    margin-top: 70px;
-} */
-
 .heading-section p {
   text-align: justify;
 }
@@ -231,22 +205,6 @@
     padding: 20px;
     height: auto;
   }
-
-  .blog-entry .text .heading {
-    font-size: 18px;
-  }
-
-  .blog-entry .text .heading a {
-    font-size: 20px;
-  }
-
-  .author-container .date {
-    font-size: 18px;
-  }
-
-  .author-container .author {
-    font-size: 20px;
-  }
 }
 
 /* Medium screens (tablets) */
@@ -277,11 +235,11 @@
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   #blogs p {
     font-size: 12px !important;
   }
-}
+} */
 
 
 
