@@ -1,5 +1,20 @@
 @import url('./style.css');
 
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  height: auto;
+}
+.skills-section {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
 /* Skills Section Styles */
 .skills-content-section {
   padding: 20px 10px;
