@@ -2,30 +2,21 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-const BlogCard = ({ title, date, author, desc, link = "single.html" }) => {
+const BlogCard = ({ title, date, author, description, link = "single_blog.html" }) => {
   return (
-    <Container className="blog-card">
-      <Container className="blog-entry">
-        <a href={link} className="blog-img">
-          {/* Optional: Insert an image tag here if needed */}
+    <div class="col-lg-4 col-md-12 d-flex">
+      <div class="blog-post col">
+        <div class="label-tag">
+          <span>Popular Article</span>
+        </div>
+        <a href={link}>
+          <h4>{title}</h4>
         </a>
-        <Container className="text">
-          <Container className="author-container">
-            <p className="mb-0 paragraph">
-              <span className="mr-2 date">{date}</span>
-              <span><a href="#" className="mr-2 author">{author}</a></span>
-              <a href="#" className="meta-chat">
-                <span className="icon-chat"></span>
-              </a>
-            </p>
-          </Container>
-          <h3 className="heading">
-            <a href={link}>{title}</a>
-          </h3>
-          <p className='blog-desc'>{desc}</p>
-        </Container>
-      </Container>
-    </Container>
+        <p>{description}</p>
+        <a href={link} class="blog-link">Read on Medium <i
+          class="bi bi-play-circle"></i></a>
+      </div>
+    </div>
   );
 };
 

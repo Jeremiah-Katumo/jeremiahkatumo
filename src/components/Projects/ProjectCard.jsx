@@ -1,89 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
-// import '../../styles/assets/css/project.css'
 
-const ProjectCard = ({ title, category, link, imageNum }) => {
-  const cardClass = `project-card project-img project-img-${imageNum}`;
+const ProjectCard = ({ title, category, link, imageNum, imageLink }) => {
+  const [hovered, setHovered] = useState(false);
+  const cardClass = `project-card project-img ${imageNum}`;
+  const dynamicStyles = hovered
+          ? {
+              backgroundImage: `url(${imageLink})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              opacity: 1,
+              transition: 'opacity 0.3s ease'
+            }
+          : {
+              opacity: 0,
+              transition: 'opacity 0.3s ease'
+            };
 
   return (
-    <Container className={cardClass}>
-      <Container className="overlay"></Container>
-      <Container className="text">
-        <h3><a href={link}>{title}</a></h3>
-        <span>{category}</span>
-      </Container>
+    <Container
+      className={cardClass + (hovered ? ' hovered' : '')}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={dynamicStyles}
+    >
+      {hovered && (
+        <>
+          <Container className="overlay"></Container>
+          <Container className="text">
+            <h3><a href={link}>{title}</a></h3>
+            <span>{category}</span>
+          </Container>
+        </>
+      )}
     </Container>
   );
 };
 
 export default ProjectCard;
-
-
-// // const projectsCardData = [
-// //   {
-// //     id: 1,
-// //     imageNum: 'one',
-// //     title: 'Branding &amp; Illustration Design',
-// //     category: 'Web Design',
-// //     image: 'project-img-one',
-// //     link: 'project1'
-// //   },
-// //   {
-// //     id: 2,
-// //     imageNum: 'two',
-// //     title: 'Branding &amp; Illustration Design',
-// //     category: 'Web Design',
-// //     image: 'project-img-two',
-// //     link: 'project1'
-// //   }
-// // ]
-
-// const ProductCard = ({ id, title, category, imageNum, link }) => {
-
-//   return (
-//     <>
-//       <Container key={id} className={`project-card project-img project-img-` + imageNum}>
-//         <Container className='overlay'></Container>
-//         <Container className='text'>
-//           <h3><a href={link}>{title}</a></h3>
-//           <span>{category}</span>
-//         </Container>
-//       </Container>
-//     </>
-//   )
-// }
-
-// function ProjectCardOne({ title, category, image, link }) {
-//   // const [hover, setHover] = useState(false);
-//   // const handleMouseEnter = () => setHover(true);
-//   // const handleMouseLeave = () => setHover(false);
-//   // const hoverClass = hover ? 'hover' : '';
-
-//   return (
-//     <>
-//       <Container className='project-card project-img project-img-one'>
-//         <Container className='overlay'></Container>
-//         <Container className='text'>
-//           <h3><a href="project1">Branding &amp; Illustration Design</a></h3>
-//           <span>Web Design</span>
-//         </Container>
-//       </Container>
-//     </>
-//   )
-// }
-
-// function ProjectCardTwo({ id, title, category, image, link }) {
-//   return (
-//     <>
-//       <Container className='project-card project-img project-img-two'>
-//         <Container className='overlay'></Container>
-//         <Container className='text'>
-//           <h3><a href={link}>{title}</a></h3>
-//           <span>{category}</span>
-//         </Container>
-//       </Container>
-//     </>
-//   )
-// }
-
-// export { ProjectCardOne, ProjectCardTwo, ProductCard }

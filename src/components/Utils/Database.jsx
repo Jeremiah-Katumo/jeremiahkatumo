@@ -1,13 +1,13 @@
 import React from "react";
+import imarika from '../../styles/assets/img/imarika.png';
+import cipk from '../../styles/assets/img/cipk.png';
+import wireframe from '../../styles/assets/img/wireframe.png';
 
 // Projects Data
 const data = [
-    { id: 1, imageNum: 'one', title: 'Imarika Corporate Website', category: 'Web Development', link: 'https://imarika-ui.vercel.app' },
-    { id: 2, imageNum: 'two', title: 'CIPK Corporate Website', category: 'Web Development', link: 'project2' },
-    // { id: 3, imageNum: 'one', title: 'E-commerce Platform Design', category: 'UI/UX Design', link: 'project3' },
-    // { id: 4, imageNum: 'two', title: 'Mobile App Design', category: 'App Design', link: 'project4' },
-    // { id: 5, imageNum: 'one', title: 'Portfolio Showcase Design', category: 'Web Design', link: 'project5' },
-    // { id: 6, imageNum: 'two', title: 'SaaS Dashboard UI', category: 'Dashboard UI', link: 'project6' },
+    { id: 1, imageNum: 'one', title: 'Imarika Corporate Website', category: 'Web Development', link: 'https://imarika-ui.vercel.app', imageLink: imarika },
+    { id: 2, imageNum: 'two', title: 'CIPK Corporate Website', category: 'Web Development', link: 'https://cipk-app.vercel.app', imageLink: cipk },
+    { id: 3, imageNum: 'one', title: 'SMS-Based Jobs App', category: 'Designing, Wireframing', link: 'https://miro.com/app/board/uXjVIBfOL_4=/?share_link_id=861520531822', imageLink: wireframe },
 ];
 
 const sectionHeaderData = [
@@ -16,9 +16,9 @@ const sectionHeaderData = [
 
 // Services Data
 const serviceTopCardData = [
-    { category: "top", icon: "flaticon-analysis", heading: "Web Design", sectionHeading: "What I Offer", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
+    { category: "top", icon: "flaticon-analysis", heading: "Responsive Design", sectionHeading: "What I Offer", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
     { category: "top", icon: "flaticon-flasks", heading: "Data Analysis", sectionHeading: "What I Offer", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
-    { category: "top", icon: "flaticon-ideas", heading: "Web Development", sectionHeading: "What I Offer", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
+    { category: "top", icon: "flaticon-ideas", heading: "Web Development, Hosting and Maintenance", sectionHeading: "What I Offer", sectionText: "Whether you're building a website, need help with your data, or just want advice on your tech idea - I’ve got you covered. Let’s bring your vision to life, one solution at a time." },
 ]
 
 const serviceBottomCardData = [
@@ -122,12 +122,18 @@ const resumeSectionHeaderData = {
 
 // Skills Data
 const skillsData = [
-  { iconClass: 'fas fa-code', title: 'Web Development' },
-  { iconClass: 'fas fa-mobile-alt', title: 'App Development' },
-  { iconClass: 'fas fa-paint-brush', title: 'UI/UX Design' },
-  { iconClass: 'fas fa-server', title: 'Backend Development' },
-  { iconClass: 'fas fa-pen-nib', title: 'Frontend Development' },
-  { iconClass: 'fas fa-pen-nib', title: 'Analytical Skills' },
+  { iconClass: 'fab fa-python', title: 'Python' },
+  { iconClass: 'fab fa-r-project', title: 'R Programming' },
+  { iconClass: 'fab fa-js', title: 'JavaScript' },
+  { iconClass: 'fab fa-php', title: 'PHP' },
+  { iconClass: 'fab fa-git-alt', title: 'Git' },
+  { iconClass: 'fas fa-pencil-ruler', title: 'UI/UX Design' },
+  { iconClass: 'fas fa-calculator', title: 'Quantitative Reasoning' },
+  { iconClass: 'fas fa-brain', title: 'Critical Thinking' },
+  { iconClass: 'fas fa-chart-line', title: 'Analytical Skills' },
+  { iconClass: 'fas fa-tasks', title: 'Task Management' },
+  { iconClass: 'fas fa-users', title: 'Teamwork' },
+  // { iconClass: 'fas fa-rocket', title: 'Deployment' },
 ];
 
 // Interests Data

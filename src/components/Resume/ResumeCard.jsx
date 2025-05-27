@@ -1,38 +1,28 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import '../../styles/assets/css/resume.css'; // Ensure styles are loaded
+import React, { useEffect, useRef } from 'react';
 
-const ResumeCard = ({ date, title, school, description: text }) => {
-  const [scrollY, setScrollY] = useState(0);
+const ResumeCard = ({ date, title, school, description, position }) => {
+  const scrollRef = useRef(null);
 
-  const handleScroll = (event) => {
-    const { scrollTop } = event.target;
-    setScrollY(scrollTop);
-  };
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.style.maxHeight = '120px';
+      scrollRef.current.style.overflowY = 'auto';
+    }
+  }, []);
 
   return (
-    <div className="resume-wrap ftco-animate">
-      <span className="date">{date}</span>
-      <h2>{title}</h2>
-      <span className="position">
-        <h3>{school}</h3>
-      </span>
-
-      <p className="mt-4 scrollable" onScroll={handleScroll}>
-        {text}
-      </p>
-
-      {/* Optional: Show scroll position below for debugging or interaction */}
-      {/* <div className="scroll-indicator">Scroll Y: {scrollY}px</div> */}
+    <div className={`timeline-item ${position}`}>
+      <div className="timeline-dot"></div>
+      <div className="timeline-content">
+        <h3>{title}</h3>
+        <span className="timeline-date">{date}</span>
+        <p className="h4">{school}</p>
+        <div ref={scrollRef}>
+          <p>{description}</p>
+        </div>
+      </div>
     </div>
   );
-};
-
-ResumeCard.propTypes = {
-  date: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  school: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
 };
 
 export default ResumeCard;
