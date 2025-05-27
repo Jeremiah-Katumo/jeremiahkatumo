@@ -491,6 +491,41 @@ Contact Form
         border-radius: 10px;
     }
 }
+
+@media (max-width: 720px) {
+    #contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        margin-bottom: 275%;
+        height: auto;
+    }
+
+    #contact-form {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 20px;
+    }
+    .contact-form-container {
+        width: 100%;
+        padding: 20px;
+    }
+    .contact-info {
+        width: 100%;
+        padding-left: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info-val {
+        font-size: 12px;
+    }
+    
+}
+
 @media (max-width: 576px) {
     #contacts {
         display: flex;
