@@ -10,7 +10,7 @@ const HireMe = () => {
         <Container className="hire-me-container">
           <Container className="text-container">
             <h2>
-              I'm <span>Available </span>for freelancing
+              I'm Available for freelancing
             </h2>
             <p>
               If you're looking for someone to help with web development, data analysis, or building custom solutions, feel free to reach out.

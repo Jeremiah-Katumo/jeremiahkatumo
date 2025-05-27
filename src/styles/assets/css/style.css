@@ -72,6 +72,61 @@ h6 {
   color: var(--text-color);
 }
 
+/* Base font sizes */
+body {
+  font-size: 16px;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.9rem; }
+p, li, a, span, label, input, textarea, button {
+  font-size: 1rem;
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+  body { font-size: 18px; }
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.4rem; }
+  h3 { font-size: 1.8rem; }
+  h4 { font-size: 1.3rem; }
+  p, li, a, span, label, input, textarea, button { font-size: 1.1rem; }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 991.98px) {
+  body { font-size: 15px; }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.7rem; }
+  h3 { font-size: 1.3rem; }
+  h4 { font-size: 1.1rem; }
+  p, li, a, span, label, input, textarea, button { font-size: 0.98rem; }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767.98px) {
+  body { font-size: 14px; }
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.3rem; }
+  h3 { font-size: 1.1rem; }
+  h4 { font-size: 1rem; }
+  p, li, a, span, label, input, textarea, button { font-size: 0.93rem; }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  body { font-size: 13px; }
+  h1 { font-size: 1.3rem; }
+  h2 { font-size: 1.1rem; }
+  h3 { font-size: 1rem; }
+  h4 { font-size: 0.95rem; }
+  p, li, a, span, label, input, textarea, button { font-size: 0.85rem; }
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/

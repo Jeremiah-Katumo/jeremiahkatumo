@@ -4,15 +4,20 @@ import '../../styles/assets/css/blog.css';
 import { Container } from 'react-bootstrap';
 import { blogData } from '../Objects/Database';
 import BlogCard from './BlogCard';
+import { SectionHeaderDouble } from '../Fragments/SectionHeader';
 
 const Blogs = () => {
   return (
     <Container id='blogs' className='blogs-container'>
-      <Container className='heading-section'>
-        <h1 className="big big-2">Blog</h1>
-        <h2 className='section-title mb-4'>My Blog</h2>
-        <p>A collection of thoughts, tutorials, and personal reflections on technology, <br />problem-solving, and continuous learning. I share what I learn as I grow.</p>
-      </Container>
+      <SectionHeaderDouble bigTitle="Blog"
+        sectionTitle="My Blog"
+        sectionText={
+          <>
+            A collection of thoughts, tutorials, and personal reflections on technology,<br />
+            problem-solving, and continuous learning. I share what I learn as I grow.
+          </>
+        }
+      />
 
       <Container className='blogs-section'>
         <div class="row row-flex margintop-lg">
