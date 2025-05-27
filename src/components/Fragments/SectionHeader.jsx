@@ -16,14 +16,6 @@ const SectionHeader = ({ data }) => {
     )
 }
 
-// export const SectionHeaderDouble = ({ sectionTitle, sectionText }) => (
-//   <div className="section-header">
-//     {/* {bigTitle && <h1 className="big big-2">{bigTitle}</h1>} */}
-//     {sectionTitle && <h2 className="section-title mb-4">{sectionTitle}</h2>}
-//     {sectionText && <p>{sectionText}</p>}
-//   </div>
-// );
-
 export const SectionHeaderDouble = ({ bigTitle, sectionTitle, sectionText }) => {
 
     return (

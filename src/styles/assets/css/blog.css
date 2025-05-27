@@ -29,7 +29,6 @@
   flex-direction: column;
   border: 2px solid var(--background-thr-color);
   padding: 50px;
-  /* border-radius: 15px; */
   width: 25%;
   height: 300px;
 }
@@ -248,58 +247,57 @@ Blog
 ////////////////////////////////////////*/
 
 .blog-post {
-    position: relative;
-    padding: 40px;
-    margin: 10px 0;
-    border: 1px solid rgba(255,255,255,0.5);
-    color: #ffffff;
+  position: relative;
+  padding: 40px;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
 }
 
 .blog-post:hover {
-    border: 2px solid #ffffff;
-    transition: all .2s ease-in-out;
+  border: 2px solid #ffffff;
+  transition: all .2s ease-in-out;
 }
 
 .blog-post h4 {
-    font-family: 'Merriweather', serif;
-    line-height: 1.6;
-    margin-bottom: 40px;
+  line-height: 1.6;
+  margin-bottom: 40px;
 }
 
 .blog-post p {
-    color: rgba(255,255,255,0.5);
-    line-height: 1.8;
-    margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.8;
+  margin-bottom: 40px;
 }
 
 .blog-post i {
-    font-size: 20px;
-    margin-left: 10px;
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 .blog-link {
-    position: absolute;
-    bottom: 30px;
+  position: absolute;
+  bottom: 30px;
 }
 
 .label-tag {
-    background-color: #ffffff;
-    padding: 4px 15px;
-    display: inline-block;
-    margin-bottom: 25px;
+  background-color: #ffffff;
+  padding: 4px 15px;
+  display: inline-block;
+  margin-bottom: 25px;
 }
 
 .label-tag span {
-    color: #000000;
-    font-size: 12px;
-    letter-spacing: .1em;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: .1em;
 }
 
 .label-tag a {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .row-flex {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
