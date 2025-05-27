@@ -25,7 +25,7 @@ function Projects() {
             <div class="lines"></div>
           </div>
         </div>
-        <SlidingText />
+        {/* <SlidingText /> */}
         <SectionHeader data={sectionHeaderData} />
 
         <Container className="project-card-container">
