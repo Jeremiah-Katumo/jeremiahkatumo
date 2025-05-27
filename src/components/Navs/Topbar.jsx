@@ -47,26 +47,20 @@ const TopBar = () => {
             className="ftco_navbar ftco-navbar-light site-navbar-target"
             fixed="top"
         >
-            <Container className="nav-content-container d-flex justify-content-between align-items-center">
+            <Container className="nav-content-container">
                 <div className="logo-container">
                     <Navbar.Brand className="brand-name" href="/">
                         <img src={brand} alt="Logo" className="brand-logo" />
                     </Navbar.Brand>
                 </div>
 
-                {/* Show MobileNav toggle only on small screens */}
                 <div className="d-lg-none">
                     <MobileNav />
                 </div>
 
-                {/* NavMenu shown directly for large screens, dropdown for mobile */}
                 <div className="d-none d-lg-block">
                     <NavMenu />
                 </div>
-
-                {/* <div className="mobile-dropdown-nav d-lg-none">
-                    <NavMenu />
-                </div> */}
 
                 <div class="theme-toggle">
                     <i class="fas fa-sun"></i>
@@ -74,8 +68,6 @@ const TopBar = () => {
                     <div class="theme-toggle-ball"></div>
                 </div>
             </Container>
-
-            {/* Mobile dropdown nav — shown only on mobile toggle */}
 
         </Navbar>
     );
