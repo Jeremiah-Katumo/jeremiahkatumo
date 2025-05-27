@@ -226,3 +226,90 @@
   } */
   
 }
+
+/* Base font sizes for Skills and Interests */
+.skills-content-section,
+.interests-content-section {
+  font-size: 1rem;
+}
+
+.skills-content-section h2,
+.interests-content-section h2 {
+  font-size: 2rem;
+}
+
+.skills-content-section .skill-card-wrapper,
+.interests-content-section .interest-card-wrapper {
+  font-size: 1rem;
+}
+
+.skills-content-section .skill-title,
+.interests-content-section .interest-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.skills-content-section .skill-icon,
+.interests-content-section .interest-icon {
+  font-size: 2rem;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 991.98px) {
+  .skills-content-section,
+  .interests-content-section {
+    font-size: 0.98rem;
+  }
+  .skills-content-section h2,
+  .interests-content-section h2 {
+    font-size: 1.5rem;
+  }
+  .skills-content-section .skill-title,
+  .interests-content-section .interest-title {
+    font-size: 1rem;
+  }
+  .skills-content-section .skill-icon,
+  .interests-content-section .interest-icon {
+    font-size: 1.6rem;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767.98px) {
+  .skills-content-section,
+  .interests-content-section {
+    font-size: 0.93rem;
+  }
+  .skills-content-section h2,
+  .interests-content-section h2 {
+    font-size: 1.2rem;
+  }
+  .skills-content-section .skill-title,
+  .interests-content-section .interest-title {
+    font-size: 0.95rem;
+  }
+  .skills-content-section .skill-icon,
+  .interests-content-section .interest-icon {
+    font-size: 1.3rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .skills-content-section,
+  .interests-content-section {
+    font-size: 0.85rem;
+  }
+  .skills-content-section h2,
+  .interests-content-section h2 {
+    font-size: 1rem;
+  }
+  .skills-content-section .skill-title,
+  .interests-content-section .interest-title {
+    font-size: 0.85rem;
+  }
+  .skills-content-section .skill-icon,
+  .interests-content-section .interest-icon {
+    font-size: 1.1rem;
+  }
+}
