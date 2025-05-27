@@ -12,7 +12,7 @@ function HomeTwo() {
 
       <Container fluid id="about" className="home-about-section">
         <Container>
-          <h2 className="section-title display-3">Let Me Introduce Myself</h2>
+          <h3 className="display-2">Let Me Introduce Myself</h3>
           <Row className="content-section wrapper">
             <motion.div
               initial={{ x: -100 }}

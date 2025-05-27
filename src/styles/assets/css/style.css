@@ -228,14 +228,11 @@ p, li, a, span, label, input, textarea, button {
     border-right: 1px solid #e6e9ec;
     left: -300px;
   }
-}
 
-@media (min-width: 991px) {
   #main {
     margin-left: 100px;
   }
 }
-
 
 /**
 * Mobile Navigation 
@@ -338,7 +335,7 @@ p, li, a, span, label, input, textarea, button {
   align-items: center;
   text-align: center;
   padding: 40px 20px;
-  margin: 25px 0;
+  margin: 0.5vh 0;
   background-color: var(--background-color);
 }
 
@@ -593,7 +590,7 @@ p, li, a, span, label, input, textarea, button {
 @media (max-width: 575.98px) {
   #about {
     padding: 5px;
-    margin-bottom: 0vh;
+    margin-bottom: 40vh;
   }
 
   .about-content {
@@ -630,7 +627,7 @@ p, li, a, span, label, input, textarea, button {
     padding: 20px;
     background-color: var(--background-color);
     /* height: auto; */
-    margin-bottom: 25vh
+    margin-bottom: 30vh
   }
 
   /* Lower layer */
@@ -782,7 +779,7 @@ p, li, a, span, label, input, textarea, button {
 @media (max-width: 480px) {
   #about {
     padding: 5px;
-    margin-bottom: 5vh;
+    margin-bottom: 20vh;
   }
 
   .content-section {
